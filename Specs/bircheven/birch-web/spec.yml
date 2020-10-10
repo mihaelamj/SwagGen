@@ -1,0 +1,90 @@
+openapi: 3.0.3
+info:
+  title: birch-web
+  description: Birch Web Application
+  version: 1.0.0
+servers:
+  - url: 'https://birchfinance.com/api'
+components:
+  x-lint-skip:
+    - inline-schema-is-scalar
+  schemas:
+    GetRateTable:
+      $ref: ../originator/schemas/rateTablePublic.yml
+    GetRateTableRequest:
+      $ref: ./schemas/getRateTableRequest.yml #unresolved
+    LeadRequestJson:
+      $ref: ../lead/schemas/leadRequestJson.yml #unresolved
+    ApiError:
+      $ref: ../core/schemas/apiError.yml
+tags:
+  - name: Plaid
+  - name: Bank
+paths:
+  /even/getRateTables:
+    post:
+      tags:
+        - Even
+      summary: getRateTables
+      description: getRateTables
+      operationId: getRateTables
+      requestBody:
+        description: Get `RateTable` for User by `productType`
+        content:
+          application/json:
+            schema:
+              $ref: ./schemas/getRateTableRequest.yml
+        required: true
+      responses:
+        '200':
+          description: >-
+            Returns `RateTable` for specified `productType` if table exists
+            within 30 days
+          content:
+            application/json:
+              schema:
+                $ref: ../originator/schemas/rateTablePublic.yml
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: ../core/schemas/apiError.yml
+              example:
+                summary: An internal server error
+                description: An unknown error occured
+                value:
+                  message: Internal Error
+                  details: Something went wrong...
+  /even/createUpdateLeadAndGetRateTables:
+    post:
+      tags:
+        - Even
+      summary: createUpdateLeadAndGetRateTables
+      operationId: createUpdateLeadAndGetRateTables
+      requestBody:
+        description: Create `Lead` and get `RateTable`
+        content:
+          application/json:
+            schema:
+              $ref: ../lead/schemas/leadRequestJson.yml
+        required: true
+      responses:
+        '200':
+          description: Return `RateTable` for newly created lead
+          content:
+            application/json:
+              schema:
+                $ref: ../originator/schemas/rateTablePublic.yml
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: ../core/schemas/apiError.yml
+              example:
+                summary: An internal server error
+                description: An unknown error occured
+                value:
+                  message: Internal Error
+                  details: Something went wrong..

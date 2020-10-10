@@ -63,37 +63,37 @@ extension TBX.UserService {
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = MultiHasAccessToObject
+            public typealias SuccessType = EvenMultiHasAccessToObject
 
             /** Request was successful */
-            case status200(MultiHasAccessToObject)
+            case status200(EvenMultiHasAccessToObject)
 
             /** Bad Request  */
-            case status400(ResponseError)
+            case status400(EvenResponseError)
 
             /** Unauthorized  */
-            case status401(ResponseError)
+            case status401(EvenResponseError)
 
             /** Customer or Device not Found */
-            case status404(ResponseError)
+            case status404(EvenResponseError)
 
             /** The IDP took too long to respond */
-            case status408(ResponseError)
+            case status408(EvenResponseError)
 
             /** Device was Logged Out or the customer not longer exists */
-            case status410(ResponseError)
+            case status410(EvenResponseError)
 
             /** The IDP return an error or the received response from IDP is invalid */
-            case status424(ResponseError)
+            case status424(EvenResponseError)
 
-            public var success: MultiHasAccessToObject? {
+            public var success: EvenMultiHasAccessToObject? {
                 switch self {
                 case .status200(let response): return response
                 default: return nil
                 }
             }
 
-            public var failure: ResponseError? {
+            public var failure: EvenResponseError? {
                 switch self {
                 case .status400(let response): return response
                 case .status401(let response): return response
@@ -106,7 +106,7 @@ extension TBX.UserService {
             }
 
             /// either success or failure value. Success is anything in the 200..<300 status code range
-            public var responseResult: APIResponseResult<MultiHasAccessToObject, ResponseError> {
+            public var responseResult: APIResponseResult<EvenMultiHasAccessToObject, EvenResponseError> {
                 if let successValue = success {
                     return .success(successValue)
                 } else if let failureValue = failure {
@@ -154,13 +154,13 @@ extension TBX.UserService {
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode(MultiHasAccessToObject.self, from: data))
-                case 400: self = try .status400(decoder.decode(ResponseError.self, from: data))
-                case 401: self = try .status401(decoder.decode(ResponseError.self, from: data))
-                case 404: self = try .status404(decoder.decode(ResponseError.self, from: data))
-                case 408: self = try .status408(decoder.decode(ResponseError.self, from: data))
-                case 410: self = try .status410(decoder.decode(ResponseError.self, from: data))
-                case 424: self = try .status424(decoder.decode(ResponseError.self, from: data))
+                case 200: self = try .status200(decoder.decode(EvenMultiHasAccessToObject.self, from: data))
+                case 400: self = try .status400(decoder.decode(EvenResponseError.self, from: data))
+                case 401: self = try .status401(decoder.decode(EvenResponseError.self, from: data))
+                case 404: self = try .status404(decoder.decode(EvenResponseError.self, from: data))
+                case 408: self = try .status408(decoder.decode(EvenResponseError.self, from: data))
+                case 410: self = try .status410(decoder.decode(EvenResponseError.self, from: data))
+                case 424: self = try .status424(decoder.decode(EvenResponseError.self, from: data))
                 default: throw APIClientError.unexpectedStatusCode(statusCode: statusCode, data: data)
                 }
             }

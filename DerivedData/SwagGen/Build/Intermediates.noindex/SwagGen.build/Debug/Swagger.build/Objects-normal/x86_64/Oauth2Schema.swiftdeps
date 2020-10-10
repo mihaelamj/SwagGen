@@ -1,0 +1,261 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "OAuth2Schema"
+provides-nominal:
+- "7Swagger12OAuth2SchemaV"
+- "7Swagger12OAuth2SchemaV4FlowV"
+- "7Swagger12OAuth2SchemaV8FlowTypeO"
+provides-member:
+- ["7Swagger12OAuth2SchemaV", ""]
+- ["7Swagger12OAuth2SchemaV4FlowV", ""]
+- ["7Swagger12OAuth2SchemaV8FlowTypeO", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- !private "Array"
+- "AssignmentPrecedence"
+- !private "FloatLiteralType"
+- "Flow"
+- "FlowType"
+- !private "IntegerLiteralType"
+- "JSONDictionary"
+- "JSONObjectConvertible"
+- "OAuth2Schema"
+- "String"
+- "StringLiteralType"
+- "URL"
+- !private "_findStringSwitchCase"
+- !private "authorizationURL"
+- !private "refreshUrl"
+- !private "scopes"
+- !private "tokenURL"
+- !private "~="
+depends-member:
+- ["SK", ""]
+- !private ["s7CVarArgP", "json"]
+- !private ["s7CVarArgP", "subscript"]
+- ["Sl", ""]
+- !private ["Sl", "json"]
+- !private ["Sl", "subscript"]
+- ["SL", ""]
+- !private ["s28CustomDebugStringConvertibleP", "json"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "json"]
+- !private ["s17CustomReflectableP", "subscript"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "json"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["Se", "json"]
+- !private ["Se", "subscript"]
+- !private ["SD", "json"]
+- !private ["SD", "subscript"]
+- !private ["SE", "json"]
+- !private ["SE", "subscript"]
+- ["SQ", "=="]
+- ["SQ", "Default_RawValue"]
+- ["SQ", "RawValue"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- ["SQ", "_rawHashValue"]
+- !private ["SQ", "allCases"]
+- ["SQ", "authorizationCode"]
+- ["SQ", "clientCredentials"]
+- !private ["SQ", "findStringSwitchCase"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "implicit"]
+- ["SQ", "init"]
+- !private ["SQ", "json"]
+- ["SQ", "password"]
+- ["SQ", "rawValue"]
+- !private ["SQ", "subscript"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "Key"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "Value"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "init"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "json"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "key"]
+- ["s32ExpressibleByStringInterpolationP", ""]
+- !private ["s26ExpressibleByStringLiteralP", "StringLiteralType"]
+- ["s26ExpressibleByStringLiteralP", ""]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "key"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "key"]
+- ["7Swagger12OAuth2SchemaV4FlowV", "JSONDictionary"]
+- ["7Swagger12OAuth2SchemaV4FlowV", "String"]
+- ["7Swagger12OAuth2SchemaV4FlowV", "URL"]
+- ["7Swagger12OAuth2SchemaV4FlowV", ""]
+- ["7Swagger12OAuth2SchemaV4FlowV", "authorizationURL"]
+- ["7Swagger12OAuth2SchemaV4FlowV", "init"]
+- ["7Swagger12OAuth2SchemaV4FlowV", "refreshUrl"]
+- ["7Swagger12OAuth2SchemaV4FlowV", "scopes"]
+- ["7Swagger12OAuth2SchemaV4FlowV", "tokenURL"]
+- ["7Swagger12OAuth2SchemaV8FlowTypeO", "=="]
+- ["7Swagger12OAuth2SchemaV8FlowTypeO", "Default_RawValue"]
+- ["7Swagger12OAuth2SchemaV8FlowTypeO", "FlowType"]
+- ["7Swagger12OAuth2SchemaV8FlowTypeO", "RawValue"]
+- ["7Swagger12OAuth2SchemaV8FlowTypeO", ""]
+- ["7Swagger12OAuth2SchemaV8FlowTypeO", "_Default_RawValue"]
+- !private ["7Swagger12OAuth2SchemaV8FlowTypeO", "_findStringSwitchCase"]
+- ["7Swagger12OAuth2SchemaV8FlowTypeO", "_rawHashValue"]
+- ["7Swagger12OAuth2SchemaV8FlowTypeO", "allCases"]
+- ["7Swagger12OAuth2SchemaV8FlowTypeO", "authorizationCode"]
+- ["7Swagger12OAuth2SchemaV8FlowTypeO", "clientCredentials"]
+- !private ["7Swagger12OAuth2SchemaV8FlowTypeO", "findStringSwitchCase"]
+- ["7Swagger12OAuth2SchemaV8FlowTypeO", "hash"]
+- ["7Swagger12OAuth2SchemaV8FlowTypeO", "hashValue"]
+- ["7Swagger12OAuth2SchemaV8FlowTypeO", "implicit"]
+- ["7Swagger12OAuth2SchemaV8FlowTypeO", "init"]
+- ["7Swagger12OAuth2SchemaV8FlowTypeO", "password"]
+- ["7Swagger12OAuth2SchemaV8FlowTypeO", "rawValue"]
+- ["SH", "=="]
+- ["SH", "Default_RawValue"]
+- ["SH", "RawValue"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- ["SH", "_rawHashValue"]
+- !private ["SH", "allCases"]
+- ["SH", "authorizationCode"]
+- ["SH", "clientCredentials"]
+- !private ["SH", "findStringSwitchCase"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "implicit"]
+- ["SH", "init"]
+- !private ["SH", "json"]
+- ["SH", "password"]
+- ["SH", "rawValue"]
+- !private ["SH", "subscript"]
+- !private ["13JSONUtilities7JSONKeyP", "key"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "FlowType"]
+- ["13JSONUtilities21JSONObjectConvertibleP", ""]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "_findStringSwitchCase"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "authorizationURL"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "findStringSwitchCase"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "flows"]
+- ["13JSONUtilities21JSONObjectConvertibleP", "init"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "refreshUrl"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "scopes"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "tokenURL"]
+- !private ["13JSONUtilities7KeyPathO", "key"]
+- ["s25LosslessStringConvertibleP", ""]
+- ["So8NSCodingP", ""]
+- ["So8NSObjectP", ""]
+- !private ["4Yams17NodeRepresentableP", "json"]
+- !private ["4Yams17NodeRepresentableP", "subscript"]
+- ["7Swagger12OAuth2SchemaV", "Flow"]
+- ["7Swagger12OAuth2SchemaV", "FlowType"]
+- ["7Swagger12OAuth2SchemaV", "JSONDictionary"]
+- ["7Swagger12OAuth2SchemaV", "String"]
+- ["7Swagger12OAuth2SchemaV", "URL"]
+- ["7Swagger12OAuth2SchemaV", ""]
+- !private ["7Swagger12OAuth2SchemaV", "_findStringSwitchCase"]
+- !private ["7Swagger12OAuth2SchemaV", "findStringSwitchCase"]
+- ["7Swagger12OAuth2SchemaV", "flows"]
+- ["7Swagger12OAuth2SchemaV", "init"]
+- ["SY", "=="]
+- ["SY", "Default_RawValue"]
+- ["SY", "RawValue"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- ["SY", "_rawHashValue"]
+- !private ["SY", "allCases"]
+- ["SY", "authorizationCode"]
+- ["SY", "clientCredentials"]
+- !private ["SY", "findStringSwitchCase"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "implicit"]
+- ["SY", "init"]
+- ["SY", "password"]
+- ["SY", "rawValue"]
+- !private ["ST", "Element"]
+- !private ["ST", "Iterator"]
+- ["ST", ""]
+- !private ["ST", "json"]
+- !private ["ST", "makeIterator"]
+- !private ["ST", "subscript"]
+- ["s16TextOutputStreamP", ""]
+- ["s20TextOutputStreamableP", ""]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
+- ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "json"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "json"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+depends-nominal:
+- "SK"
+- !private "s7CVarArgP"
+- "Sl"
+- "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SD"
+- !private "SE"
+- "SQ"
+- "s25ExpressibleByArrayLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s32ExpressibleByStringInterpolationP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "7Swagger12OAuth2SchemaV4FlowV"
+- "7Swagger12OAuth2SchemaV8FlowTypeO"
+- "SH"
+- !private "13JSONUtilities7JSONKeyP"
+- "13JSONUtilities21JSONObjectConvertibleP"
+- !private "13JSONUtilities7KeyPathO"
+- "s25LosslessStringConvertibleP"
+- "So8NSCodingP"
+- "So8NSObjectP"
+- !private "4Yams17NodeRepresentableP"
+- "7Swagger12OAuth2SchemaV"
+- "SY"
+- "ST"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/JSONUtilities.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/Yams.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/PathKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/CYaml/include/CYaml.h"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/CYaml/include/yaml.h"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Intermediates.noindex/GeneratedModuleMaps/CYaml.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "f31d0a5178999413fbb082d612ba6868"

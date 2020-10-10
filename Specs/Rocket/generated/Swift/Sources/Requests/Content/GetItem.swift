@@ -23,9 +23,16 @@ extension Rocket.Content {
         children of the show should only need to request expand of children.
         If an expand is specified which is not relevant to the item type, it will be ignored.
          */
-        public enum Expand: String, Codable, Equatable, CaseIterable {
+        public enum EvenExpand: String, Codable, Equatable, CaseIterable {
             case all = "all"
             case children = "children"
+            case undecodable
+
+            public init(from decoder: Decoder) throws {
+                let container = try decoder.singleValueContainer()
+                let rawValue = try container.decode(String.self)
+                self = EvenExpand(rawValue: rawValue) ?? .undecodable
+            }
         }
 
         /** Given a provided show id, it can be useful to get the details of a child season. This option
@@ -35,9 +42,16 @@ extension Rocket.Content {
         its list of child episode summaries, and also expand the detail of the show with its list of seasons summaries.
         Note the `id` parameter must be a show id for this parameter to work correctly.
          */
-        public enum SelectSeason: String, Codable, Equatable, CaseIterable {
+        public enum EvenSelectSeason: String, Codable, Equatable, CaseIterable {
             case first = "first"
             case latest = "latest"
+            case undecodable
+
+            public init(from decoder: Decoder) throws {
+                let container = try decoder.singleValueContainer()
+                let rawValue = try container.decode(String.self)
+                self = EvenSelectSeason(rawValue: rawValue) ?? .undecodable
+            }
         }
 
         public final class Request: APIRequest<Response> {
@@ -63,7 +77,7 @@ it provides full context for navigating around the show page. Subsequent navigat
 children of the show should only need to request expand of children.
 If an expand is specified which is not relevant to the item type, it will be ignored.
  */
-                public var expand: Expand?
+                public var expand: EvenExpand?
 
                 /** Given a provided show id, it can be useful to get the details of a child season. This option
 provides a means to return the `first` or `latest` season of a show given the show id.
@@ -72,7 +86,7 @@ latest season along with `expand=all`. This would then return the detail of the 
 its list of child episode summaries, and also expand the detail of the show with its list of seasons summaries.
 Note the `id` parameter must be a show id for this parameter to work correctly.
  */
-                public var selectSeason: SelectSeason?
+                public var selectSeason: EvenSelectSeason?
 
                 /** Set to true when passing a custom Id as the `id` path parameter. */
                 public var useCustomId: Bool?
@@ -97,9 +111,9 @@ clients as these formats evolve under the current major version.
 - `ldp` - Dynamic list detail pages with schedulable rows.
 See the `feature-flags.md` for available flag details.
  */
-                public var ff: [FeatureFlags]?
+                public var ff: [EvenFeatureFlags]?
 
-                public init(id: String, maxRating: String? = nil, expand: Expand? = nil, selectSeason: SelectSeason? = nil, useCustomId: Bool? = nil, device: String? = nil, sub: String? = nil, segments: [String]? = nil, ff: [FeatureFlags]? = nil) {
+                public init(id: String, maxRating: String? = nil, expand: EvenExpand? = nil, selectSeason: EvenSelectSeason? = nil, useCustomId: Bool? = nil, device: String? = nil, sub: String? = nil, segments: [String]? = nil, ff: [EvenFeatureFlags]? = nil) {
                     self.id = id
                     self.maxRating = maxRating
                     self.expand = expand
@@ -120,7 +134,7 @@ See the `feature-flags.md` for available flag details.
             }
 
             /// convenience initialiser so an Option doesn't have to be created
-            public convenience init(id: String, maxRating: String? = nil, expand: Expand? = nil, selectSeason: SelectSeason? = nil, useCustomId: Bool? = nil, device: String? = nil, sub: String? = nil, segments: [String]? = nil, ff: [FeatureFlags]? = nil) {
+            public convenience init(id: String, maxRating: String? = nil, expand: EvenExpand? = nil, selectSeason: EvenSelectSeason? = nil, useCustomId: Bool? = nil, device: String? = nil, sub: String? = nil, segments: [String]? = nil, ff: [EvenFeatureFlags]? = nil) {
                 let options = Options(id: id, maxRating: maxRating, expand: expand, selectSeason: selectSeason, useCustomId: useCustomId, device: device, sub: sub, segments: segments, ff: ff)
                 self.init(options: options)
             }
@@ -160,31 +174,31 @@ See the `feature-flags.md` for available flag details.
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = ItemDetail
+            public typealias SuccessType = EvenItemDetail
 
             /** The item requested */
-            case status200(ItemDetail)
+            case status200(EvenItemDetail)
 
             /** Bad request. */
-            case status400(ServiceError)
+            case status400(EvenServiceError)
 
             /** Not found. */
-            case status404(ServiceError)
+            case status404(EvenServiceError)
 
             /** Internal server error. */
-            case status500(ServiceError)
+            case status500(EvenServiceError)
 
             /** Service error. */
-            case defaultResponse(statusCode: Int, ServiceError)
+            case defaultResponse(statusCode: Int, EvenServiceError)
 
-            public var success: ItemDetail? {
+            public var success: EvenItemDetail? {
                 switch self {
                 case .status200(let response): return response
                 default: return nil
                 }
             }
 
-            public var failure: ServiceError? {
+            public var failure: EvenServiceError? {
                 switch self {
                 case .status400(let response): return response
                 case .status404(let response): return response
@@ -195,7 +209,7 @@ See the `feature-flags.md` for available flag details.
             }
 
             /// either success or failure value. Success is anything in the 200..<300 status code range
-            public var responseResult: APIResponseResult<ItemDetail, ServiceError> {
+            public var responseResult: APIResponseResult<EvenItemDetail, EvenServiceError> {
                 if let successValue = success {
                     return .success(successValue)
                 } else if let failureValue = failure {
@@ -237,11 +251,11 @@ See the `feature-flags.md` for available flag details.
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode(ItemDetail.self, from: data))
-                case 400: self = try .status400(decoder.decode(ServiceError.self, from: data))
-                case 404: self = try .status404(decoder.decode(ServiceError.self, from: data))
-                case 500: self = try .status500(decoder.decode(ServiceError.self, from: data))
-                default: self = try .defaultResponse(statusCode: statusCode, decoder.decode(ServiceError.self, from: data))
+                case 200: self = try .status200(decoder.decode(EvenItemDetail.self, from: data))
+                case 400: self = try .status400(decoder.decode(EvenServiceError.self, from: data))
+                case 404: self = try .status404(decoder.decode(EvenServiceError.self, from: data))
+                case 500: self = try .status500(decoder.decode(EvenServiceError.self, from: data))
+                default: self = try .defaultResponse(statusCode: statusCode, decoder.decode(EvenServiceError.self, from: data))
                 }
             }
 

@@ -43,12 +43,12 @@ extension TFL.Line {
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = [Disruption]
+            public typealias SuccessType = [EvenDisruption]
 
             /** OK */
-            case status200([Disruption])
+            case status200([EvenDisruption])
 
-            public var success: [Disruption]? {
+            public var success: [EvenDisruption]? {
                 switch self {
                 case .status200(let response): return response
                 }
@@ -74,7 +74,7 @@ extension TFL.Line {
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode([Disruption].self, from: data))
+                case 200: self = try .status200(decoder.decode([EvenDisruption].self, from: data))
                 default: throw APIClientError.unexpectedStatusCode(statusCode: statusCode, data: data)
                 }
             }

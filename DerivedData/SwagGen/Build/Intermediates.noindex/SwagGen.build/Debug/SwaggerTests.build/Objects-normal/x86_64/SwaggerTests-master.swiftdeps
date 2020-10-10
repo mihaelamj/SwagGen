@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)"
+options: "1edf24c39e22c4bcbd7b40a927f50f57"
+build_time: [1602278840, 49190000]
+inputs:
+  "/Users/mmj/Developer/personal/SwagGen/Tests/SwaggerTests/ParsingTests.swift": [1602277498, 95460779]
+  "/Users/mmj/Developer/personal/SwagGen/Tests/SwaggerTests/SpecTests.swift": [1602277498, 95714220]
+  "/Users/mmj/Developer/personal/SwagGen/Tests/SwaggerTests/XCTestManifests.swift": [1602277498, 95905707]

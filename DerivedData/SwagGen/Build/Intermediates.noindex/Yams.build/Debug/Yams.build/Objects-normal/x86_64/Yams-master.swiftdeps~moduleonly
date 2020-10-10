@@ -1,0 +1,20 @@
+version: "Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)"
+options: "c2de217fc9e2f1647281fb9fd4d3bf7a"
+build_time: [1602278827, 172137000]
+inputs:
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/Yams/Constructor.swift": [1602278089, 979527265]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/Yams/Decoder.swift": [1602278089, 979794437]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/Yams/Emitter.swift": [1602278089, 980059600]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/Yams/Encoder.swift": [1602278089, 980297631]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/Yams/Mark.swift": [1602278089, 876408567]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/Yams/Node.Mapping.swift": [1602278089, 980483991]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/Yams/Node.Scalar.swift": [1602278089, 980655484]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/Yams/Node.Sequence.swift": [1602278089, 980823520]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/Yams/Node.swift": [1602278089, 981051871]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/Yams/Parser.swift": [1602278089, 981323937]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/Yams/Representer.swift": [1602278089, 981534216]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/Yams/Resolver.swift": [1602278089, 981716813]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/Yams/String+Yams.swift": [1602278089, 981902853]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/Yams/Tag.swift": [1602278089, 982088876]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/Yams/YamlError.swift": [1602278089, 982269267]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/Yams/shim.swift": [1602278089, 982371360]

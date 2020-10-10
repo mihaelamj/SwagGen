@@ -1,0 +1,4 @@
+module StencilSwiftKit {
+header "StencilSwiftKit-Swift.h"
+export *
+}

@@ -1,0 +1,4 @@
+module SwiftCLI {
+header "SwiftCLI-Swift.h"
+export *
+}

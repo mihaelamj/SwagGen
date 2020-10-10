@@ -20,12 +20,12 @@ extension TFL.Journey {
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = [Mode]
+            public typealias SuccessType = [EvenMode]
 
             /** OK */
-            case status200([Mode])
+            case status200([EvenMode])
 
-            public var success: [Mode]? {
+            public var success: [EvenMode]? {
                 switch self {
                 case .status200(let response): return response
                 }
@@ -51,7 +51,7 @@ extension TFL.Journey {
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode([Mode].self, from: data))
+                case 200: self = try .status200(decoder.decode([EvenMode].self, from: data))
                 default: throw APIClientError.unexpectedStatusCode(statusCode: statusCode, data: data)
                 }
             }

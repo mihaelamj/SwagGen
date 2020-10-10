@@ -1,0 +1,13 @@
+version: "Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)"
+options: "58a0073db99bba4242c4fa5a51f6d582"
+build_time: [1602278827, 172199000]
+inputs:
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/JSONUtilities/Sources/JSONUtilities/DecodingError.swift": [1602278091, 680071194]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/JSONUtilities/Sources/JSONUtilities/Dictionary+JSONKey.swift": [1602278091, 680546104]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/JSONUtilities/Sources/JSONUtilities/Dictionary+KeyPath.swift": [1602278091, 680845011]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/JSONUtilities/Sources/JSONUtilities/InvalidItemBehaviour.swift": [1602278091, 681145327]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/JSONUtilities/Sources/JSONUtilities/JSONFileLoading.swift": [1602278091, 681504596]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/JSONUtilities/Sources/JSONUtilities/JSONObjectConvertible.swift": [1602278091, 681885795]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/JSONUtilities/Sources/JSONUtilities/JSONPrimitiveConvertible.swift": [1602278091, 682242923]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/JSONUtilities/Sources/JSONUtilities/KeyPath.swift": [1602278091, 682684606]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/JSONUtilities/Sources/JSONUtilities/URL+JSONPrimitiveConvertible.swift": [1602278091, 683028930]

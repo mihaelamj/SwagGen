@@ -42,12 +42,12 @@ extension TFL.Occupancy {
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = CarParkOccupancy
+            public typealias SuccessType = EvenCarParkOccupancy
 
             /** OK */
-            case status200(CarParkOccupancy)
+            case status200(EvenCarParkOccupancy)
 
-            public var success: CarParkOccupancy? {
+            public var success: EvenCarParkOccupancy? {
                 switch self {
                 case .status200(let response): return response
                 }
@@ -73,7 +73,7 @@ extension TFL.Occupancy {
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode(CarParkOccupancy.self, from: data))
+                case 200: self = try .status200(decoder.decode(EvenCarParkOccupancy.self, from: data))
                 default: throw APIClientError.unexpectedStatusCode(statusCode: statusCode, data: data)
                 }
             }

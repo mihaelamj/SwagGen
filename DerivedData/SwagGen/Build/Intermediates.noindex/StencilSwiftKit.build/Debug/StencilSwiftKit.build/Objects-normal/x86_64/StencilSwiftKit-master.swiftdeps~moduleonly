@@ -1,0 +1,15 @@
+version: "Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)"
+options: "55a3e8f918f798fe13bb49083ac66614"
+build_time: [1602278839, 235992000]
+inputs:
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/StencilSwiftKit/Sources/StencilSwiftKit/CallMacroNodes.swift": [1602278092, 372361824]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/StencilSwiftKit/Sources/StencilSwiftKit/Context.swift": [1602278092, 372555882]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/StencilSwiftKit/Sources/StencilSwiftKit/Environment.swift": [1602278092, 372761342]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/StencilSwiftKit/Sources/StencilSwiftKit/Filters+Numbers.swift": [1602278092, 372963878]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/StencilSwiftKit/Sources/StencilSwiftKit/Filters+Strings.swift": [1602278092, 373208679]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/StencilSwiftKit/Sources/StencilSwiftKit/Filters.swift": [1602278092, 373404994]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/StencilSwiftKit/Sources/StencilSwiftKit/MapNode.swift": [1602278092, 373580759]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/StencilSwiftKit/Sources/StencilSwiftKit/Parameters.swift": [1602278092, 373769453]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/StencilSwiftKit/Sources/StencilSwiftKit/SetNode.swift": [1602278092, 373947180]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/StencilSwiftKit/Sources/StencilSwiftKit/StencilSwiftTemplate.swift": [1602278092, 374115222]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/StencilSwiftKit/Sources/StencilSwiftKit/SwiftIdentifier.swift": [1602278092, 374291346]

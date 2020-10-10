@@ -13,10 +13,17 @@ extension TFL.StopPoint {
         public static let service = APIService<Response>(id: "StopPoint_Crowding", tag: "StopPoint", method: "GET", path: "/StopPoint/{id}/Crowding/{line}", hasBody: false, securityRequirements: [])
 
         /** The direction of travel. Can be inbound or outbound. */
-        public enum Direction: String, Codable, Equatable, CaseIterable {
+        public enum EvenDirection: String, Codable, Equatable, CaseIterable {
             case inbound = "inbound"
             case outbound = "outbound"
             case all = "all"
+            case undecodable
+
+            public init(from decoder: Decoder) throws {
+                let container = try decoder.singleValueContainer()
+                let rawValue = try container.decode(String.self)
+                self = EvenDirection(rawValue: rawValue) ?? .undecodable
+            }
         }
 
         public final class Request: APIRequest<Response> {
@@ -30,9 +37,9 @@ extension TFL.StopPoint {
                 public var line: String
 
                 /** The direction of travel. Can be inbound or outbound. */
-                public var direction: Direction
+                public var direction: EvenDirection
 
-                public init(id: String, line: String, direction: Direction) {
+                public init(id: String, line: String, direction: EvenDirection) {
                     self.id = id
                     self.line = line
                     self.direction = direction
@@ -47,7 +54,7 @@ extension TFL.StopPoint {
             }
 
             /// convenience initialiser so an Option doesn't have to be created
-            public convenience init(id: String, line: String, direction: Direction) {
+            public convenience init(id: String, line: String, direction: EvenDirection) {
                 let options = Options(id: id, line: line, direction: direction)
                 self.init(options: options)
             }
@@ -64,12 +71,12 @@ extension TFL.StopPoint {
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = [StopPoint]
+            public typealias SuccessType = [EvenStopPoint]
 
             /** OK */
-            case status200([StopPoint])
+            case status200([EvenStopPoint])
 
-            public var success: [StopPoint]? {
+            public var success: [EvenStopPoint]? {
                 switch self {
                 case .status200(let response): return response
                 }
@@ -95,7 +102,7 @@ extension TFL.StopPoint {
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode([StopPoint].self, from: data))
+                case 200: self = try .status200(decoder.decode([EvenStopPoint].self, from: data))
                 default: throw APIClientError.unexpectedStatusCode(statusCode: statusCode, data: data)
                 }
             }

@@ -1,0 +1,284 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ExpectationType"
+- "ExpectationFailure"
+- "Expectation"
+- "expect"
+- "expect"
+- "=="
+- "!="
+- "=="
+- "!="
+- "=="
+- "!="
+- ">"
+- ">="
+- "<"
+- "<="
+provides-nominal:
+- "7Spectre15ExpectationTypeP"
+- "7Spectre18ExpectationFailureV"
+- "7Spectre11ExpectationC"
+provides-member:
+- ["7Spectre15ExpectationTypeP", ""]
+- ["7Spectre18ExpectationFailureV", ""]
+- ["7Spectre11ExpectationC", ""]
+- ["7Spectre15ExpectationTypeP", "beNil"]
+- ["7Spectre15ExpectationTypeP", "beTrue"]
+- ["7Spectre15ExpectationTypeP", "beFalse"]
+- ["7Spectre15ExpectationTypeP", "beOfType"]
+- ["7Spectre15ExpectationTypeP", "toThrow"]
+- ["7Spectre15ExpectationTypeP", "toThrow"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- "!="
+- "<"
+- "<="
+- "=="
+- ">"
+- ">="
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CastingPrecedence"
+- "Comparable"
+- "Equatable"
+- "Error"
+- "Expectation"
+- "ExpectationFailure"
+- "ExpectationType"
+- "FailureType"
+- "FloatLiteralType"
+- "Int"
+- "IntegerLiteralType"
+- !private "Mirror"
+- "String"
+- "StringLiteralType"
+- "T"
+- !private "UnicodeScalarType"
+- "ValueType"
+- "expect"
+- !private "expression"
+- !private "failure"
+- !private "file"
+- !private "function"
+- !private "line"
+depends-member:
+- !private ["SK", ""]
+- !private ["SK", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["Sl", ""]
+- !private ["Sl", "init"]
+- !private ["SL", ""]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subjectType"]
+- !private ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "subjectType"]
+- !private ["Se", "init"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "init"]
+- ["SQ", ""]
+- !private ["SQ", "init"]
+- ["s5ErrorP", ""]
+- ["s5ErrorP", "_code"]
+- ["s5ErrorP", "_domain"]
+- ["s5ErrorP", "_getEmbeddedNSError"]
+- ["s5ErrorP", "_userInfo"]
+- ["s5ErrorP", "code"]
+- ["s5ErrorP", "domain"]
+- ["s5ErrorP", "file"]
+- ["s5ErrorP", "function"]
+- !private ["s5ErrorP", "init"]
+- ["s5ErrorP", "line"]
+- ["s5ErrorP", "reason"]
+- ["s5ErrorP", "userInfo"]
+- ["7Spectre11ExpectationC", "Expectation"]
+- !private ["7Spectre11ExpectationC", "ExpectationFailure"]
+- ["7Spectre11ExpectationC", "FailureType"]
+- ["7Spectre11ExpectationC", "Int"]
+- ["7Spectre11ExpectationC", "String"]
+- ["7Spectre11ExpectationC", "ValueType"]
+- ["7Spectre11ExpectationC", ""]
+- ["7Spectre11ExpectationC", "deinit"]
+- ["7Spectre11ExpectationC", "expression"]
+- ["7Spectre11ExpectationC", "failure"]
+- ["7Spectre11ExpectationC", "file"]
+- ["7Spectre11ExpectationC", "function"]
+- ["7Spectre11ExpectationC", "init"]
+- ["7Spectre11ExpectationC", "line"]
+- ["7Spectre11ExpectationC", "to"]
+- ["7Spectre18ExpectationFailureV", "Int"]
+- ["7Spectre18ExpectationFailureV", "String"]
+- ["7Spectre18ExpectationFailureV", ""]
+- ["7Spectre18ExpectationFailureV", "_code"]
+- ["7Spectre18ExpectationFailureV", "_domain"]
+- ["7Spectre18ExpectationFailureV", "_getEmbeddedNSError"]
+- ["7Spectre18ExpectationFailureV", "_userInfo"]
+- ["7Spectre18ExpectationFailureV", "code"]
+- ["7Spectre18ExpectationFailureV", "domain"]
+- ["7Spectre18ExpectationFailureV", "file"]
+- ["7Spectre18ExpectationFailureV", "function"]
+- ["7Spectre18ExpectationFailureV", "init"]
+- ["7Spectre18ExpectationFailureV", "line"]
+- ["7Spectre18ExpectationFailureV", "reason"]
+- ["7Spectre18ExpectationFailureV", "userInfo"]
+- ["7Spectre15ExpectationTypeP", "Bool"]
+- ["7Spectre15ExpectationTypeP", "Equatable"]
+- !private ["7Spectre15ExpectationTypeP", "Error"]
+- !private ["7Spectre15ExpectationTypeP", "ExpectationFailure"]
+- ["7Spectre15ExpectationTypeP", "FailureType"]
+- !private ["7Spectre15ExpectationTypeP", "Mirror"]
+- ["7Spectre15ExpectationTypeP", "String"]
+- ["7Spectre15ExpectationTypeP", "ValueType"]
+- ["7Spectre15ExpectationTypeP", ""]
+- ["7Spectre15ExpectationTypeP", "beFalse"]
+- ["7Spectre15ExpectationTypeP", "beNil"]
+- ["7Spectre15ExpectationTypeP", "beOfType"]
+- ["7Spectre15ExpectationTypeP", "beTrue"]
+- ["7Spectre15ExpectationTypeP", "expression"]
+- ["7Spectre15ExpectationTypeP", "failure"]
+- !private ["7Spectre15ExpectationTypeP", "file"]
+- !private ["7Spectre15ExpectationTypeP", "function"]
+- !private ["7Spectre15ExpectationTypeP", "init"]
+- !private ["7Spectre15ExpectationTypeP", "line"]
+- ["7Spectre15ExpectationTypeP", "toThrow"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "init"]
+- !private ["s32ExpressibleByStringInterpolationP", "StringInterpolation"]
+- !private ["s32ExpressibleByStringInterpolationP", ""]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", ""]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["7Spectre11FailureTypeP", ""]
+- ["7Spectre11FailureTypeP", "_code"]
+- ["7Spectre11FailureTypeP", "_domain"]
+- ["7Spectre11FailureTypeP", "_getEmbeddedNSError"]
+- ["7Spectre11FailureTypeP", "_userInfo"]
+- ["7Spectre11FailureTypeP", "code"]
+- ["7Spectre11FailureTypeP", "domain"]
+- ["7Spectre11FailureTypeP", "file"]
+- ["7Spectre11FailureTypeP", "function"]
+- !private ["7Spectre11FailureTypeP", "init"]
+- ["7Spectre11FailureTypeP", "line"]
+- ["7Spectre11FailureTypeP", "reason"]
+- ["7Spectre11FailureTypeP", "userInfo"]
+- !private ["SH", ""]
+- !private ["SH", "init"]
+- !private ["s25LosslessStringConvertibleP", ""]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s6MirrorV", "init"]
+- !private ["s6MirrorV", "subjectType"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", ""]
+- !private ["So8NSObjectP", ""]
+- !private ["Sm", "init"]
+- !private ["ST", ""]
+- !private ["ST", "init"]
+- !private ["SS", "init"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s27StringInterpolationProtocolP", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", ""]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", ""]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+depends-nominal:
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "SE"
+- "SQ"
+- "s5ErrorP"
+- "7Spectre11ExpectationC"
+- "7Spectre18ExpectationFailureV"
+- "7Spectre15ExpectationTypeP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "7Spectre11FailureTypeP"
+- !private "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "s6MirrorV"
+- !private "s10MirrorPathP"
+- !private "So8NSCodingP"
+- !private "So8NSObjectP"
+- !private "Sm"
+- !private "ST"
+- !private "SS"
+- !private "s27StringInterpolationProtocolP"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreData.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreImage.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/QuartzCore.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Metal.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/AppKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/XCTest.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTest.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "f1e42a777db72c0980a1dfdd958ea73b"

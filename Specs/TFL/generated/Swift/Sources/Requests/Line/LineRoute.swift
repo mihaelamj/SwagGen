@@ -13,9 +13,16 @@ extension TFL.Line {
         public static let service = APIService<Response>(id: "Line_Route", tag: "Line", method: "GET", path: "/Line/Route", hasBody: false, securityRequirements: [])
 
         /** A comma seperated list of service types to filter on. Supported values: Regular, Night. Defaulted to 'Regular' if not specified */
-        public enum ServiceTypes: String, Codable, Equatable, CaseIterable {
+        public enum EvenServiceTypes: String, Codable, Equatable, CaseIterable {
             case regular = "Regular"
             case night = "Night"
+            case undecodable
+
+            public init(from decoder: Decoder) throws {
+                let container = try decoder.singleValueContainer()
+                let rawValue = try container.decode(String.self)
+                self = EvenServiceTypes(rawValue: rawValue) ?? .undecodable
+            }
         }
 
         public final class Request: APIRequest<Response> {
@@ -23,9 +30,9 @@ extension TFL.Line {
             public struct Options {
 
                 /** A comma seperated list of service types to filter on. Supported values: Regular, Night. Defaulted to 'Regular' if not specified */
-                public var serviceTypes: [ServiceTypes]?
+                public var serviceTypes: [EvenServiceTypes]?
 
-                public init(serviceTypes: [ServiceTypes]? = nil) {
+                public init(serviceTypes: [EvenServiceTypes]? = nil) {
                     self.serviceTypes = serviceTypes
                 }
             }
@@ -38,7 +45,7 @@ extension TFL.Line {
             }
 
             /// convenience initialiser so an Option doesn't have to be created
-            public convenience init(serviceTypes: [ServiceTypes]? = nil) {
+            public convenience init(serviceTypes: [EvenServiceTypes]? = nil) {
                 let options = Options(serviceTypes: serviceTypes)
                 self.init(options: options)
             }
@@ -53,12 +60,12 @@ extension TFL.Line {
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = [Line]
+            public typealias SuccessType = [EvenLine]
 
             /** OK */
-            case status200([Line])
+            case status200([EvenLine])
 
-            public var success: [Line]? {
+            public var success: [EvenLine]? {
                 switch self {
                 case .status200(let response): return response
                 }
@@ -84,7 +91,7 @@ extension TFL.Line {
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode([Line].self, from: data))
+                case 200: self = try .status200(decoder.decode([EvenLine].self, from: data))
                 default: throw APIClientError.unexpectedStatusCode(statusCode: statusCode, data: data)
                 }
             }

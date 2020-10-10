@@ -14,9 +14,9 @@ extension Rocket.Account {
 
         public final class Request: APIRequest<Response> {
 
-            public var body: ChangePinRequest
+            public var body: EvenChangePinRequest
 
-            public init(body: ChangePinRequest, encoder: RequestEncoder? = nil) {
+            public init(body: EvenChangePinRequest, encoder: RequestEncoder? = nil) {
                 self.body = body
                 super.init(service: ChangePin.service) { defaultEncoder in
                     return try (encoder ?? defaultEncoder).encode(body)
@@ -31,22 +31,22 @@ extension Rocket.Account {
             case status204
 
             /** Bad request. */
-            case status400(ServiceError)
+            case status400(EvenServiceError)
 
             /** Invalid access token. */
-            case status401(ServiceError)
+            case status401(EvenServiceError)
 
             /** Forbidden. */
-            case status403(ServiceError)
+            case status403(EvenServiceError)
 
             /** Not found. */
-            case status404(ServiceError)
+            case status404(EvenServiceError)
 
             /** Internal server error. */
-            case status500(ServiceError)
+            case status500(EvenServiceError)
 
             /** Service error. */
-            case defaultResponse(statusCode: Int, ServiceError)
+            case defaultResponse(statusCode: Int, EvenServiceError)
 
             public var success: Void? {
                 switch self {
@@ -55,7 +55,7 @@ extension Rocket.Account {
                 }
             }
 
-            public var failure: ServiceError? {
+            public var failure: EvenServiceError? {
                 switch self {
                 case .status400(let response): return response
                 case .status401(let response): return response
@@ -68,7 +68,7 @@ extension Rocket.Account {
             }
 
             /// either success or failure value. Success is anything in the 200..<300 status code range
-            public var responseResult: APIResponseResult<Void, ServiceError> {
+            public var responseResult: APIResponseResult<Void, EvenServiceError> {
                 if let successValue = success {
                     return .success(successValue)
                 } else if let failureValue = failure {
@@ -117,12 +117,12 @@ extension Rocket.Account {
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
                 case 204: self = .status204
-                case 400: self = try .status400(decoder.decode(ServiceError.self, from: data))
-                case 401: self = try .status401(decoder.decode(ServiceError.self, from: data))
-                case 403: self = try .status403(decoder.decode(ServiceError.self, from: data))
-                case 404: self = try .status404(decoder.decode(ServiceError.self, from: data))
-                case 500: self = try .status500(decoder.decode(ServiceError.self, from: data))
-                default: self = try .defaultResponse(statusCode: statusCode, decoder.decode(ServiceError.self, from: data))
+                case 400: self = try .status400(decoder.decode(EvenServiceError.self, from: data))
+                case 401: self = try .status401(decoder.decode(EvenServiceError.self, from: data))
+                case 403: self = try .status403(decoder.decode(EvenServiceError.self, from: data))
+                case 404: self = try .status404(decoder.decode(EvenServiceError.self, from: data))
+                case 500: self = try .status500(decoder.decode(EvenServiceError.self, from: data))
+                default: self = try .defaultResponse(statusCode: statusCode, decoder.decode(EvenServiceError.self, from: data))
                 }
             }
 

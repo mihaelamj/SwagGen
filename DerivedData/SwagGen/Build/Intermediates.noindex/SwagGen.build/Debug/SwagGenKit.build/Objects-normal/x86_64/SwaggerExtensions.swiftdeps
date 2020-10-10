@@ -1,0 +1,844 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Enum"
+- "ResponseFormatter"
+provides-nominal:
+- "10SwagGenKit4EnumV"
+- "10SwagGenKit17ResponseFormatterV"
+provides-member:
+- ["10SwagGenKit4EnumV", ""]
+- ["10SwagGenKit17ResponseFormatterV", ""]
+- ["7Swagger0A4SpecV", ""]
+- ["7Swagger8MetadataV", ""]
+- ["7Swagger6SchemaV", ""]
+- ["7Swagger9OperationV", ""]
+- ["7Swagger12ObjectSchemaV", ""]
+- ["7Swagger17OperationResponseV", ""]
+- ["7Swagger8ResponseV", ""]
+- ["7Swagger8PropertyV", ""]
+- ["7Swagger9ParameterV", ""]
+- ["7Swagger7ContentV", ""]
+- ["7Swagger0A4SpecV", "operationsByTag"]
+- ["7Swagger0A4SpecV", "enums"]
+- ["7Swagger8MetadataV", "getEnum"]
+- ["7Swagger6SchemaV", "parent"]
+- ["7Swagger6SchemaV", "properties"]
+- ["7Swagger6SchemaV", "requiredProperties"]
+- ["7Swagger6SchemaV", "optionalProperties"]
+- ["7Swagger6SchemaV", "inheritedProperties"]
+- ["7Swagger6SchemaV", "inheritedRequiredProperties"]
+- ["7Swagger6SchemaV", "inheritedOptionalProperties"]
+- ["7Swagger6SchemaV", "getEnum"]
+- ["7Swagger6SchemaV", "enums"]
+- ["7Swagger6SchemaV", "inheritedEnums"]
+- ["7Swagger6SchemaV", "inlineSchema"]
+- ["7Swagger9OperationV", "getParameters"]
+- ["7Swagger9OperationV", "enums"]
+- ["7Swagger9OperationV", "requestEnums"]
+- ["7Swagger9OperationV", "responseEnums"]
+- ["7Swagger12ObjectSchemaV", "enums"]
+- ["7Swagger17OperationResponseV", "successful"]
+- ["7Swagger17OperationResponseV", "name"]
+- ["7Swagger17OperationResponseV", "isEnum"]
+- ["7Swagger17OperationResponseV", "enumValue"]
+- ["7Swagger8ResponseV", "schema"]
+- ["7Swagger8PropertyV", "isEnum"]
+- ["7Swagger8PropertyV", "enumValue"]
+- ["7Swagger9ParameterV", "getEnum"]
+- ["7Swagger9ParameterV", "isEnum"]
+- ["7Swagger9ParameterV", "enumValue"]
+- ["7Swagger9ParameterV", "schema"]
+- ["7Swagger6SchemaV", "canBeEnum"]
+- ["7Swagger6SchemaV", "isFile"]
+- ["7Swagger7ContentV", "defaultSchema"]
+- ["7Swagger7ContentV", "containsFile"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "!="
+- !private "&&"
+- "+"
+- !private "+="
+- "<"
+- "=="
+- !private "??"
+- !private "Array"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "ComponentObject"
+- "Content"
+- "Enum"
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- "Metadata"
+- "ObjectSchema"
+- "OperationResponse"
+- "Parameter"
+- "ParameterLocation"
+- "Property"
+- "Response"
+- "ResponseFormatter"
+- "Schema"
+- "String"
+- !private "StringLiteralType"
+- "Swagger"
+- "SwaggerSpec"
+- !private "UnicodeScalarType"
+- !private "additionalProperties"
+- !private "components"
+- !private "content"
+- !private "description"
+- !private "enumNames"
+- !private "enumValue"
+- !private "enumValues"
+- !private "enums"
+- !private "getEnum"
+- !private "getMediaItem"
+- !private "inheritedOptionalProperties"
+- !private "inheritedRequiredProperties"
+- !private "mediaItems"
+- !private "metadata"
+- !private "name"
+- !private "operations"
+- !private "optionalProperties"
+- !private "parameters"
+- !private "parent"
+- !private "properties"
+- !private "requestBody"
+- !private "requestEnums"
+- !private "requiredProperties"
+- !private "response"
+- !private "responseEnums"
+- !private "responses"
+- !private "schema"
+- !private "statusCode"
+- !private "tags"
+- !private "type"
+depends-member:
+- !private ["s18AdditiveArithmeticP", ""]
+- !private ["s18AdditiveArithmeticP", "description"]
+- !private ["Sa", "append"]
+- !private ["Sa", "compactMap"]
+- !private ["Sa", "contains"]
+- !private ["Sa", "filter"]
+- !private ["Sa", "isEmpty"]
+- !private ["Sa", "map"]
+- !private ["Sa", "sorted"]
+- !private ["7Swagger11ArraySchemaV", "items"]
+- ["7Swagger11ArraySchemaV0bC5ItemsO", "multiple"]
+- ["7Swagger11ArraySchemaV0bC5ItemsO", "single"]
+- !private ["SK", ""]
+- !private ["SK", "append"]
+- !private ["SK", "compactMap"]
+- !private ["SK", "contains"]
+- !private ["SK", "filter"]
+- !private ["SK", "hasPrefix"]
+- !private ["SK", "isEmpty"]
+- !private ["SK", "map"]
+- !private ["SK", "sorted"]
+- !private ["Sz", ""]
+- !private ["Sz", "description"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "compactMap"]
+- !private ["s7CVarArgP", "contains"]
+- !private ["s7CVarArgP", "description"]
+- !private ["s7CVarArgP", "filter"]
+- !private ["s7CVarArgP", "hasPrefix"]
+- !private ["s7CVarArgP", "isEmpty"]
+- !private ["s7CVarArgP", "map"]
+- !private ["s7CVarArgP", "sorted"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "values"]
+- !private ["Sl", ""]
+- !private ["Sl", "append"]
+- !private ["Sl", "compactMap"]
+- !private ["Sl", "contains"]
+- !private ["Sl", "filter"]
+- !private ["Sl", "first"]
+- !private ["Sl", "hasPrefix"]
+- !private ["Sl", "isEmpty"]
+- !private ["Sl", "map"]
+- !private ["Sl", "sorted"]
+- !private ["Sl", "subscript"]
+- !private ["Sl", "values"]
+- !private ["SL", ""]
+- !private ["SL", "description"]
+- !private ["SL", "hasPrefix"]
+- !private ["7Swagger9ComponentP", "content"]
+- !private ["7Swagger9ComponentP", "description"]
+- !private ["7Swagger9ComponentP", "enumValue"]
+- !private ["7Swagger9ComponentP", "enums"]
+- !private ["7Swagger9ComponentP", "getEnum"]
+- !private ["7Swagger9ComponentP", "inheritedEnums"]
+- !private ["7Swagger9ComponentP", "inheritedOptionalProperties"]
+- !private ["7Swagger9ComponentP", "inheritedRequiredProperties"]
+- !private ["7Swagger9ComponentP", "inlineSchema"]
+- !private ["7Swagger9ComponentP", "isFile"]
+- !private ["7Swagger9ComponentP", "location"]
+- !private ["7Swagger9ComponentP", "metadata"]
+- !private ["7Swagger9ComponentP", "name"]
+- !private ["7Swagger9ComponentP", "optionalProperties"]
+- !private ["7Swagger9ComponentP", "parent"]
+- !private ["7Swagger9ComponentP", "properties"]
+- !private ["7Swagger9ComponentP", "requiredProperties"]
+- !private ["7Swagger9ComponentP", "schema"]
+- !private ["7Swagger9ComponentP", "type"]
+- !private ["7Swagger15ComponentObjectV", "name"]
+- !private ["7Swagger15ComponentObjectV", "value"]
+- !private ["7Swagger10ComponentsV", "parameters"]
+- ["7Swagger7ContentV", "Bool"]
+- ["7Swagger7ContentV", "Schema"]
+- ["7Swagger7ContentV", ""]
+- ["7Swagger7ContentV", "containsFile"]
+- ["7Swagger7ContentV", "defaultSchema"]
+- !private ["7Swagger7ContentV", "getMediaItem"]
+- !private ["7Swagger7ContentV", "mediaItems"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "compactMap"]
+- !private ["10Foundation15ContiguousBytesP", "contains"]
+- !private ["10Foundation15ContiguousBytesP", "filter"]
+- !private ["10Foundation15ContiguousBytesP", "isEmpty"]
+- !private ["10Foundation15ContiguousBytesP", "map"]
+- !private ["10Foundation15ContiguousBytesP", "sorted"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "compactMap"]
+- !private ["s28CustomDebugStringConvertibleP", "contains"]
+- !private ["s28CustomDebugStringConvertibleP", "filter"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
+- !private ["s28CustomDebugStringConvertibleP", "hasPrefix"]
+- !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "sorted"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "values"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "compactMap"]
+- !private ["s17CustomReflectableP", "contains"]
+- !private ["s17CustomReflectableP", "description"]
+- !private ["s17CustomReflectableP", "filter"]
+- !private ["s17CustomReflectableP", "hasPrefix"]
+- !private ["s17CustomReflectableP", "isEmpty"]
+- !private ["s17CustomReflectableP", "map"]
+- !private ["s17CustomReflectableP", "sorted"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "values"]
+- !private ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "compactMap"]
+- !private ["s23CustomStringConvertibleP", "contains"]
+- !private ["s23CustomStringConvertibleP", "description"]
+- !private ["s23CustomStringConvertibleP", "filter"]
+- !private ["s23CustomStringConvertibleP", "first"]
+- !private ["s23CustomStringConvertibleP", "hasPrefix"]
+- !private ["s23CustomStringConvertibleP", "isEmpty"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- !private ["s23CustomStringConvertibleP", "sorted"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "values"]
+- !private ["10Foundation12DataProtocolP", ""]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "compactMap"]
+- !private ["10Foundation12DataProtocolP", "contains"]
+- !private ["10Foundation12DataProtocolP", "filter"]
+- !private ["10Foundation12DataProtocolP", "isEmpty"]
+- !private ["10Foundation12DataProtocolP", "map"]
+- !private ["10Foundation12DataProtocolP", "sorted"]
+- !private ["Se", "append"]
+- !private ["Se", "compactMap"]
+- !private ["Se", "contains"]
+- !private ["Se", "description"]
+- !private ["Se", "filter"]
+- !private ["Se", "hasPrefix"]
+- !private ["Se", "isEmpty"]
+- !private ["Se", "map"]
+- !private ["Se", "sorted"]
+- !private ["Se", "subscript"]
+- !private ["Se", "values"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SD", "subscript"]
+- !private ["SD", "values"]
+- !private ["SE", ""]
+- !private ["SE", "append"]
+- !private ["SE", "compactMap"]
+- !private ["SE", "contains"]
+- !private ["SE", "description"]
+- !private ["SE", "filter"]
+- !private ["SE", "hasPrefix"]
+- !private ["SE", "isEmpty"]
+- !private ["SE", "map"]
+- !private ["SE", "sorted"]
+- !private ["SE", "subscript"]
+- !private ["SE", "values"]
+- ["10SwagGenKit4EnumV", "Metadata"]
+- ["10SwagGenKit4EnumV", "Schema"]
+- ["10SwagGenKit4EnumV", "String"]
+- ["10SwagGenKit4EnumV", "cases"]
+- ["10SwagGenKit4EnumV", "description"]
+- ["10SwagGenKit4EnumV", "init"]
+- ["10SwagGenKit4EnumV", "metadata"]
+- ["10SwagGenKit4EnumV", "name"]
+- ["10SwagGenKit4EnumV", "names"]
+- ["10SwagGenKit4EnumV", "schema"]
+- !private ["SQ", "=="]
+- ["SQ", ""]
+- !private ["SQ", "all"]
+- !private ["SQ", "append"]
+- ["SQ", "binary"]
+- ["SQ", "byte"]
+- !private ["SQ", "compactMap"]
+- !private ["SQ", "contains"]
+- !private ["SQ", "description"]
+- !private ["SQ", "filter"]
+- !private ["SQ", "hasPrefix"]
+- !private ["SQ", "isEmpty"]
+- !private ["SQ", "json"]
+- !private ["SQ", "map"]
+- !private ["SQ", "sorted"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "values"]
+- !private ["s25ExpressibleByArrayLiteralP", ""]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "compactMap"]
+- !private ["s25ExpressibleByArrayLiteralP", "contains"]
+- !private ["s25ExpressibleByArrayLiteralP", "filter"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "isEmpty"]
+- !private ["s25ExpressibleByArrayLiteralP", "map"]
+- !private ["s25ExpressibleByArrayLiteralP", "sorted"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "Key"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "Value"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "init"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "values"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "hasPrefix"]
+- !private ["s27ExpressibleByIntegerLiteralP", ""]
+- !private ["s27ExpressibleByIntegerLiteralP", "description"]
+- !private ["s23ExpressibleByNilLiteralP", "init"]
+- !private ["s32ExpressibleByStringInterpolationP", "StringInterpolation"]
+- !private ["s32ExpressibleByStringInterpolationP", ""]
+- !private ["s32ExpressibleByStringInterpolationP", "hasPrefix"]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", ""]
+- !private ["s26ExpressibleByStringLiteralP", "hasPrefix"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "hasPrefix"]
+- !private ["s17FixedWidthIntegerP", "description"]
+- !private ["7Swagger11GroupSchemaV", "discriminator"]
+- !private ["7Swagger11GroupSchemaV", "schemas"]
+- !private ["7Swagger11GroupSchemaV", "type"]
+- !private ["7Swagger11GroupSchemaV0B4TypeO", "all"]
+- !private ["SH", ""]
+- !private ["SH", "all"]
+- !private ["SH", "append"]
+- ["SH", "binary"]
+- ["SH", "byte"]
+- !private ["SH", "compactMap"]
+- !private ["SH", "contains"]
+- !private ["SH", "description"]
+- !private ["SH", "filter"]
+- !private ["SH", "hasPrefix"]
+- !private ["SH", "isEmpty"]
+- !private ["SH", "json"]
+- !private ["SH", "map"]
+- !private ["SH", "sorted"]
+- !private ["SH", "subscript"]
+- !private ["SH", "values"]
+- !private ["Si", "description"]
+- !private ["13JSONUtilities7JSONKeyP", "hasPrefix"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "Enum"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", ""]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "additionalProperties"]
+- ["13JSONUtilities21JSONObjectConvertibleP", "array"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "components"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "content"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "defaultSchema"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "description"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "enumNames"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "enumValue"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "enumValues"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "enums"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "getEnum"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "getMediaItem"]
+- ["13JSONUtilities21JSONObjectConvertibleP", "group"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "inheritedEnums"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "inheritedOptionalProperties"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "inheritedRequiredProperties"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "inlineSchema"]
+- ["13JSONUtilities21JSONObjectConvertibleP", "integer"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "isFile"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "items"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "location"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "mediaItems"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "metadata"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "name"]
+- ["13JSONUtilities21JSONObjectConvertibleP", "number"]
+- ["13JSONUtilities21JSONObjectConvertibleP", "object"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "operations"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "optionalProperties"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "parameters"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "parent"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "properties"]
+- ["13JSONUtilities21JSONObjectConvertibleP", "reference"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "requiredProperties"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "schema"]
+- ["13JSONUtilities21JSONObjectConvertibleP", "string"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "tags"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "title"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "type"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "value"]
+- !private ["13JSONUtilities11JSONRawTypeP", "description"]
+- !private ["13JSONUtilities11JSONRawTypeP", "hasPrefix"]
+- !private ["s25LosslessStringConvertibleP", ""]
+- !private ["s25LosslessStringConvertibleP", "description"]
+- !private ["s25LosslessStringConvertibleP", "hasPrefix"]
+- !private ["7Swagger9MediaItemV", "schema"]
+- !private ["7Swagger7ContentV9MediaTypeO", "json"]
+- ["7Swagger8MetadataV", "Enum"]
+- ["7Swagger8MetadataV", "Schema"]
+- ["7Swagger8MetadataV", "String"]
+- ["7Swagger8MetadataV", ""]
+- !private ["7Swagger8MetadataV", "description"]
+- !private ["7Swagger8MetadataV", "enumNames"]
+- !private ["7Swagger8MetadataV", "enumValues"]
+- ["7Swagger8MetadataV", "getEnum"]
+- !private ["7Swagger8MetadataV", "title"]
+- !private ["s10MirrorPathP", "description"]
+- !private ["s10MirrorPathP", "hasPrefix"]
+- !private ["SM", ""]
+- !private ["SM", "append"]
+- !private ["SM", "compactMap"]
+- !private ["SM", "contains"]
+- !private ["SM", "filter"]
+- !private ["SM", "first"]
+- !private ["SM", "isEmpty"]
+- !private ["SM", "map"]
+- !private ["SM", "sorted"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "compactMap"]
+- !private ["10Foundation19MutableDataProtocolP", "contains"]
+- !private ["10Foundation19MutableDataProtocolP", "filter"]
+- !private ["10Foundation19MutableDataProtocolP", "isEmpty"]
+- !private ["10Foundation19MutableDataProtocolP", "map"]
+- !private ["10Foundation19MutableDataProtocolP", "sorted"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "hasPrefix"]
+- !private ["So9NSCopyingP", "hasPrefix"]
+- !private ["So21NSItemProviderReadingP", "hasPrefix"]
+- !private ["So21NSItemProviderWritingP", "hasPrefix"]
+- !private ["So16NSMutableCopyingP", "hasPrefix"]
+- !private ["So8NSObjectC", "hasPrefix"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "hasPrefix"]
+- !private ["So14NSSecureCodingP", "hasPrefix"]
+- !private ["So8NSStringC", "hasPrefix"]
+- !private ["7Swagger5NamedP", "name"]
+- !private ["7Swagger5NamedP", "value"]
+- !private ["4Yams17NodeRepresentableP", ""]
+- !private ["4Yams17NodeRepresentableP", "append"]
+- !private ["4Yams17NodeRepresentableP", "compactMap"]
+- !private ["4Yams17NodeRepresentableP", "contains"]
+- !private ["4Yams17NodeRepresentableP", "description"]
+- !private ["4Yams17NodeRepresentableP", "filter"]
+- !private ["4Yams17NodeRepresentableP", "hasPrefix"]
+- !private ["4Yams17NodeRepresentableP", "isEmpty"]
+- !private ["4Yams17NodeRepresentableP", "map"]
+- !private ["4Yams17NodeRepresentableP", "sorted"]
+- !private ["4Yams17NodeRepresentableP", "subscript"]
+- !private ["4Yams17NodeRepresentableP", "values"]
+- !private ["7Stencil12NormalizableP", "append"]
+- !private ["7Stencil12NormalizableP", "compactMap"]
+- !private ["7Stencil12NormalizableP", "contains"]
+- !private ["7Stencil12NormalizableP", "filter"]
+- !private ["7Stencil12NormalizableP", "isEmpty"]
+- !private ["7Stencil12NormalizableP", "map"]
+- !private ["7Stencil12NormalizableP", "sorted"]
+- !private ["7Stencil12NormalizableP", "subscript"]
+- !private ["7Stencil12NormalizableP", "values"]
+- !private ["Sj", ""]
+- !private ["Sj", "description"]
+- ["7Swagger12ObjectSchemaV", "Enum"]
+- ["7Swagger12ObjectSchemaV", ""]
+- !private ["7Swagger12ObjectSchemaV", "additionalProperties"]
+- ["7Swagger12ObjectSchemaV", "enums"]
+- !private ["7Swagger12ObjectSchemaV", "optionalProperties"]
+- !private ["7Swagger12ObjectSchemaV", "properties"]
+- !private ["7Swagger12ObjectSchemaV", "requiredProperties"]
+- ["7Swagger9OperationV", "Enum"]
+- ["7Swagger9OperationV", "Parameter"]
+- ["7Swagger9OperationV", "ParameterLocation"]
+- ["7Swagger9OperationV", ""]
+- ["7Swagger9OperationV", "enums"]
+- !private ["7Swagger9OperationV", "generatedIdentifier"]
+- ["7Swagger9OperationV", "getParameters"]
+- !private ["7Swagger9OperationV", "parameters"]
+- !private ["7Swagger9OperationV", "requestBody"]
+- ["7Swagger9OperationV", "requestEnums"]
+- ["7Swagger9OperationV", "responseEnums"]
+- !private ["7Swagger9OperationV", "responses"]
+- !private ["7Swagger9OperationV", "tags"]
+- ["7Swagger17OperationResponseV", "Bool"]
+- ["7Swagger17OperationResponseV", "Enum"]
+- ["7Swagger17OperationResponseV", "String"]
+- ["7Swagger17OperationResponseV", ""]
+- ["7Swagger17OperationResponseV", "enumValue"]
+- ["7Swagger17OperationResponseV", "isEnum"]
+- ["7Swagger17OperationResponseV", "name"]
+- !private ["7Swagger17OperationResponseV", "response"]
+- !private ["7Swagger17OperationResponseV", "statusCode"]
+- ["7Swagger17OperationResponseV", "successful"]
+- ["7Swagger9ParameterV", "Bool"]
+- ["7Swagger9ParameterV", "Enum"]
+- ["7Swagger9ParameterV", "Schema"]
+- ["7Swagger9ParameterV", "String"]
+- ["7Swagger9ParameterV", ""]
+- !private ["7Swagger9ParameterV", "description"]
+- ["7Swagger9ParameterV", "enumValue"]
+- ["7Swagger9ParameterV", "getEnum"]
+- ["7Swagger9ParameterV", "isEnum"]
+- !private ["7Swagger9ParameterV", "location"]
+- !private ["7Swagger9ParameterV", "name"]
+- ["7Swagger9ParameterV", "schema"]
+- !private ["7Swagger9ParameterV", "type"]
+- !private ["7Swagger15ParameterSchemaV", "schema"]
+- ["7Swagger13ParameterTypeO", "content"]
+- ["7Swagger13ParameterTypeO", "schema"]
+- !private ["7Swagger17PossibleReferenceO", "value"]
+- ["7Swagger8PropertyV", "Bool"]
+- ["7Swagger8PropertyV", "Enum"]
+- ["7Swagger8PropertyV", ""]
+- ["7Swagger8PropertyV", "enumValue"]
+- ["7Swagger8PropertyV", "isEnum"]
+- !private ["7Swagger8PropertyV", "name"]
+- !private ["7Swagger8PropertyV", "schema"]
+- !private ["Sk", ""]
+- !private ["Sk", "append"]
+- !private ["Sk", "compactMap"]
+- !private ["Sk", "contains"]
+- !private ["Sk", "filter"]
+- !private ["Sk", "isEmpty"]
+- !private ["Sk", "map"]
+- !private ["Sk", "sorted"]
+- !private ["Sm", ""]
+- !private ["Sm", "append"]
+- !private ["Sm", "compactMap"]
+- !private ["Sm", "contains"]
+- !private ["Sm", "filter"]
+- !private ["Sm", "hasPrefix"]
+- !private ["Sm", "isEmpty"]
+- !private ["Sm", "map"]
+- !private ["Sm", "sorted"]
+- ["SY", "binary"]
+- ["SY", "byte"]
+- ["SY", "format"]
+- !private ["SY", "init"]
+- !private ["SY", "json"]
+- !private ["SY", "rawValue"]
+- !private ["7Swagger9ReferenceC", "component"]
+- !private ["7Swagger11RequestBodyV", "content"]
+- ["7Swagger8ResponseV", "Schema"]
+- ["7Swagger8ResponseV", ""]
+- !private ["7Swagger8ResponseV", "content"]
+- !private ["7Swagger8ResponseV", "description"]
+- ["7Swagger8ResponseV", "schema"]
+- ["10SwagGenKit17ResponseFormatterV", "Bool"]
+- ["10SwagGenKit17ResponseFormatterV", "Int"]
+- ["10SwagGenKit17ResponseFormatterV", "Response"]
+- ["10SwagGenKit17ResponseFormatterV", "String"]
+- ["10SwagGenKit17ResponseFormatterV", "init"]
+- ["10SwagGenKit17ResponseFormatterV", "name"]
+- ["10SwagGenKit17ResponseFormatterV", "response"]
+- ["10SwagGenKit17ResponseFormatterV", "statusCode"]
+- ["10SwagGenKit17ResponseFormatterV", "successful"]
+- !private ["s10SIMDScalarP", "description"]
+- !private ["4Yams19ScalarConstructibleP", "description"]
+- !private ["4Yams19ScalarConstructibleP", "hasPrefix"]
+- !private ["4Yams19ScalarRepresentableP", "description"]
+- !private ["4Yams19ScalarRepresentableP", "hasPrefix"]
+- ["7Swagger6SchemaV", "Bool"]
+- ["7Swagger6SchemaV", "ComponentObject"]
+- ["7Swagger6SchemaV", "Enum"]
+- ["7Swagger6SchemaV", "Property"]
+- ["7Swagger6SchemaV", "Schema"]
+- ["7Swagger6SchemaV", "String"]
+- ["7Swagger6SchemaV", ""]
+- ["7Swagger6SchemaV", "canBeEnum"]
+- ["7Swagger6SchemaV", "enums"]
+- ["7Swagger6SchemaV", "getEnum"]
+- ["7Swagger6SchemaV", "inheritedEnums"]
+- ["7Swagger6SchemaV", "inheritedOptionalProperties"]
+- ["7Swagger6SchemaV", "inheritedProperties"]
+- ["7Swagger6SchemaV", "inheritedRequiredProperties"]
+- ["7Swagger6SchemaV", "inlineSchema"]
+- ["7Swagger6SchemaV", "isFile"]
+- !private ["7Swagger6SchemaV", "metadata"]
+- ["7Swagger6SchemaV", "optionalProperties"]
+- ["7Swagger6SchemaV", "parent"]
+- ["7Swagger6SchemaV", "properties"]
+- ["7Swagger6SchemaV", "requiredProperties"]
+- !private ["7Swagger6SchemaV", "type"]
+- ["7Swagger10SchemaTypeO", "array"]
+- ["7Swagger10SchemaTypeO", "group"]
+- ["7Swagger10SchemaTypeO", "integer"]
+- ["7Swagger10SchemaTypeO", "number"]
+- ["7Swagger10SchemaTypeO", "object"]
+- ["7Swagger10SchemaTypeO", "reference"]
+- ["7Swagger10SchemaTypeO", "string"]
+- !private ["ST", "Element"]
+- !private ["ST", "Iterator"]
+- !private ["ST", ""]
+- !private ["ST", "append"]
+- !private ["ST", "compactMap"]
+- !private ["ST", "contains"]
+- !private ["ST", "filter"]
+- !private ["ST", "first"]
+- !private ["ST", "hasPrefix"]
+- !private ["ST", "isEmpty"]
+- !private ["ST", "makeIterator"]
+- !private ["ST", "map"]
+- !private ["ST", "sorted"]
+- !private ["ST", "subscript"]
+- !private ["ST", "values"]
+- !private ["4Yams22SexagesimalConvertibleP", "description"]
+- !private ["SZ", "description"]
+- !private ["s13SignedNumericP", ""]
+- !private ["s13SignedNumericP", "description"]
+- !private ["Sx", ""]
+- !private ["Sx", "description"]
+- !private ["SS", "hasPrefix"]
+- ["7Swagger12StringFormatO", "format"]
+- ["7Swagger12StringFormatO0bC4TypeO", "binary"]
+- ["7Swagger12StringFormatO0bC4TypeO", "byte"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s27StringInterpolationProtocolP", "init"]
+- !private ["Sy", "hasPrefix"]
+- !private ["7Swagger12StringSchemaV", "format"]
+- ["7Swagger0A4SpecV", "Enum"]
+- ["7Swagger0A4SpecV", "String"]
+- ["7Swagger0A4SpecV", "Swagger"]
+- ["7Swagger0A4SpecV", ""]
+- !private ["7Swagger0A4SpecV", "components"]
+- ["7Swagger0A4SpecV", "enums"]
+- !private ["7Swagger0A4SpecV", "operations"]
+- ["7Swagger0A4SpecV", "operationsByTag"]
+- !private ["7Swagger0A4SpecV", "tags"]
+- !private ["s16TextOutputStreamP", ""]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "hasPrefix"]
+- !private ["s20TextOutputStreamableP", ""]
+- !private ["s20TextOutputStreamableP", "hasPrefix"]
+- !private ["SD6ValuesV", "contains"]
+- !private ["SD6ValuesV", "first"]
+- !private ["4Yams13YAMLEncodableP", "description"]
+- !private ["4Yams13YAMLEncodableP", "hasPrefix"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "compactMap"]
+- !private ["s14_ArrayProtocolP", "contains"]
+- !private ["s14_ArrayProtocolP", "filter"]
+- !private ["s14_ArrayProtocolP", "isEmpty"]
+- !private ["s14_ArrayProtocolP", "map"]
+- !private ["s14_ArrayProtocolP", "sorted"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "description"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "hasPrefix"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "compactMap"]
+- !private ["s24_DestructorSafeContainerP", "contains"]
+- !private ["s24_DestructorSafeContainerP", "filter"]
+- !private ["s24_DestructorSafeContainerP", "isEmpty"]
+- !private ["s24_DestructorSafeContainerP", "map"]
+- !private ["s24_DestructorSafeContainerP", "sorted"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "hasPrefix"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "description"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "hasPrefix"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "hasPrefix"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "compactMap"]
+- !private ["s19_HasContiguousBytesP", "contains"]
+- !private ["s19_HasContiguousBytesP", "filter"]
+- !private ["s19_HasContiguousBytesP", "hasPrefix"]
+- !private ["s19_HasContiguousBytesP", "isEmpty"]
+- !private ["s19_HasContiguousBytesP", "map"]
+- !private ["s19_HasContiguousBytesP", "sorted"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "compactMap"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "contains"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "description"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "filter"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "hasPrefix"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "sorted"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "values"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "hasPrefix"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "hasPrefix"]
+- !private ["s21_ObjectiveCBridgeableP", "_ObjectiveCType"]
+- !private ["s21_ObjectiveCBridgeableP", "_bridgeToObjectiveC"]
+- !private ["s21_ObjectiveCBridgeableP", "_conditionallyBridgeFromObjectiveC"]
+- !private ["s21_ObjectiveCBridgeableP", "_forceBridgeFromObjectiveC"]
+- !private ["s21_ObjectiveCBridgeableP", "_unconditionallyBridgeFromObjectiveC"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "compactMap"]
+- !private ["s21_ObjectiveCBridgeableP", "contains"]
+- !private ["s21_ObjectiveCBridgeableP", "description"]
+- !private ["s21_ObjectiveCBridgeableP", "filter"]
+- !private ["s21_ObjectiveCBridgeableP", "hasPrefix"]
+- !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
+- !private ["s21_ObjectiveCBridgeableP", "sorted"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "values"]
+depends-nominal:
+- !private "s18AdditiveArithmeticP"
+- !private "Sa"
+- !private "7Swagger11ArraySchemaV"
+- "7Swagger11ArraySchemaV0bC5ItemsO"
+- !private "SK"
+- !private "Sz"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "7Swagger9ComponentP"
+- !private "7Swagger15ComponentObjectV"
+- !private "7Swagger10ComponentsV"
+- "7Swagger7ContentV"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "SD"
+- !private "SE"
+- "10SwagGenKit4EnumV"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "7Swagger11GroupSchemaV"
+- !private "7Swagger11GroupSchemaV0B4TypeO"
+- "SH"
+- !private "Si"
+- !private "13JSONUtilities7JSONKeyP"
+- "13JSONUtilities21JSONObjectConvertibleP"
+- !private "13JSONUtilities11JSONRawTypeP"
+- !private "s25LosslessStringConvertibleP"
+- !private "7Swagger9MediaItemV"
+- !private "7Swagger7ContentV9MediaTypeO"
+- "7Swagger8MetadataV"
+- !private "s10MirrorPathP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- !private "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "7Swagger5NamedP"
+- !private "4Yams17NodeRepresentableP"
+- !private "7Stencil12NormalizableP"
+- !private "Sj"
+- "7Swagger12ObjectSchemaV"
+- "7Swagger9OperationV"
+- "7Swagger17OperationResponseV"
+- "7Swagger9ParameterV"
+- !private "7Swagger15ParameterSchemaV"
+- "7Swagger13ParameterTypeO"
+- !private "7Swagger17PossibleReferenceO"
+- "7Swagger8PropertyV"
+- !private "Sk"
+- !private "Sm"
+- "SY"
+- !private "7Swagger9ReferenceC"
+- !private "7Swagger11RequestBodyV"
+- "7Swagger8ResponseV"
+- "10SwagGenKit17ResponseFormatterV"
+- !private "s10SIMDScalarP"
+- !private "4Yams19ScalarConstructibleP"
+- !private "4Yams19ScalarRepresentableP"
+- "7Swagger6SchemaV"
+- "7Swagger10SchemaTypeO"
+- !private "ST"
+- !private "4Yams22SexagesimalConvertibleP"
+- !private "SZ"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "SS"
+- "7Swagger12StringFormatO"
+- "7Swagger12StringFormatO0bC4TypeO"
+- !private "s27StringInterpolationProtocolP"
+- !private "Sy"
+- !private "7Swagger12StringSchemaV"
+- "7Swagger0A4SpecV"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "SD6ValuesV"
+- !private "4Yams13YAMLEncodableP"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/Stencil.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/Swagger.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/JSONUtilities.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/Yams.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/PathKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/StencilSwiftKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/CYaml/include/CYaml.h"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/CYaml/include/yaml.h"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Intermediates.noindex/GeneratedModuleMaps/CYaml.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "3db7306d1c7cccef6397d79ac7f49e71"

@@ -56,37 +56,37 @@ Creates one if it doesn't exist, overwrites one if it does.
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = Watched
+            public typealias SuccessType = EvenWatched
 
             /** OK. */
-            case status200(Watched)
+            case status200(EvenWatched)
 
             /** Bad request. */
-            case status400(ServiceError)
+            case status400(EvenServiceError)
 
             /** Invalid access token. */
-            case status401(ServiceError)
+            case status401(EvenServiceError)
 
             /** Forbidden. */
-            case status403(ServiceError)
+            case status403(EvenServiceError)
 
             /** Not found. */
-            case status404(ServiceError)
+            case status404(EvenServiceError)
 
             /** Internal server error. */
-            case status500(ServiceError)
+            case status500(EvenServiceError)
 
             /** Service error. */
-            case defaultResponse(statusCode: Int, ServiceError)
+            case defaultResponse(statusCode: Int, EvenServiceError)
 
-            public var success: Watched? {
+            public var success: EvenWatched? {
                 switch self {
                 case .status200(let response): return response
                 default: return nil
                 }
             }
 
-            public var failure: ServiceError? {
+            public var failure: EvenServiceError? {
                 switch self {
                 case .status400(let response): return response
                 case .status401(let response): return response
@@ -99,7 +99,7 @@ Creates one if it doesn't exist, overwrites one if it does.
             }
 
             /// either success or failure value. Success is anything in the 200..<300 status code range
-            public var responseResult: APIResponseResult<Watched, ServiceError> {
+            public var responseResult: APIResponseResult<EvenWatched, EvenServiceError> {
                 if let successValue = success {
                     return .success(successValue)
                 } else if let failureValue = failure {
@@ -147,13 +147,13 @@ Creates one if it doesn't exist, overwrites one if it does.
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode(Watched.self, from: data))
-                case 400: self = try .status400(decoder.decode(ServiceError.self, from: data))
-                case 401: self = try .status401(decoder.decode(ServiceError.self, from: data))
-                case 403: self = try .status403(decoder.decode(ServiceError.self, from: data))
-                case 404: self = try .status404(decoder.decode(ServiceError.self, from: data))
-                case 500: self = try .status500(decoder.decode(ServiceError.self, from: data))
-                default: self = try .defaultResponse(statusCode: statusCode, decoder.decode(ServiceError.self, from: data))
+                case 200: self = try .status200(decoder.decode(EvenWatched.self, from: data))
+                case 400: self = try .status400(decoder.decode(EvenServiceError.self, from: data))
+                case 401: self = try .status401(decoder.decode(EvenServiceError.self, from: data))
+                case 403: self = try .status403(decoder.decode(EvenServiceError.self, from: data))
+                case 404: self = try .status404(decoder.decode(EvenServiceError.self, from: data))
+                case 500: self = try .status500(decoder.decode(EvenServiceError.self, from: data))
+                default: self = try .defaultResponse(statusCode: statusCode, decoder.decode(EvenServiceError.self, from: data))
                 }
             }
 

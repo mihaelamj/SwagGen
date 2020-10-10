@@ -1,0 +1,79 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3D6F49464C6E1EFF6E40C762B4AC2BABACF4F772",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3D6F49464C6E1EFF6E40C762B4AC2BABACF4F772" : 0,
+    "1FA2FB8C2BC57F03F22E05F4E40A3BD4587C910E" : 0,
+    "1B9E61546D4F9511D800AE955CDC56CD3D276E5C" : 0,
+    "804E0A642F9B0288E24EC6843BD9BD71D8BD7EA7" : 0,
+    "ADDC1206D78F8ACCD31EF2DB60D08A98EF203A7E" : 0,
+    "3DA8097D366B6AFDAEA91946C35253AA1EBC780B" : 0,
+    "419DF1B9522022C975F034AD3286151764923B4B" : 0,
+    "E3472B155FC961329A2EA7BFAD3AFAE6EFBD63E5" : 0,
+    "D591987028BFCE350CA11D7DA7F1AE9C4373C207" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7EF5B77E-099A-4960-A22E-2B6416871839",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3D6F49464C6E1EFF6E40C762B4AC2BABACF4F772" : "SwagGen\/",
+    "1FA2FB8C2BC57F03F22E05F4E40A3BD4587C910E" : "SwagGen\/DerivedData\/SwagGen\/SourcePackages\/checkouts\/SwiftCLI\/",
+    "1B9E61546D4F9511D800AE955CDC56CD3D276E5C" : "SwagGen\/DerivedData\/SwagGen\/SourcePackages\/checkouts\/Yams\/",
+    "804E0A642F9B0288E24EC6843BD9BD71D8BD7EA7" : "SwagGen\/DerivedData\/SwagGen\/SourcePackages\/checkouts\/StencilSwiftKit\/",
+    "ADDC1206D78F8ACCD31EF2DB60D08A98EF203A7E" : "SwagGen\/DerivedData\/SwagGen\/SourcePackages\/checkouts\/JSONUtilities\/",
+    "3DA8097D366B6AFDAEA91946C35253AA1EBC780B" : "SwagGen\/DerivedData\/SwagGen\/SourcePackages\/checkouts\/Stencil\/",
+    "419DF1B9522022C975F034AD3286151764923B4B" : "SwagGen\/DerivedData\/SwagGen\/SourcePackages\/checkouts\/Rainbow\/",
+    "E3472B155FC961329A2EA7BFAD3AFAE6EFBD63E5" : "SwagGen\/DerivedData\/SwagGen\/SourcePackages\/checkouts\/PathKit\/",
+    "D591987028BFCE350CA11D7DA7F1AE9C4373C207" : "SwagGen\/DerivedData\/SwagGen\/SourcePackages\/checkouts\/Spectre\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : ".",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : ".",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jpsim\/Yams.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1B9E61546D4F9511D800AE955CDC56CD3D276E5C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jakeheis\/SwiftCLI",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1FA2FB8C2BC57F03F22E05F4E40A3BD4587C910E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mihaelamj\/SwagGen.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3D6F49464C6E1EFF6E40C762B4AC2BABACF4F772"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/stencilproject\/Stencil.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3DA8097D366B6AFDAEA91946C35253AA1EBC780B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/onevcat\/Rainbow.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "419DF1B9522022C975F034AD3286151764923B4B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SwiftGen\/StencilSwiftKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "804E0A642F9B0288E24EC6843BD9BD71D8BD7EA7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yonaskolb\/JSONUtilities.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ADDC1206D78F8ACCD31EF2DB60D08A98EF203A7E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kylef\/Spectre.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D591987028BFCE350CA11D7DA7F1AE9C4373C207"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kylef\/PathKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E3472B155FC961329A2EA7BFAD3AFAE6EFBD63E5"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+module Rainbow {
+header "Rainbow-Swift.h"
+export *
+}

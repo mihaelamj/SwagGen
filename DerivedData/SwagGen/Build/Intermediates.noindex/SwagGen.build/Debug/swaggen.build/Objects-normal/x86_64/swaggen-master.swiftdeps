@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)"
+options: "62f0d78586107d8f93357e0b3086ab20"
+build_time: [1602278841, 710991000]
+inputs:
+  "/Users/mmj/Developer/personal/SwagGen/Sources/SwagGen/GenerateCommand.swift": [1602277497, 955450926]
+  "/Users/mmj/Developer/personal/SwagGen/Sources/SwagGen/main.swift": [1602277497, 955560242]

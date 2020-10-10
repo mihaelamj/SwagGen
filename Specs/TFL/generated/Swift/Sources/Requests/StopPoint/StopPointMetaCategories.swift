@@ -20,12 +20,12 @@ extension TFL.StopPoint {
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = [StopPointCategory]
+            public typealias SuccessType = [EvenStopPointCategory]
 
             /** OK */
-            case status200([StopPointCategory])
+            case status200([EvenStopPointCategory])
 
-            public var success: [StopPointCategory]? {
+            public var success: [EvenStopPointCategory]? {
                 switch self {
                 case .status200(let response): return response
                 }
@@ -51,7 +51,7 @@ extension TFL.StopPoint {
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode([StopPointCategory].self, from: data))
+                case 200: self = try .status200(decoder.decode([EvenStopPointCategory].self, from: data))
                 default: throw APIClientError.unexpectedStatusCode(statusCode: statusCode, data: data)
                 }
             }

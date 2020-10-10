@@ -1,0 +1,13 @@
+version: "Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)"
+options: "9d3dd1187d0e528fff81dd665db130ad"
+build_time: [1602278827, 171832000]
+inputs:
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Spectre/Sources/Spectre/Case.swift": [1602278090, 272088927]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Spectre/Sources/Spectre/Context.swift": [1602278090, 272613713]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Spectre/Sources/Spectre/Expectation.swift": [1602278090, 273030968]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Spectre/Sources/Spectre/Failure.swift": [1602278090, 273454738]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Spectre/Sources/Spectre/Global.swift": [1602278090, 273890712]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Spectre/Sources/Spectre/GlobalContext.swift": [1602278090, 274247494]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Spectre/Sources/Spectre/Reporter.swift": [1602278090, 274719687]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Spectre/Sources/Spectre/Reporters.swift": [1602278090, 275074499]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Spectre/Sources/Spectre/XCTest.swift": [1602278090, 336390058]

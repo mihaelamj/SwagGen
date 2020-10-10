@@ -43,12 +43,12 @@ extension TBX.Auth {
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = [MSO]
+            public typealias SuccessType = [EvenMSO]
 
             /** Request was successful */
-            case status200([MSO])
+            case status200([EvenMSO])
 
-            public var success: [MSO]? {
+            public var success: [EvenMSO]? {
                 switch self {
                 case .status200(let response): return response
                 }
@@ -74,7 +74,7 @@ extension TBX.Auth {
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode([MSO].self, from: data))
+                case 200: self = try .status200(decoder.decode([EvenMSO].self, from: data))
                 default: throw APIClientError.unexpectedStatusCode(statusCode: statusCode, data: data)
                 }
             }

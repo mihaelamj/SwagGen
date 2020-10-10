@@ -47,22 +47,22 @@ extension Petstore.Pets {
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = [Pet]
+            public typealias SuccessType = [EvenPet]
 
             /** An array of pets */
-            case status200([Pet])
+            case status200([EvenPet])
 
             /** unexpected error */
-            case defaultResponse(statusCode: Int, ErrorType)
+            case defaultResponse(statusCode: Int, EvenError)
 
-            public var success: [Pet]? {
+            public var success: [EvenPet]? {
                 switch self {
                 case .status200(let response): return response
                 default: return nil
                 }
             }
 
-            public var failure: ErrorType? {
+            public var failure: EvenError? {
                 switch self {
                 case .defaultResponse(_, let response): return response
                 default: return nil
@@ -70,7 +70,7 @@ extension Petstore.Pets {
             }
 
             /// either success or failure value. Success is anything in the 200..<300 status code range
-            public var responseResult: APIResponseResult<[Pet], ErrorType> {
+            public var responseResult: APIResponseResult<[EvenPet], EvenError> {
                 if let successValue = success {
                     return .success(successValue)
                 } else if let failureValue = failure {
@@ -103,8 +103,8 @@ extension Petstore.Pets {
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode([Pet].self, from: data))
-                default: self = try .defaultResponse(statusCode: statusCode, decoder.decode(ErrorType.self, from: data))
+                case 200: self = try .status200(decoder.decode([EvenPet].self, from: data))
+                default: self = try .defaultResponse(statusCode: statusCode, decoder.decode(EvenError.self, from: data))
                 }
             }
 

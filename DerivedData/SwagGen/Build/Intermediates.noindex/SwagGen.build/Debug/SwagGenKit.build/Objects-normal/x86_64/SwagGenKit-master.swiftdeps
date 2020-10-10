@@ -1,0 +1,11 @@
+version: "Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)"
+options: "6593d2f212004d77c090649bf75ab369"
+build_time: [1602278840, 461606000]
+inputs:
+  "/Users/mmj/Developer/personal/SwagGen/Sources/SwagGenKit/CodeFormatter.swift": [1602277497, 955846777]
+  "/Users/mmj/Developer/personal/SwagGen/Sources/SwagGenKit/Generator.swift": [1602277497, 956096810]
+  "/Users/mmj/Developer/personal/SwagGen/Sources/SwagGenKit/SwagGenStencilTemplate.swift": [1602277497, 956262473]
+  "/Users/mmj/Developer/personal/SwagGen/Sources/SwagGenKit/SwaggerExtensions.swift": [1602277497, 956414548]
+  "/Users/mmj/Developer/personal/SwagGen/Sources/SwagGenKit/SwiftFormatter.swift": [1602277497, 956573003]
+  "/Users/mmj/Developer/personal/SwagGen/Sources/SwagGenKit/TemplateConfig.swift": [1602277497, 956717637]
+  "/Users/mmj/Developer/personal/SwagGen/Sources/SwagGenKit/Utilities.swift": [1602277497, 957004313]

@@ -22,16 +22,23 @@ extension TestSpec {
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
 
             /** enum response */
-            public enum Status200: Int, Codable, Equatable, CaseIterable {
+            public enum EvenStatus200: Int, Codable, Equatable, CaseIterable {
                 case one = 1
                 case two = 2
+                case undecodable
+
+                public init(from decoder: Decoder) throws {
+                    let container = try decoder.singleValueContainer()
+                    let rawValue = try container.decode(Int.self)
+                    self = EvenStatus200(rawValue: rawValue) ?? .undecodable
+                }
             }
-            public typealias SuccessType = [String: Status200]
+            public typealias SuccessType = [String: EvenStatus200]
 
             /** enum response */
-            case status200([String: Status200])
+            case status200([String: EvenStatus200])
 
-            public var success: [String: Status200]? {
+            public var success: [String: EvenStatus200]? {
                 switch self {
                 case .status200(let response): return response
                 }
@@ -57,7 +64,7 @@ extension TestSpec {
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode([String: Status200].self, from: data))
+                case 200: self = try .status200(decoder.decode([String: EvenStatus200].self, from: data))
                 default: throw APIClientError.unexpectedStatusCode(statusCode: statusCode, data: data)
                 }
             }

@@ -1,0 +1,235 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SerializationStyle"
+- "CollectionFormat"
+provides-nominal:
+- "7Swagger18SerializationStyleO"
+- "7Swagger16CollectionFormatO"
+provides-member:
+- ["7Swagger18SerializationStyleO", ""]
+- ["7Swagger16CollectionFormatO", ""]
+- ["7Swagger17ParameterLocationO", ""]
+- ["7Swagger15ParameterSchemaV", ""]
+- ["7Swagger17ParameterLocationO", "defaultSerializationStyle"]
+- ["7Swagger15ParameterSchemaV", "collectionFormat"]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- !private "Array"
+- "CollectionFormat"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "ParameterLocation"
+- "ParameterSchema"
+- "SerializationStyle"
+- "String"
+- "StringLiteralType"
+- !private "UnicodeScalarType"
+- !private "_findStringSwitchCase"
+- !private "serializationStyle"
+- !private "~="
+depends-member:
+- ["7Swagger16CollectionFormatO", "=="]
+- ["7Swagger16CollectionFormatO", "Default_RawValue"]
+- ["7Swagger16CollectionFormatO", "RawValue"]
+- ["7Swagger16CollectionFormatO", "String"]
+- ["7Swagger16CollectionFormatO", ""]
+- ["7Swagger16CollectionFormatO", "_Default_RawValue"]
+- !private ["7Swagger16CollectionFormatO", "_findStringSwitchCase"]
+- ["7Swagger16CollectionFormatO", "_rawHashValue"]
+- ["7Swagger16CollectionFormatO", "csv"]
+- !private ["7Swagger16CollectionFormatO", "findStringSwitchCase"]
+- ["7Swagger16CollectionFormatO", "hash"]
+- ["7Swagger16CollectionFormatO", "hashValue"]
+- ["7Swagger16CollectionFormatO", "init"]
+- ["7Swagger16CollectionFormatO", "pipes"]
+- ["7Swagger16CollectionFormatO", "rawValue"]
+- ["7Swagger16CollectionFormatO", "separator"]
+- ["7Swagger16CollectionFormatO", "ssv"]
+- ["7Swagger16CollectionFormatO", "tsv"]
+- !private ["s28CustomDebugStringConvertibleP", "csv"]
+- !private ["s28CustomDebugStringConvertibleP", "pipes"]
+- !private ["s28CustomDebugStringConvertibleP", "ssv"]
+- !private ["s17CustomReflectableP", "csv"]
+- !private ["s17CustomReflectableP", "pipes"]
+- !private ["s17CustomReflectableP", "ssv"]
+- !private ["Se", "csv"]
+- !private ["Se", "pipes"]
+- !private ["Se", "ssv"]
+- !private ["SE", "csv"]
+- !private ["SE", "pipes"]
+- !private ["SE", "ssv"]
+- ["SQ", "=="]
+- ["SQ", "Default_RawValue"]
+- ["SQ", "RawValue"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "cookie"]
+- ["SQ", "csv"]
+- ["SQ", "deepObject"]
+- !private ["SQ", "findStringSwitchCase"]
+- ["SQ", "form"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "header"]
+- ["SQ", "init"]
+- ["SQ", "label"]
+- ["SQ", "matrix"]
+- ["SQ", "path"]
+- ["SQ", "pipeDelimited"]
+- ["SQ", "pipes"]
+- ["SQ", "query"]
+- ["SQ", "rawValue"]
+- ["SQ", "simple"]
+- ["SQ", "spaceDelimited"]
+- ["SQ", "ssv"]
+- ["SQ", "tsv"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "csv"]
+- !private ["s23ExpressibleByNilLiteralP", "pipes"]
+- !private ["s23ExpressibleByNilLiteralP", "ssv"]
+- ["SH", "=="]
+- ["SH", "Default_RawValue"]
+- ["SH", "RawValue"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- ["SH", "_rawHashValue"]
+- ["SH", "cookie"]
+- ["SH", "csv"]
+- ["SH", "deepObject"]
+- !private ["SH", "findStringSwitchCase"]
+- ["SH", "form"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "header"]
+- ["SH", "init"]
+- ["SH", "label"]
+- ["SH", "matrix"]
+- ["SH", "path"]
+- ["SH", "pipeDelimited"]
+- ["SH", "pipes"]
+- ["SH", "query"]
+- ["SH", "rawValue"]
+- ["SH", "simple"]
+- ["SH", "spaceDelimited"]
+- ["SH", "ssv"]
+- ["SH", "tsv"]
+- !private ["4Yams17NodeRepresentableP", "csv"]
+- !private ["4Yams17NodeRepresentableP", "pipes"]
+- !private ["4Yams17NodeRepresentableP", "ssv"]
+- !private ["Sq", "csv"]
+- !private ["Sq", "pipes"]
+- !private ["Sq", "ssv"]
+- ["7Swagger17ParameterLocationO", "SerializationStyle"]
+- ["7Swagger17ParameterLocationO", ""]
+- ["7Swagger17ParameterLocationO", "cookie"]
+- ["7Swagger17ParameterLocationO", "defaultSerializationStyle"]
+- ["7Swagger17ParameterLocationO", "header"]
+- ["7Swagger17ParameterLocationO", "path"]
+- ["7Swagger17ParameterLocationO", "query"]
+- ["7Swagger15ParameterSchemaV", "CollectionFormat"]
+- ["7Swagger15ParameterSchemaV", ""]
+- ["7Swagger15ParameterSchemaV", "collectionFormat"]
+- !private ["7Swagger15ParameterSchemaV", "serializationStyle"]
+- ["SY", "=="]
+- ["SY", "Default_RawValue"]
+- ["SY", "RawValue"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- ["SY", "_rawHashValue"]
+- ["SY", "cookie"]
+- ["SY", "csv"]
+- ["SY", "deepObject"]
+- !private ["SY", "findStringSwitchCase"]
+- ["SY", "form"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "header"]
+- ["SY", "init"]
+- ["SY", "label"]
+- ["SY", "matrix"]
+- ["SY", "path"]
+- ["SY", "pipeDelimited"]
+- ["SY", "pipes"]
+- ["SY", "query"]
+- ["SY", "rawValue"]
+- ["SY", "simple"]
+- ["SY", "spaceDelimited"]
+- ["SY", "ssv"]
+- ["SY", "tsv"]
+- ["7Swagger18SerializationStyleO", "=="]
+- ["7Swagger18SerializationStyleO", "Default_RawValue"]
+- ["7Swagger18SerializationStyleO", "RawValue"]
+- ["7Swagger18SerializationStyleO", ""]
+- ["7Swagger18SerializationStyleO", "_Default_RawValue"]
+- !private ["7Swagger18SerializationStyleO", "_findStringSwitchCase"]
+- ["7Swagger18SerializationStyleO", "_rawHashValue"]
+- ["7Swagger18SerializationStyleO", "deepObject"]
+- !private ["7Swagger18SerializationStyleO", "findStringSwitchCase"]
+- ["7Swagger18SerializationStyleO", "form"]
+- ["7Swagger18SerializationStyleO", "hash"]
+- ["7Swagger18SerializationStyleO", "hashValue"]
+- ["7Swagger18SerializationStyleO", "init"]
+- ["7Swagger18SerializationStyleO", "label"]
+- ["7Swagger18SerializationStyleO", "matrix"]
+- ["7Swagger18SerializationStyleO", "pipeDelimited"]
+- ["7Swagger18SerializationStyleO", "rawValue"]
+- ["7Swagger18SerializationStyleO", "simple"]
+- ["7Swagger18SerializationStyleO", "spaceDelimited"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "csv"]
+- !private ["s21_ObjectiveCBridgeableP", "pipes"]
+- !private ["s21_ObjectiveCBridgeableP", "ssv"]
+depends-nominal:
+- "7Swagger16CollectionFormatO"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- "SH"
+- !private "4Yams17NodeRepresentableP"
+- !private "Sq"
+- "7Swagger17ParameterLocationO"
+- "7Swagger15ParameterSchemaV"
+- "SY"
+- "7Swagger18SerializationStyleO"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/JSONUtilities.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/Yams.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/PathKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/CYaml/include/CYaml.h"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/CYaml/include/yaml.h"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Intermediates.noindex/GeneratedModuleMaps/CYaml.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "667006c8d2cd1a640efa5d839ca34710"

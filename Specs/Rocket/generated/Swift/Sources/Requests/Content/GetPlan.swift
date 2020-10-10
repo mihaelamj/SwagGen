@@ -39,9 +39,9 @@ clients as these formats evolve under the current major version.
 - `ldp` - Dynamic list detail pages with schedulable rows.
 See the `feature-flags.md` for available flag details.
  */
-                public var ff: [FeatureFlags]?
+                public var ff: [EvenFeatureFlags]?
 
-                public init(id: String, device: String? = nil, sub: String? = nil, segments: [String]? = nil, ff: [FeatureFlags]? = nil) {
+                public init(id: String, device: String? = nil, sub: String? = nil, segments: [String]? = nil, ff: [EvenFeatureFlags]? = nil) {
                     self.id = id
                     self.device = device
                     self.sub = sub
@@ -58,7 +58,7 @@ See the `feature-flags.md` for available flag details.
             }
 
             /// convenience initialiser so an Option doesn't have to be created
-            public convenience init(id: String, device: String? = nil, sub: String? = nil, segments: [String]? = nil, ff: [FeatureFlags]? = nil) {
+            public convenience init(id: String, device: String? = nil, sub: String? = nil, segments: [String]? = nil, ff: [EvenFeatureFlags]? = nil) {
                 let options = Options(id: id, device: device, sub: sub, segments: segments, ff: ff)
                 self.init(options: options)
             }
@@ -86,31 +86,31 @@ See the `feature-flags.md` for available flag details.
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = Plan
+            public typealias SuccessType = EvenPlan
 
             /** The Plan requested. */
-            case status200(Plan)
+            case status200(EvenPlan)
 
             /** Bad request. */
-            case status400(ServiceError)
+            case status400(EvenServiceError)
 
             /** Not found. */
-            case status404(ServiceError)
+            case status404(EvenServiceError)
 
             /** Internal server error. */
-            case status500(ServiceError)
+            case status500(EvenServiceError)
 
             /** Service error. */
-            case defaultResponse(statusCode: Int, ServiceError)
+            case defaultResponse(statusCode: Int, EvenServiceError)
 
-            public var success: Plan? {
+            public var success: EvenPlan? {
                 switch self {
                 case .status200(let response): return response
                 default: return nil
                 }
             }
 
-            public var failure: ServiceError? {
+            public var failure: EvenServiceError? {
                 switch self {
                 case .status400(let response): return response
                 case .status404(let response): return response
@@ -121,7 +121,7 @@ See the `feature-flags.md` for available flag details.
             }
 
             /// either success or failure value. Success is anything in the 200..<300 status code range
-            public var responseResult: APIResponseResult<Plan, ServiceError> {
+            public var responseResult: APIResponseResult<EvenPlan, EvenServiceError> {
                 if let successValue = success {
                     return .success(successValue)
                 } else if let failureValue = failure {
@@ -163,11 +163,11 @@ See the `feature-flags.md` for available flag details.
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode(Plan.self, from: data))
-                case 400: self = try .status400(decoder.decode(ServiceError.self, from: data))
-                case 404: self = try .status404(decoder.decode(ServiceError.self, from: data))
-                case 500: self = try .status500(decoder.decode(ServiceError.self, from: data))
-                default: self = try .defaultResponse(statusCode: statusCode, decoder.decode(ServiceError.self, from: data))
+                case 200: self = try .status200(decoder.decode(EvenPlan.self, from: data))
+                case 400: self = try .status400(decoder.decode(EvenServiceError.self, from: data))
+                case 404: self = try .status404(decoder.decode(EvenServiceError.self, from: data))
+                case 500: self = try .status500(decoder.decode(EvenServiceError.self, from: data))
+                default: self = try .defaultResponse(statusCode: statusCode, decoder.decode(EvenServiceError.self, from: data))
                 }
             }
 

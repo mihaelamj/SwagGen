@@ -1,0 +1,224 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Schema"
+- "SchemaType"
+provides-nominal:
+- "7Swagger6SchemaV"
+- "7Swagger10SchemaTypeO"
+provides-member:
+- ["7Swagger6SchemaV", ""]
+- ["7Swagger10SchemaTypeO", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!="
+- "ArraySchema"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- !private "DataType"
+- "GroupSchema"
+- "IntegerSchema"
+- "JSONDictionary"
+- "JSONObjectConvertible"
+- "Metadata"
+- "NumberSchema"
+- "ObjectSchema"
+- "Reference"
+- "Schema"
+- "SchemaType"
+- !private "StringLiteralType"
+- "StringSchema"
+- !private "metadata"
+- !private "type"
+depends-member:
+- !private ["7Swagger11ArraySchemaV", ""]
+- !private ["7Swagger11ArraySchemaV", "init"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["Sl", "subscript"]
+- !private ["7Swagger9ComponentP", "Metadata"]
+- !private ["7Swagger9ComponentP", "SchemaType"]
+- ["7Swagger9ComponentP", "init"]
+- !private ["7Swagger9ComponentP", "metadata"]
+- !private ["7Swagger9ComponentP", "type"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["7Swagger8DataTypeO", "RawValue"]
+- !private ["7Swagger8DataTypeO", ""]
+- ["7Swagger8DataTypeO", "array"]
+- ["7Swagger8DataTypeO", "boolean"]
+- !private ["7Swagger8DataTypeO", "init"]
+- ["7Swagger8DataTypeO", "integer"]
+- ["7Swagger8DataTypeO", "number"]
+- ["7Swagger8DataTypeO", "object"]
+- ["7Swagger8DataTypeO", "string"]
+- !private ["Se", "subscript"]
+- !private ["SD", "subscript"]
+- !private ["SE", "subscript"]
+- ["SQ", ""]
+- !private ["SQ", "all"]
+- !private ["SQ", "any"]
+- ["SQ", "array"]
+- ["SQ", "boolean"]
+- !private ["SQ", "init"]
+- ["SQ", "integer"]
+- ["SQ", "number"]
+- ["SQ", "object"]
+- !private ["SQ", "one"]
+- ["SQ", "string"]
+- !private ["SQ", "subscript"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s23ExpressibleByNilLiteralP", "init"]
+- !private ["7Swagger11GroupSchemaV", "init"]
+- !private ["7Swagger11GroupSchemaV0B4TypeO", "all"]
+- !private ["7Swagger11GroupSchemaV0B4TypeO", "any"]
+- !private ["7Swagger11GroupSchemaV0B4TypeO", "one"]
+- !private ["SH", "all"]
+- !private ["SH", "any"]
+- ["SH", "array"]
+- ["SH", "boolean"]
+- !private ["SH", "init"]
+- ["SH", "integer"]
+- ["SH", "number"]
+- ["SH", "object"]
+- !private ["SH", "one"]
+- ["SH", "string"]
+- !private ["SH", "subscript"]
+- !private ["7Swagger13IntegerSchemaV", "init"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "ArraySchema"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "DataType"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "GroupSchema"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "IntegerSchema"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "Metadata"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "NumberSchema"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "ObjectSchema"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "Reference"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "SchemaType"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "StringSchema"]
+- ["13JSONUtilities21JSONObjectConvertibleP", ""]
+- ["13JSONUtilities21JSONObjectConvertibleP", "any"]
+- ["13JSONUtilities21JSONObjectConvertibleP", "array"]
+- ["13JSONUtilities21JSONObjectConvertibleP", "boolean"]
+- ["13JSONUtilities21JSONObjectConvertibleP", "group"]
+- ["13JSONUtilities21JSONObjectConvertibleP", "init"]
+- ["13JSONUtilities21JSONObjectConvertibleP", "integer"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "metadata"]
+- ["13JSONUtilities21JSONObjectConvertibleP", "number"]
+- ["13JSONUtilities21JSONObjectConvertibleP", "object"]
+- ["13JSONUtilities21JSONObjectConvertibleP", "reference"]
+- ["13JSONUtilities21JSONObjectConvertibleP", "string"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "type"]
+- !private ["7Swagger8MetadataV", ""]
+- !private ["7Swagger8MetadataV", "init"]
+- !private ["4Yams17NodeRepresentableP", "subscript"]
+- !private ["7Swagger12NumberSchemaV", "init"]
+- !private ["7Swagger12ObjectSchemaV", ""]
+- !private ["7Swagger12ObjectSchemaV", "init"]
+- ["SY", "array"]
+- ["SY", "boolean"]
+- !private ["SY", "init"]
+- ["SY", "integer"]
+- ["SY", "number"]
+- ["SY", "object"]
+- ["SY", "string"]
+- !private ["7Swagger9ReferenceC", "init"]
+- ["7Swagger6SchemaV", "JSONDictionary"]
+- ["7Swagger6SchemaV", "Metadata"]
+- ["7Swagger6SchemaV", "SchemaType"]
+- ["7Swagger6SchemaV", ""]
+- ["7Swagger6SchemaV", "init"]
+- ["7Swagger6SchemaV", "metadata"]
+- ["7Swagger6SchemaV", "type"]
+- ["7Swagger10SchemaTypeO", "ArraySchema"]
+- ["7Swagger10SchemaTypeO", "Bool"]
+- !private ["7Swagger10SchemaTypeO", "DataType"]
+- ["7Swagger10SchemaTypeO", "GroupSchema"]
+- ["7Swagger10SchemaTypeO", "IntegerSchema"]
+- ["7Swagger10SchemaTypeO", "JSONDictionary"]
+- ["7Swagger10SchemaTypeO", "NumberSchema"]
+- ["7Swagger10SchemaTypeO", "ObjectSchema"]
+- ["7Swagger10SchemaTypeO", "Reference"]
+- ["7Swagger10SchemaTypeO", "Schema"]
+- ["7Swagger10SchemaTypeO", "StringSchema"]
+- ["7Swagger10SchemaTypeO", ""]
+- ["7Swagger10SchemaTypeO", "any"]
+- ["7Swagger10SchemaTypeO", "array"]
+- ["7Swagger10SchemaTypeO", "boolean"]
+- ["7Swagger10SchemaTypeO", "group"]
+- ["7Swagger10SchemaTypeO", "init"]
+- ["7Swagger10SchemaTypeO", "integer"]
+- ["7Swagger10SchemaTypeO", "isPrimitive"]
+- ["7Swagger10SchemaTypeO", "number"]
+- ["7Swagger10SchemaTypeO", "object"]
+- ["7Swagger10SchemaTypeO", "reference"]
+- ["7Swagger10SchemaTypeO", "string"]
+- !private ["ST", ""]
+- !private ["ST", "subscript"]
+- !private ["7Swagger12StringSchemaV", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+depends-nominal:
+- !private "7Swagger11ArraySchemaV"
+- !private "s7CVarArgP"
+- !private "Sl"
+- "7Swagger9ComponentP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- "7Swagger8DataTypeO"
+- !private "Se"
+- !private "SD"
+- !private "SE"
+- "SQ"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "7Swagger11GroupSchemaV"
+- !private "7Swagger11GroupSchemaV0B4TypeO"
+- "SH"
+- !private "7Swagger13IntegerSchemaV"
+- "13JSONUtilities21JSONObjectConvertibleP"
+- !private "7Swagger8MetadataV"
+- !private "4Yams17NodeRepresentableP"
+- !private "7Swagger12NumberSchemaV"
+- !private "7Swagger12ObjectSchemaV"
+- "SY"
+- !private "7Swagger9ReferenceC"
+- "7Swagger6SchemaV"
+- "7Swagger10SchemaTypeO"
+- !private "ST"
+- !private "7Swagger12StringSchemaV"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/JSONUtilities.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/Yams.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/PathKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/CYaml/include/CYaml.h"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/CYaml/include/yaml.h"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Intermediates.noindex/GeneratedModuleMaps/CYaml.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "856029fe3800acf2d06b04968beec1fe"

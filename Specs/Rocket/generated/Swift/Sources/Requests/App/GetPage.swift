@@ -28,9 +28,16 @@ then what you pass to this endpoint would look like `/page?path=/search%3Fq%3Dth
         children of the show should only need to request expand of children.
         If an expand is specified which is not relevant to the item type, it will be ignored.
          */
-        public enum ItemDetailExpand: String, Codable, Equatable, CaseIterable {
+        public enum EvenItemDetailExpand: String, Codable, Equatable, CaseIterable {
             case all = "all"
             case children = "children"
+            case undecodable
+
+            public init(from decoder: Decoder) throws {
+                let container = try decoder.singleValueContainer()
+                let rawValue = try container.decode(String.self)
+                self = EvenItemDetailExpand(rawValue: rawValue) ?? .undecodable
+            }
         }
 
         /** Only relevant when loading show detail pages as these embed a detailed item in the main page entry.
@@ -41,17 +48,31 @@ then what you pass to this endpoint would look like `/page?path=/search%3Fq%3Dth
         detail of the latest season with its list of child episode summaries, and also expand
         the detail of the show with its list of seasons summaries.
          */
-        public enum ItemDetailSelectSeason: String, Codable, Equatable, CaseIterable {
+        public enum EvenItemDetailSelectSeason: String, Codable, Equatable, CaseIterable {
             case first = "first"
             case latest = "latest"
+            case undecodable
+
+            public init(from decoder: Decoder) throws {
+                let container = try decoder.singleValueContainer()
+                let rawValue = try container.decode(String.self)
+                self = EvenItemDetailSelectSeason(rawValue: rawValue) ?? .undecodable
+            }
         }
 
         /** Only relevant to page entries of type `TextEntry`.
         Converts the value of a text page entry to the specified format.
          */
-        public enum TextEntryFormat: String, Codable, Equatable, CaseIterable {
+        public enum EvenTextEntryFormat: String, Codable, Equatable, CaseIterable {
             case markdown = "markdown"
             case html = "html"
+            case undecodable
+
+            public init(from decoder: Decoder) throws {
+                let container = try decoder.singleValueContainer()
+                let rawValue = try container.decode(String.self)
+                self = EvenTextEntryFormat(rawValue: rawValue) ?? .undecodable
+            }
         }
 
         public final class Request: APIRequest<Response> {
@@ -85,7 +106,7 @@ it provides full context for navigating around the show page. Subsequent navigat
 children of the show should only need to request expand of children.
 If an expand is specified which is not relevant to the item type, it will be ignored.
  */
-                public var itemDetailExpand: ItemDetailExpand?
+                public var itemDetailExpand: EvenItemDetailExpand?
 
                 /** Only relevant when loading show detail pages as these embed a detailed item in the main page entry.
 Given a targeted show page, it can be useful to get the details of a child season. This option
@@ -95,12 +116,12 @@ The `expand` parameter also works here so for example you could land on a show p
 detail of the latest season with its list of child episode summaries, and also expand
 the detail of the show with its list of seasons summaries.
  */
-                public var itemDetailSelectSeason: ItemDetailSelectSeason?
+                public var itemDetailSelectSeason: EvenItemDetailSelectSeason?
 
                 /** Only relevant to page entries of type `TextEntry`.
 Converts the value of a text page entry to the specified format.
  */
-                public var textEntryFormat: TextEntryFormat?
+                public var textEntryFormat: EvenTextEntryFormat?
 
                 /** The maximum rating (inclusive) of items returned, e.g. 'auoflc-pg'. */
                 public var maxRating: String?
@@ -125,9 +146,9 @@ clients as these formats evolve under the current major version.
 - `ldp` - Dynamic list detail pages with schedulable rows.
 See the `feature-flags.md` for available flag details.
  */
-                public var ff: [FeatureFlags]?
+                public var ff: [EvenFeatureFlags]?
 
-                public init(path: String, listPageSize: Int? = nil, listPageSizeLarge: Int? = nil, maxListPrefetch: Int? = nil, itemDetailExpand: ItemDetailExpand? = nil, itemDetailSelectSeason: ItemDetailSelectSeason? = nil, textEntryFormat: TextEntryFormat? = nil, maxRating: String? = nil, device: String? = nil, sub: String? = nil, segments: [String]? = nil, ff: [FeatureFlags]? = nil) {
+                public init(path: String, listPageSize: Int? = nil, listPageSizeLarge: Int? = nil, maxListPrefetch: Int? = nil, itemDetailExpand: EvenItemDetailExpand? = nil, itemDetailSelectSeason: EvenItemDetailSelectSeason? = nil, textEntryFormat: EvenTextEntryFormat? = nil, maxRating: String? = nil, device: String? = nil, sub: String? = nil, segments: [String]? = nil, ff: [EvenFeatureFlags]? = nil) {
                     self.path = path
                     self.listPageSize = listPageSize
                     self.listPageSizeLarge = listPageSizeLarge
@@ -151,7 +172,7 @@ See the `feature-flags.md` for available flag details.
             }
 
             /// convenience initialiser so an Option doesn't have to be created
-            public convenience init(path: String, listPageSize: Int? = nil, listPageSizeLarge: Int? = nil, maxListPrefetch: Int? = nil, itemDetailExpand: ItemDetailExpand? = nil, itemDetailSelectSeason: ItemDetailSelectSeason? = nil, textEntryFormat: TextEntryFormat? = nil, maxRating: String? = nil, device: String? = nil, sub: String? = nil, segments: [String]? = nil, ff: [FeatureFlags]? = nil) {
+            public convenience init(path: String, listPageSize: Int? = nil, listPageSizeLarge: Int? = nil, maxListPrefetch: Int? = nil, itemDetailExpand: EvenItemDetailExpand? = nil, itemDetailSelectSeason: EvenItemDetailSelectSeason? = nil, textEntryFormat: EvenTextEntryFormat? = nil, maxRating: String? = nil, device: String? = nil, sub: String? = nil, segments: [String]? = nil, ff: [EvenFeatureFlags]? = nil) {
                 let options = Options(path: path, listPageSize: listPageSize, listPageSizeLarge: listPageSizeLarge, maxListPrefetch: maxListPrefetch, itemDetailExpand: itemDetailExpand, itemDetailSelectSeason: itemDetailSelectSeason, textEntryFormat: textEntryFormat, maxRating: maxRating, device: device, sub: sub, segments: segments, ff: ff)
                 self.init(options: options)
             }
@@ -197,31 +218,31 @@ See the `feature-flags.md` for available flag details.
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = Page
+            public typealias SuccessType = EvenPage
 
             /** The page requested. */
-            case status200(Page)
+            case status200(EvenPage)
 
             /** Bad request. */
-            case status400(ServiceError)
+            case status400(EvenServiceError)
 
             /** Not found. */
-            case status404(ServiceError)
+            case status404(EvenServiceError)
 
             /** Internal server error. */
-            case status500(ServiceError)
+            case status500(EvenServiceError)
 
             /** Service error. */
-            case defaultResponse(statusCode: Int, ServiceError)
+            case defaultResponse(statusCode: Int, EvenServiceError)
 
-            public var success: Page? {
+            public var success: EvenPage? {
                 switch self {
                 case .status200(let response): return response
                 default: return nil
                 }
             }
 
-            public var failure: ServiceError? {
+            public var failure: EvenServiceError? {
                 switch self {
                 case .status400(let response): return response
                 case .status404(let response): return response
@@ -232,7 +253,7 @@ See the `feature-flags.md` for available flag details.
             }
 
             /// either success or failure value. Success is anything in the 200..<300 status code range
-            public var responseResult: APIResponseResult<Page, ServiceError> {
+            public var responseResult: APIResponseResult<EvenPage, EvenServiceError> {
                 if let successValue = success {
                     return .success(successValue)
                 } else if let failureValue = failure {
@@ -274,11 +295,11 @@ See the `feature-flags.md` for available flag details.
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode(Page.self, from: data))
-                case 400: self = try .status400(decoder.decode(ServiceError.self, from: data))
-                case 404: self = try .status404(decoder.decode(ServiceError.self, from: data))
-                case 500: self = try .status500(decoder.decode(ServiceError.self, from: data))
-                default: self = try .defaultResponse(statusCode: statusCode, decoder.decode(ServiceError.self, from: data))
+                case 200: self = try .status200(decoder.decode(EvenPage.self, from: data))
+                case 400: self = try .status400(decoder.decode(EvenServiceError.self, from: data))
+                case 404: self = try .status404(decoder.decode(EvenServiceError.self, from: data))
+                case 500: self = try .status500(decoder.decode(EvenServiceError.self, from: data))
+                default: self = try .defaultResponse(statusCode: statusCode, decoder.decode(EvenServiceError.self, from: data))
                 }
             }
 

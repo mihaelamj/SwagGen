@@ -150,24 +150,24 @@ To add support for a specific asynchronous library, just add an extension on `AP
 
 ## Models
 
-- **Auth**
-- **ContentIdentityCountry**
-- **ContentProvider**
-- **Customer**
-- **Device**
-- **DeviceObject**
-- **DeviceType**
-- **ErrorObject**
-- **HasAccessToObject**
-- **IdentityProvider**
-- **MSO**
-- **MultiHasAccessToObject**
-- **ObjectID**
-- **OverrideRuleObject**
-- **ResponseError**
-- **TokenObject**
-- **TryAndBuyObject**
-- **XAny**
+- **EvenAuth**
+- **EvenContentIdentityCountry**
+- **EvenContentProvider**
+- **EvenCustomer**
+- **EvenDevice**
+- **EvenDeviceObject**
+- **EvenDeviceType**
+- **EvenErrorObject**
+- **EvenHasAccessToObject**
+- **EvenIdentityProvider**
+- **EvenMSO**
+- **EvenMultiHasAccessToObject**
+- **EvenObjectID**
+- **EvenOverrideRuleObject**
+- **EvenResponseError**
+- **EvenTokenObject**
+- **EvenTryAndBuyObject**
+- **EvenXAny**
 
 ## Requests
 

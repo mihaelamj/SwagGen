@@ -1,0 +1,4 @@
+module PathKit {
+header "PathKit-Swift.h"
+export *
+}

@@ -21,12 +21,12 @@ extension TFL.Mode {
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = [ActiveServiceType]
+            public typealias SuccessType = [EvenActiveServiceType]
 
             /** OK */
-            case status200([ActiveServiceType])
+            case status200([EvenActiveServiceType])
 
-            public var success: [ActiveServiceType]? {
+            public var success: [EvenActiveServiceType]? {
                 switch self {
                 case .status200(let response): return response
                 }
@@ -52,7 +52,7 @@ extension TFL.Mode {
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode([ActiveServiceType].self, from: data))
+                case 200: self = try .status200(decoder.decode([EvenActiveServiceType].self, from: data))
                 default: throw APIClientError.unexpectedStatusCode(statusCode: statusCode, data: data)
                 }
             }

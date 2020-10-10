@@ -76,12 +76,12 @@ extension TFL.Road {
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = [RoadDisruption]
+            public typealias SuccessType = [EvenRoadDisruption]
 
             /** OK */
-            case status200([RoadDisruption])
+            case status200([EvenRoadDisruption])
 
-            public var success: [RoadDisruption]? {
+            public var success: [EvenRoadDisruption]? {
                 switch self {
                 case .status200(let response): return response
                 }
@@ -107,7 +107,7 @@ extension TFL.Road {
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode([RoadDisruption].self, from: data))
+                case 200: self = try .status200(decoder.decode([EvenRoadDisruption].self, from: data))
                 default: throw APIClientError.unexpectedStatusCode(statusCode: statusCode, data: data)
                 }
             }

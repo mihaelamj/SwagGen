@@ -23,10 +23,10 @@ extension Rocket.Profile {
                 public var pageSize: Int?
 
                 /** The list sort order, either 'asc' or 'desc'. */
-                public var order: ListOrder?
+                public var order: EvenListOrder?
 
                 /** The item type to filter by. Defaults to unspecified. */
-                public var itemType: ItemType?
+                public var itemType: EvenItemType?
 
                 /** The type of device the content is targeting. */
                 public var device: String?
@@ -48,9 +48,9 @@ clients as these formats evolve under the current major version.
 - `ldp` - Dynamic list detail pages with schedulable rows.
 See the `feature-flags.md` for available flag details.
  */
-                public var ff: [FeatureFlags]?
+                public var ff: [EvenFeatureFlags]?
 
-                public init(page: Int? = nil, pageSize: Int? = nil, order: ListOrder? = nil, itemType: ItemType? = nil, device: String? = nil, sub: String? = nil, segments: [String]? = nil, ff: [FeatureFlags]? = nil) {
+                public init(page: Int? = nil, pageSize: Int? = nil, order: EvenListOrder? = nil, itemType: EvenItemType? = nil, device: String? = nil, sub: String? = nil, segments: [String]? = nil, ff: [EvenFeatureFlags]? = nil) {
                     self.page = page
                     self.pageSize = pageSize
                     self.order = order
@@ -70,7 +70,7 @@ See the `feature-flags.md` for available flag details.
             }
 
             /// convenience initialiser so an Option doesn't have to be created
-            public convenience init(page: Int? = nil, pageSize: Int? = nil, order: ListOrder? = nil, itemType: ItemType? = nil, device: String? = nil, sub: String? = nil, segments: [String]? = nil, ff: [FeatureFlags]? = nil) {
+            public convenience init(page: Int? = nil, pageSize: Int? = nil, order: EvenListOrder? = nil, itemType: EvenItemType? = nil, device: String? = nil, sub: String? = nil, segments: [String]? = nil, ff: [EvenFeatureFlags]? = nil) {
                 let options = Options(page: page, pageSize: pageSize, order: order, itemType: itemType, device: device, sub: sub, segments: segments, ff: ff)
                 self.init(options: options)
             }
@@ -106,37 +106,37 @@ See the `feature-flags.md` for available flag details.
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = ItemList
+            public typealias SuccessType = EvenItemList
 
             /** The list of items requested. */
-            case status200(ItemList)
+            case status200(EvenItemList)
 
             /** Bad request. */
-            case status400(ServiceError)
+            case status400(EvenServiceError)
 
             /** Invalid access token. */
-            case status401(ServiceError)
+            case status401(EvenServiceError)
 
             /** Forbidden. */
-            case status403(ServiceError)
+            case status403(EvenServiceError)
 
             /** Not found. */
-            case status404(ServiceError)
+            case status404(EvenServiceError)
 
             /** Internal server error. */
-            case status500(ServiceError)
+            case status500(EvenServiceError)
 
             /** Service error. */
-            case defaultResponse(statusCode: Int, ServiceError)
+            case defaultResponse(statusCode: Int, EvenServiceError)
 
-            public var success: ItemList? {
+            public var success: EvenItemList? {
                 switch self {
                 case .status200(let response): return response
                 default: return nil
                 }
             }
 
-            public var failure: ServiceError? {
+            public var failure: EvenServiceError? {
                 switch self {
                 case .status400(let response): return response
                 case .status401(let response): return response
@@ -149,7 +149,7 @@ See the `feature-flags.md` for available flag details.
             }
 
             /// either success or failure value. Success is anything in the 200..<300 status code range
-            public var responseResult: APIResponseResult<ItemList, ServiceError> {
+            public var responseResult: APIResponseResult<EvenItemList, EvenServiceError> {
                 if let successValue = success {
                     return .success(successValue)
                 } else if let failureValue = failure {
@@ -197,13 +197,13 @@ See the `feature-flags.md` for available flag details.
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode(ItemList.self, from: data))
-                case 400: self = try .status400(decoder.decode(ServiceError.self, from: data))
-                case 401: self = try .status401(decoder.decode(ServiceError.self, from: data))
-                case 403: self = try .status403(decoder.decode(ServiceError.self, from: data))
-                case 404: self = try .status404(decoder.decode(ServiceError.self, from: data))
-                case 500: self = try .status500(decoder.decode(ServiceError.self, from: data))
-                default: self = try .defaultResponse(statusCode: statusCode, decoder.decode(ServiceError.self, from: data))
+                case 200: self = try .status200(decoder.decode(EvenItemList.self, from: data))
+                case 400: self = try .status400(decoder.decode(EvenServiceError.self, from: data))
+                case 401: self = try .status401(decoder.decode(EvenServiceError.self, from: data))
+                case 403: self = try .status403(decoder.decode(EvenServiceError.self, from: data))
+                case 404: self = try .status404(decoder.decode(EvenServiceError.self, from: data))
+                case 500: self = try .status500(decoder.decode(EvenServiceError.self, from: data))
+                default: self = try .defaultResponse(statusCode: statusCode, decoder.decode(EvenServiceError.self, from: data))
                 }
             }
 

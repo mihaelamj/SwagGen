@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)"
+options: "d42633e678f140d9cf2b5982c545f6bc"
+build_time: [1602278827, 172130000]
+inputs:
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/PathKit/Sources/PathKit.swift": [1602278090, 972091958]

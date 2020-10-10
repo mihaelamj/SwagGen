@@ -189,6 +189,11 @@ SwagGen can be used to generate code for any language. At the moment there is on
 ## Swift API usage
 Usage documentation can be found in the [Readme](Templates/Swift/README.md) that is generated with your template.
 
+## Merge yamls:
+
+* npm install -g speccy@0.8.7
+* speccy resolve spec.yaml -o spec-output.yaml
+
 ---
 
 ## Attributions

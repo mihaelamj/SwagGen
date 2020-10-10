@@ -1,0 +1,4 @@
+module CYaml {
+umbrella "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/CYaml/include"
+export *
+}

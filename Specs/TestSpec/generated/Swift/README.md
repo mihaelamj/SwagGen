@@ -150,25 +150,25 @@ To add support for a specific asynchronous library, just add an extension on `AP
 
 ## Models
 
-- **Animal**
-- **Cat**
-- **ChildWithNestedObject**
-- **Dog**
-- **ErrorType**
-- **ModelWithAdditionalProperties**
-- **ModelWithBooleanAdditionalProperties**
-- **ModelWithDefinitionAdditionalProperties**
-- **ModelWithInlineSpec**
-- **ModelWithNullableProperties**
-- **ModelWithOnlyAdditionalProperties**
-- **ObjectHoldingNullableReference**
-- **Puppi**
-- **SingleAnimal**
-- **SomeNullableObject**
-- **User**
-- **UserReference**
-- **UserSubclass**
-- **Zoo**
+- **EvenAnimal**
+- **EvenCat**
+- **EvenChildWithNestedObject**
+- **EvenDog**
+- **EvenError**
+- **EvenModelWithAdditionalProperties**
+- **EvenModelWithBooleanAdditionalProperties**
+- **EvenModelWithDefinitionAdditionalProperties**
+- **EvenModelWithInlineSpec**
+- **EvenModelWithNullableProperties**
+- **EvenModelWithOnlyAdditionalProperties**
+- **EvenObjectHoldingNullableReference**
+- **EvenPuppi**
+- **EvenSingleAnimal**
+- **EvenSomeNullableObject**
+- **EvenUser**
+- **EvenUserReference**
+- **EvenUserSubclass**
+- **EvenZoo**
 
 ## Requests
 

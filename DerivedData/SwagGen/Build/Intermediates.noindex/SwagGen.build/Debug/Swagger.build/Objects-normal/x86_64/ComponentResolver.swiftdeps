@@ -1,0 +1,324 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CaseIterable"
+- "ComponentResolver"
+provides-nominal:
+- "7Swagger12CaseIterableP"
+- "7Swagger17ComponentResolverC"
+provides-member:
+- ["7Swagger12CaseIterableP", ""]
+- ["7Swagger17ComponentResolverC", ""]
+provides-dynamic-lookup:
+- "components"
+- "resolve"
+- "resolveReference"
+- "spec"
+depends-top-level:
+- "=="
+- "AssignmentPrecedence"
+- "CaseIterable"
+- "Component"
+- "ComponentObject"
+- "ComponentResolver"
+- "Components"
+- "Content"
+- "Header"
+- "MediaItem"
+- "OperationResponse"
+- "Parameter"
+- "PossibleReference"
+- "Reference"
+- "RequestBody"
+- "Schema"
+- "SchemaType"
+- "Self"
+- "SwaggerSpec"
+- "Void"
+- "components"
+- "resolve"
+- "resolveReference"
+- !private "spec"
+depends-member:
+- !private ["Sa", "first"]
+- !private ["Sa", "forEach"]
+- !private ["7Swagger11ArraySchemaV", "items"]
+- ["7Swagger11ArraySchemaV0bC5ItemsO", "multiple"]
+- ["7Swagger11ArraySchemaV0bC5ItemsO", "single"]
+- !private ["SK", ""]
+- !private ["SK", "first"]
+- !private ["SK", "forEach"]
+- !private ["s7CVarArgP", "first"]
+- !private ["s7CVarArgP", "forEach"]
+- !private ["s7CVarArgP", "values"]
+- ["7Swagger12CaseIterableP", "allCases"]
+- !private ["Sl", ""]
+- !private ["Sl", "first"]
+- !private ["Sl", "forEach"]
+- !private ["Sl", "values"]
+- !private ["7Swagger9ComponentP", "componentType"]
+- !private ["7Swagger9ComponentP", "content"]
+- !private ["7Swagger9ComponentP", "headers"]
+- !private ["7Swagger9ComponentP", "schema"]
+- !private ["7Swagger9ComponentP", "type"]
+- !private ["7Swagger15ComponentObjectV", ""]
+- !private ["7Swagger15ComponentObjectV", "name"]
+- !private ["7Swagger15ComponentObjectV", "value"]
+- ["7Swagger17ComponentResolverC", "Component"]
+- ["7Swagger17ComponentResolverC", "ComponentObject"]
+- ["7Swagger17ComponentResolverC", "Components"]
+- ["7Swagger17ComponentResolverC", "Content"]
+- ["7Swagger17ComponentResolverC", "Header"]
+- ["7Swagger17ComponentResolverC", "MediaItem"]
+- ["7Swagger17ComponentResolverC", "OperationResponse"]
+- ["7Swagger17ComponentResolverC", "Parameter"]
+- ["7Swagger17ComponentResolverC", "PossibleReference"]
+- ["7Swagger17ComponentResolverC", "Reference"]
+- ["7Swagger17ComponentResolverC", "RequestBody"]
+- ["7Swagger17ComponentResolverC", "Schema"]
+- ["7Swagger17ComponentResolverC", "SchemaType"]
+- ["7Swagger17ComponentResolverC", "SwaggerSpec"]
+- ["7Swagger17ComponentResolverC", "Void"]
+- ["7Swagger17ComponentResolverC", "components"]
+- ["7Swagger17ComponentResolverC", "deinit"]
+- ["7Swagger17ComponentResolverC", "init"]
+- ["7Swagger17ComponentResolverC", "resolve"]
+- !private ["7Swagger17ComponentResolverC", "resolveReference"]
+- ["7Swagger17ComponentResolverC", "spec"]
+- !private ["7Swagger13ComponentTypeO", ""]
+- !private ["7Swagger13ComponentTypeO", "rawValue"]
+- !private ["7Swagger10ComponentsV", "headers"]
+- !private ["7Swagger10ComponentsV", "parameters"]
+- !private ["7Swagger10ComponentsV", "requestBodies"]
+- !private ["7Swagger10ComponentsV", "responses"]
+- !private ["7Swagger10ComponentsV", "schemas"]
+- !private ["7Swagger7ContentV", "mediaItems"]
+- !private ["10Foundation15ContiguousBytesP", "first"]
+- !private ["10Foundation15ContiguousBytesP", "forEach"]
+- !private ["s28CustomDebugStringConvertibleP", "callAsFunction"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
+- !private ["s28CustomDebugStringConvertibleP", "forEach"]
+- !private ["s28CustomDebugStringConvertibleP", "values"]
+- !private ["s17CustomReflectableP", "callAsFunction"]
+- !private ["s17CustomReflectableP", "first"]
+- !private ["s17CustomReflectableP", "forEach"]
+- !private ["s17CustomReflectableP", "values"]
+- !private ["s23CustomStringConvertibleP", "first"]
+- !private ["s23CustomStringConvertibleP", "forEach"]
+- !private ["s23CustomStringConvertibleP", "values"]
+- !private ["10Foundation12DataProtocolP", ""]
+- !private ["10Foundation12DataProtocolP", "first"]
+- !private ["10Foundation12DataProtocolP", "forEach"]
+- !private ["Se", "callAsFunction"]
+- !private ["Se", "first"]
+- !private ["Se", "forEach"]
+- !private ["Se", "values"]
+- !private ["SD", "values"]
+- !private ["SE", "callAsFunction"]
+- !private ["SE", "first"]
+- !private ["SE", "forEach"]
+- !private ["SE", "values"]
+- !private ["SQ", ""]
+- !private ["SQ", "callAsFunction"]
+- !private ["SQ", "first"]
+- !private ["SQ", "forEach"]
+- !private ["SQ", "rawValue"]
+- !private ["SQ", "values"]
+- !private ["s25ExpressibleByArrayLiteralP", ""]
+- !private ["s25ExpressibleByArrayLiteralP", "first"]
+- !private ["s25ExpressibleByArrayLiteralP", "forEach"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "values"]
+- !private ["s23ExpressibleByNilLiteralP", "callAsFunction"]
+- !private ["7Swagger11GroupSchemaV", "schemas"]
+- !private ["SH", "callAsFunction"]
+- !private ["SH", "first"]
+- !private ["SH", "forEach"]
+- !private ["SH", "rawValue"]
+- !private ["SH", "values"]
+- !private ["7Swagger6HeaderV", ""]
+- !private ["7Swagger6HeaderV", "schema"]
+- ["13JSONUtilities21JSONObjectConvertibleP", ""]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "additionalProperties"]
+- ["13JSONUtilities21JSONObjectConvertibleP", "array"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "componentType"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "components"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "content"]
+- ["13JSONUtilities21JSONObjectConvertibleP", "group"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "headers"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "items"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "mediaItems"]
+- ["13JSONUtilities21JSONObjectConvertibleP", "object"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "parameters"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "paths"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "properties"]
+- ["13JSONUtilities21JSONObjectConvertibleP", "reference"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "requestBodies"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "responses"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "schema"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "schemas"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "type"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "value"]
+- !private ["7Swagger9MediaItemV", "schema"]
+- !private ["SM", ""]
+- !private ["SM", "first"]
+- !private ["SM", "forEach"]
+- !private ["10Foundation19MutableDataProtocolP", "first"]
+- !private ["10Foundation19MutableDataProtocolP", "forEach"]
+- !private ["7Swagger5NamedP", "name"]
+- !private ["7Swagger5NamedP", "value"]
+- !private ["7Swagger13NamedMappableP", "operations"]
+- !private ["7Swagger13NamedMappableP", "parameters"]
+- !private ["4Yams17NodeRepresentableP", "callAsFunction"]
+- !private ["4Yams17NodeRepresentableP", "first"]
+- !private ["4Yams17NodeRepresentableP", "forEach"]
+- !private ["4Yams17NodeRepresentableP", "values"]
+- !private ["7Swagger12ObjectSchemaV", "additionalProperties"]
+- !private ["7Swagger12ObjectSchemaV", "properties"]
+- !private ["7Swagger9OperationV", "operationParameters"]
+- !private ["7Swagger9OperationV", "pathParameters"]
+- !private ["7Swagger9OperationV", "requestBody"]
+- !private ["7Swagger9OperationV", "responses"]
+- !private ["7Swagger17OperationResponseV", "response"]
+- !private ["Sq", "callAsFunction"]
+- ["7Swagger9ParameterV", ""]
+- !private ["7Swagger9ParameterV", "type"]
+- !private ["7Swagger15ParameterSchemaV", "schema"]
+- ["7Swagger13ParameterTypeO", "content"]
+- ["7Swagger13ParameterTypeO", "schema"]
+- !private ["7Swagger4PathV", "operations"]
+- !private ["7Swagger4PathV", "parameters"]
+- ["7Swagger17PossibleReferenceO", "reference"]
+- !private ["7Swagger17PossibleReferenceO", "value"]
+- !private ["7Swagger8PropertyV", "schema"]
+- !private ["Sk", ""]
+- !private ["Sk", "first"]
+- !private ["Sk", "forEach"]
+- !private ["Sm", ""]
+- !private ["Sm", "first"]
+- !private ["Sm", "forEach"]
+- !private ["SY", "rawValue"]
+- !private ["7Swagger9ReferenceC", "referenceName"]
+- !private ["7Swagger9ReferenceC", "referenceType"]
+- !private ["7Swagger9ReferenceC", "resolve"]
+- !private ["7Swagger11RequestBodyV", ""]
+- !private ["7Swagger11RequestBodyV", "content"]
+- !private ["7Swagger8ResponseV", ""]
+- !private ["7Swagger8ResponseV", "content"]
+- !private ["7Swagger8ResponseV", "headers"]
+- !private ["7Swagger6SchemaV", ""]
+- !private ["7Swagger6SchemaV", "type"]
+- ["7Swagger10SchemaTypeO", "array"]
+- ["7Swagger10SchemaTypeO", "group"]
+- ["7Swagger10SchemaTypeO", "object"]
+- ["7Swagger10SchemaTypeO", "reference"]
+- !private ["ST", "Element"]
+- !private ["ST", "Iterator"]
+- !private ["ST", ""]
+- !private ["ST", "first"]
+- !private ["ST", "forEach"]
+- !private ["ST", "makeIterator"]
+- !private ["ST", "values"]
+- !private ["7Swagger0A4SpecV", "components"]
+- !private ["7Swagger0A4SpecV", "paths"]
+- !private ["s14_ArrayProtocolP", "first"]
+- !private ["s14_ArrayProtocolP", "forEach"]
+- !private ["s24_DestructorSafeContainerP", "first"]
+- !private ["s24_DestructorSafeContainerP", "forEach"]
+- !private ["s19_HasContiguousBytesP", "first"]
+- !private ["s19_HasContiguousBytesP", "forEach"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "forEach"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "values"]
+- !private ["s21_ObjectiveCBridgeableP", "callAsFunction"]
+- !private ["s21_ObjectiveCBridgeableP", "first"]
+- !private ["s21_ObjectiveCBridgeableP", "forEach"]
+- !private ["s21_ObjectiveCBridgeableP", "values"]
+depends-nominal:
+- !private "Sa"
+- !private "7Swagger11ArraySchemaV"
+- "7Swagger11ArraySchemaV0bC5ItemsO"
+- !private "SK"
+- !private "s7CVarArgP"
+- "7Swagger12CaseIterableP"
+- !private "Sl"
+- !private "7Swagger9ComponentP"
+- !private "7Swagger15ComponentObjectV"
+- "7Swagger17ComponentResolverC"
+- !private "7Swagger13ComponentTypeO"
+- !private "7Swagger10ComponentsV"
+- !private "7Swagger7ContentV"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "SD"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "7Swagger11GroupSchemaV"
+- !private "SH"
+- !private "7Swagger6HeaderV"
+- "13JSONUtilities21JSONObjectConvertibleP"
+- !private "7Swagger9MediaItemV"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "7Swagger5NamedP"
+- !private "7Swagger13NamedMappableP"
+- !private "4Yams17NodeRepresentableP"
+- !private "7Swagger12ObjectSchemaV"
+- !private "7Swagger9OperationV"
+- !private "7Swagger17OperationResponseV"
+- !private "Sq"
+- "7Swagger9ParameterV"
+- !private "7Swagger15ParameterSchemaV"
+- "7Swagger13ParameterTypeO"
+- !private "7Swagger4PathV"
+- "7Swagger17PossibleReferenceO"
+- !private "7Swagger8PropertyV"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
+- !private "7Swagger9ReferenceC"
+- !private "7Swagger11RequestBodyV"
+- !private "7Swagger8ResponseV"
+- !private "7Swagger6SchemaV"
+- "7Swagger10SchemaTypeO"
+- !private "ST"
+- !private "7Swagger0A4SpecV"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/JSONUtilities.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/Yams.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/PathKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/CYaml/include/CYaml.h"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/CYaml/include/yaml.h"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Intermediates.noindex/GeneratedModuleMaps/CYaml.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "162142c7427ed22f96291ef6c38fccfa"

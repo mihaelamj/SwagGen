@@ -1,0 +1,15 @@
+version: "Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)"
+options: "bb94ad3985b49fe623f68b6222a4a4e8"
+build_time: [1602278827, 171957000]
+inputs:
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Rainbow/Sources/BackgroundColor.swift": [1602278090, 621863150]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Rainbow/Sources/CodesParser.swift": [1602278090, 622171142]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Rainbow/Sources/Color.swift": [1602278090, 622470987]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Rainbow/Sources/ControlCode.swift": [1602278090, 679139306]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Rainbow/Sources/ModesExtractor.swift": [1602278090, 623065266]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Rainbow/Sources/OutputTarget.swift": [1602278090, 679361370]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Rainbow/Sources/Rainbow.swift": [1602278090, 679603755]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Rainbow/Sources/String+Rainbow.swift": [1602278090, 624302965]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Rainbow/Sources/StringGenerator.swift": [1602278090, 624572793]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Rainbow/Sources/Style.swift": [1602278090, 624851534]
+  "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Rainbow/Sources/XcodeColorsSupport.swift": [1602278090, 625145932]

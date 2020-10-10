@@ -1,0 +1,4 @@
+module SwagGenKit {
+header "SwagGenKit-Swift.h"
+export *
+}

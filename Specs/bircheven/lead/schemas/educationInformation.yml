@@ -1,0 +1,15 @@
+type: object
+properties:
+  educationLevel:
+    $ref: ./educationLevel.yml
+  graduateDegreeType:
+    $ref: ./graduateDegreeType.yml
+  universityAttended:
+    type: string
+    description: |
+      Name of university where a lead received their highest degree.
+      A lookup service for possible universiteis is available from using the /leads/universities endpoint.
+      To maximize returned offers, this string must match one of the names returned from the lookup.
+  graduationDate:
+    type: string
+    format: date

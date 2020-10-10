@@ -13,10 +13,17 @@ extension TFL.TravelTime {
         public static let service = APIService<Response>(id: "TravelTime_GetOverlay", tag: "TravelTime", method: "GET", path: "/TravelTimes/overlay/{z}/mapcenter/{mapCenterLat}/{mapCenterLon}/pinlocation/{pinLat}/{pinLon}/dimensions/{width}/{height}", hasBody: false, securityRequirements: [])
 
         /** The direction of travel. */
-        public enum Direction: String, Codable, Equatable, CaseIterable {
+        public enum EvenDirection: String, Codable, Equatable, CaseIterable {
             case average = "Average"
             case from = "From"
             case to = "To"
+            case undecodable
+
+            public init(from decoder: Decoder) throws {
+                let container = try decoder.singleValueContainer()
+                let rawValue = try container.decode(String.self)
+                self = EvenDirection(rawValue: rawValue) ?? .undecodable
+            }
         }
 
         public final class Request: APIRequest<Response> {
@@ -54,12 +61,12 @@ extension TFL.TravelTime {
                 public var height: Int
 
                 /** The direction of travel. */
-                public var direction: Direction
+                public var direction: EvenDirection
 
                 /** The total minutes between the travel time bands */
                 public var travelTimeInterval: Int
 
-                public init(z: Int, pinLat: Double, pinLon: Double, mapCenterLat: Double, mapCenterLon: Double, scenarioTitle: String, timeOfDayId: String, modeId: String, width: Int, height: Int, direction: Direction, travelTimeInterval: Int) {
+                public init(z: Int, pinLat: Double, pinLon: Double, mapCenterLat: Double, mapCenterLon: Double, scenarioTitle: String, timeOfDayId: String, modeId: String, width: Int, height: Int, direction: EvenDirection, travelTimeInterval: Int) {
                     self.z = z
                     self.pinLat = pinLat
                     self.pinLon = pinLon
@@ -83,7 +90,7 @@ extension TFL.TravelTime {
             }
 
             /// convenience initialiser so an Option doesn't have to be created
-            public convenience init(z: Int, pinLat: Double, pinLon: Double, mapCenterLat: Double, mapCenterLon: Double, scenarioTitle: String, timeOfDayId: String, modeId: String, width: Int, height: Int, direction: Direction, travelTimeInterval: Int) {
+            public convenience init(z: Int, pinLat: Double, pinLon: Double, mapCenterLat: Double, mapCenterLon: Double, scenarioTitle: String, timeOfDayId: String, modeId: String, width: Int, height: Int, direction: EvenDirection, travelTimeInterval: Int) {
                 let options = Options(z: z, pinLat: pinLat, pinLon: pinLon, mapCenterLat: mapCenterLat, mapCenterLon: mapCenterLon, scenarioTitle: scenarioTitle, timeOfDayId: timeOfDayId, modeId: modeId, width: width, height: height, direction: direction, travelTimeInterval: travelTimeInterval)
                 self.init(options: options)
             }
@@ -104,12 +111,12 @@ extension TFL.TravelTime {
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = Object
+            public typealias SuccessType = EvenObject
 
             /** OK */
-            case status200(Object)
+            case status200(EvenObject)
 
-            public var success: Object? {
+            public var success: EvenObject? {
                 switch self {
                 case .status200(let response): return response
                 }
@@ -135,7 +142,7 @@ extension TFL.TravelTime {
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode(Object.self, from: data))
+                case 200: self = try .status200(decoder.decode(EvenObject.self, from: data))
                 default: throw APIClientError.unexpectedStatusCode(statusCode: statusCode, data: data)
                 }
             }

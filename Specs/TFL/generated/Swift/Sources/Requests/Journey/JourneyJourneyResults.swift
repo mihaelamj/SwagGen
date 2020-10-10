@@ -13,49 +13,91 @@ extension TFL.Journey {
         public static let service = APIService<Response>(id: "Journey_JourneyResults", tag: "Journey", method: "GET", path: "/Journey/JourneyResults/{from}/to/{to}", hasBody: false, securityRequirements: [])
 
         /** Does the time given relate to arrival or leaving time? Possible options: "departing" | "arriving" */
-        public enum TimeIs: String, Codable, Equatable, CaseIterable {
+        public enum EvenTimeIs: String, Codable, Equatable, CaseIterable {
             case arriving = "Arriving"
             case departing = "Departing"
+            case undecodable
+
+            public init(from decoder: Decoder) throws {
+                let container = try decoder.singleValueContainer()
+                let rawValue = try container.decode(String.self)
+                self = EvenTimeIs(rawValue: rawValue) ?? .undecodable
+            }
         }
 
         /** The journey preference eg possible options: "leastinterchange" | "leasttime" | "leastwalking" */
-        public enum JourneyPreference: String, Codable, Equatable, CaseIterable {
+        public enum EvenJourneyPreference: String, Codable, Equatable, CaseIterable {
             case leastInterchange = "LeastInterchange"
             case leastTime = "LeastTime"
             case leastWalking = "LeastWalking"
+            case undecodable
+
+            public init(from decoder: Decoder) throws {
+                let container = try decoder.singleValueContainer()
+                let rawValue = try container.decode(String.self)
+                self = EvenJourneyPreference(rawValue: rawValue) ?? .undecodable
+            }
         }
 
         /** The accessibility preference must be a comma separated list eg. "noSolidStairs,noEscalators,noElevators,stepFreeToVehicle,stepFreeToPlatform" */
-        public enum AccessibilityPreference: String, Codable, Equatable, CaseIterable {
+        public enum EvenAccessibilityPreference: String, Codable, Equatable, CaseIterable {
             case noRequirements = "NoRequirements"
             case noSolidStairs = "NoSolidStairs"
             case noEscalators = "NoEscalators"
             case noElevators = "NoElevators"
             case stepFreeToVehicle = "StepFreeToVehicle"
             case stepFreeToPlatform = "StepFreeToPlatform"
+            case undecodable
+
+            public init(from decoder: Decoder) throws {
+                let container = try decoder.singleValueContainer()
+                let rawValue = try container.decode(String.self)
+                self = EvenAccessibilityPreference(rawValue: rawValue) ?? .undecodable
+            }
         }
 
         /** The walking speed. eg possible options: "slow" | "average" | "fast". */
-        public enum WalkingSpeed: String, Codable, Equatable, CaseIterable {
+        public enum EvenWalkingSpeed: String, Codable, Equatable, CaseIterable {
             case slow = "Slow"
             case average = "Average"
             case fast = "Fast"
+            case undecodable
+
+            public init(from decoder: Decoder) throws {
+                let container = try decoder.singleValueContainer()
+                let rawValue = try container.decode(String.self)
+                self = EvenWalkingSpeed(rawValue: rawValue) ?? .undecodable
+            }
         }
 
         /** The cycle preference. eg possible options: "allTheWay" | "leaveAtStation" | "takeOnTransport" | "cycleHire" */
-        public enum CyclePreference: String, Codable, Equatable, CaseIterable {
+        public enum EvenCyclePreference: String, Codable, Equatable, CaseIterable {
             case none = "None"
             case leaveAtStation = "LeaveAtStation"
             case takeOnTransport = "TakeOnTransport"
             case allTheWay = "AllTheWay"
             case cycleHire = "CycleHire"
+            case undecodable
+
+            public init(from decoder: Decoder) throws {
+                let container = try decoder.singleValueContainer()
+                let rawValue = try container.decode(String.self)
+                self = EvenCyclePreference(rawValue: rawValue) ?? .undecodable
+            }
         }
 
         /** A comma separated list of cycling proficiency levels. eg possible options: "easy,moderate,fast" */
-        public enum BikeProficiency: String, Codable, Equatable, CaseIterable {
+        public enum EvenBikeProficiency: String, Codable, Equatable, CaseIterable {
             case easy = "Easy"
             case moderate = "Moderate"
             case fast = "Fast"
+            case undecodable
+
+            public init(from decoder: Decoder) throws {
+                let container = try decoder.singleValueContainer()
+                let rawValue = try container.decode(String.self)
+                self = EvenBikeProficiency(rawValue: rawValue) ?? .undecodable
+            }
         }
 
         public final class Request: APIRequest<Response> {
@@ -81,16 +123,16 @@ extension TFL.Journey {
                 public var time: String?
 
                 /** Does the time given relate to arrival or leaving time? Possible options: "departing" | "arriving" */
-                public var timeIs: TimeIs?
+                public var timeIs: EvenTimeIs?
 
                 /** The journey preference eg possible options: "leastinterchange" | "leasttime" | "leastwalking" */
-                public var journeyPreference: JourneyPreference?
+                public var journeyPreference: EvenJourneyPreference?
 
                 /** The mode must be a comma separated list of modes. eg possible options: "public-bus,overground,train,tube,coach,dlr,cablecar,tram,river,walking,cycle" */
                 public var mode: [String]?
 
                 /** The accessibility preference must be a comma separated list eg. "noSolidStairs,noEscalators,noElevators,stepFreeToVehicle,stepFreeToPlatform" */
-                public var accessibilityPreference: [AccessibilityPreference]?
+                public var accessibilityPreference: [EvenAccessibilityPreference]?
 
                 /** An optional name to associate with the origin of the journey in the results. */
                 public var fromName: String?
@@ -108,16 +150,16 @@ extension TFL.Journey {
                 public var maxWalkingMinutes: String?
 
                 /** The walking speed. eg possible options: "slow" | "average" | "fast". */
-                public var walkingSpeed: WalkingSpeed?
+                public var walkingSpeed: EvenWalkingSpeed?
 
                 /** The cycle preference. eg possible options: "allTheWay" | "leaveAtStation" | "takeOnTransport" | "cycleHire" */
-                public var cyclePreference: CyclePreference?
+                public var cyclePreference: EvenCyclePreference?
 
                 /** Time adjustment command. eg possible options: "TripFirst" | "TripLast" */
                 public var adjustment: String?
 
                 /** A comma separated list of cycling proficiency levels. eg possible options: "easy,moderate,fast" */
-                public var bikeProficiency: [BikeProficiency]?
+                public var bikeProficiency: [EvenBikeProficiency]?
 
                 /** Option to determine whether to return alternative cycling journey */
                 public var alternativeCycle: Bool?
@@ -134,7 +176,7 @@ extension TFL.Journey {
                 /** A boolean to indicate whether to optimize journeys using walking */
                 public var walkingOptimization: Bool?
 
-                public init(from: String, to: String, via: String? = nil, nationalSearch: Bool? = nil, date: String? = nil, time: String? = nil, timeIs: TimeIs? = nil, journeyPreference: JourneyPreference? = nil, mode: [String]? = nil, accessibilityPreference: [AccessibilityPreference]? = nil, fromName: String? = nil, toName: String? = nil, viaName: String? = nil, maxTransferMinutes: String? = nil, maxWalkingMinutes: String? = nil, walkingSpeed: WalkingSpeed? = nil, cyclePreference: CyclePreference? = nil, adjustment: String? = nil, bikeProficiency: [BikeProficiency]? = nil, alternativeCycle: Bool? = nil, alternativeWalking: Bool? = nil, applyHtmlMarkup: Bool? = nil, useMultiModalCall: Bool? = nil, walkingOptimization: Bool? = nil) {
+                public init(from: String, to: String, via: String? = nil, nationalSearch: Bool? = nil, date: String? = nil, time: String? = nil, timeIs: EvenTimeIs? = nil, journeyPreference: EvenJourneyPreference? = nil, mode: [String]? = nil, accessibilityPreference: [EvenAccessibilityPreference]? = nil, fromName: String? = nil, toName: String? = nil, viaName: String? = nil, maxTransferMinutes: String? = nil, maxWalkingMinutes: String? = nil, walkingSpeed: EvenWalkingSpeed? = nil, cyclePreference: EvenCyclePreference? = nil, adjustment: String? = nil, bikeProficiency: [EvenBikeProficiency]? = nil, alternativeCycle: Bool? = nil, alternativeWalking: Bool? = nil, applyHtmlMarkup: Bool? = nil, useMultiModalCall: Bool? = nil, walkingOptimization: Bool? = nil) {
                     self.from = from
                     self.to = to
                     self.via = via
@@ -170,7 +212,7 @@ extension TFL.Journey {
             }
 
             /// convenience initialiser so an Option doesn't have to be created
-            public convenience init(from: String, to: String, via: String? = nil, nationalSearch: Bool? = nil, date: String? = nil, time: String? = nil, timeIs: TimeIs? = nil, journeyPreference: JourneyPreference? = nil, mode: [String]? = nil, accessibilityPreference: [AccessibilityPreference]? = nil, fromName: String? = nil, toName: String? = nil, viaName: String? = nil, maxTransferMinutes: String? = nil, maxWalkingMinutes: String? = nil, walkingSpeed: WalkingSpeed? = nil, cyclePreference: CyclePreference? = nil, adjustment: String? = nil, bikeProficiency: [BikeProficiency]? = nil, alternativeCycle: Bool? = nil, alternativeWalking: Bool? = nil, applyHtmlMarkup: Bool? = nil, useMultiModalCall: Bool? = nil, walkingOptimization: Bool? = nil) {
+            public convenience init(from: String, to: String, via: String? = nil, nationalSearch: Bool? = nil, date: String? = nil, time: String? = nil, timeIs: EvenTimeIs? = nil, journeyPreference: EvenJourneyPreference? = nil, mode: [String]? = nil, accessibilityPreference: [EvenAccessibilityPreference]? = nil, fromName: String? = nil, toName: String? = nil, viaName: String? = nil, maxTransferMinutes: String? = nil, maxWalkingMinutes: String? = nil, walkingSpeed: EvenWalkingSpeed? = nil, cyclePreference: EvenCyclePreference? = nil, adjustment: String? = nil, bikeProficiency: [EvenBikeProficiency]? = nil, alternativeCycle: Bool? = nil, alternativeWalking: Bool? = nil, applyHtmlMarkup: Bool? = nil, useMultiModalCall: Bool? = nil, walkingOptimization: Bool? = nil) {
                 let options = Options(from: from, to: to, via: via, nationalSearch: nationalSearch, date: date, time: time, timeIs: timeIs, journeyPreference: journeyPreference, mode: mode, accessibilityPreference: accessibilityPreference, fromName: fromName, toName: toName, viaName: viaName, maxTransferMinutes: maxTransferMinutes, maxWalkingMinutes: maxWalkingMinutes, walkingSpeed: walkingSpeed, cyclePreference: cyclePreference, adjustment: adjustment, bikeProficiency: bikeProficiency, alternativeCycle: alternativeCycle, alternativeWalking: alternativeWalking, applyHtmlMarkup: applyHtmlMarkup, useMultiModalCall: useMultiModalCall, walkingOptimization: walkingOptimization)
                 self.init(options: options)
             }
@@ -252,12 +294,12 @@ extension TFL.Journey {
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = ItineraryResult
+            public typealias SuccessType = EvenItineraryResult
 
             /** OK */
-            case status200(ItineraryResult)
+            case status200(EvenItineraryResult)
 
-            public var success: ItineraryResult? {
+            public var success: EvenItineraryResult? {
                 switch self {
                 case .status200(let response): return response
                 }
@@ -283,7 +325,7 @@ extension TFL.Journey {
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode(ItineraryResult.self, from: data))
+                case 200: self = try .status200(decoder.decode(EvenItineraryResult.self, from: data))
                 default: throw APIClientError.unexpectedStatusCode(statusCode: statusCode, data: data)
                 }
             }

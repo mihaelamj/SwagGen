@@ -13,16 +13,30 @@ extension TFL.Line {
         public static let service = APIService<Response>(id: "Line_RouteSequence", tag: "Line", method: "GET", path: "/Line/{id}/Route/Sequence/{direction}", hasBody: false, securityRequirements: [])
 
         /** The direction of travel. Can be inbound or outbound. */
-        public enum Direction: String, Codable, Equatable, CaseIterable {
+        public enum EvenDirection: String, Codable, Equatable, CaseIterable {
             case inbound = "inbound"
             case outbound = "outbound"
             case all = "all"
+            case undecodable
+
+            public init(from decoder: Decoder) throws {
+                let container = try decoder.singleValueContainer()
+                let rawValue = try container.decode(String.self)
+                self = EvenDirection(rawValue: rawValue) ?? .undecodable
+            }
         }
 
         /** A comma seperated list of service types to filter on. Supported values: Regular, Night. Defaulted to 'Regular' if not specified */
-        public enum ServiceTypes: String, Codable, Equatable, CaseIterable {
+        public enum EvenServiceTypes: String, Codable, Equatable, CaseIterable {
             case regular = "Regular"
             case night = "Night"
+            case undecodable
+
+            public init(from decoder: Decoder) throws {
+                let container = try decoder.singleValueContainer()
+                let rawValue = try container.decode(String.self)
+                self = EvenServiceTypes(rawValue: rawValue) ?? .undecodable
+            }
         }
 
         public final class Request: APIRequest<Response> {
@@ -33,15 +47,15 @@ extension TFL.Line {
                 public var id: String
 
                 /** The direction of travel. Can be inbound or outbound. */
-                public var direction: Direction
+                public var direction: EvenDirection
 
                 /** A comma seperated list of service types to filter on. Supported values: Regular, Night. Defaulted to 'Regular' if not specified */
-                public var serviceTypes: [ServiceTypes]?
+                public var serviceTypes: [EvenServiceTypes]?
 
                 /** That excludes crowding from line disruptions. Can be true or false. */
                 public var excludeCrowding: Bool?
 
-                public init(id: String, direction: Direction, serviceTypes: [ServiceTypes]? = nil, excludeCrowding: Bool? = nil) {
+                public init(id: String, direction: EvenDirection, serviceTypes: [EvenServiceTypes]? = nil, excludeCrowding: Bool? = nil) {
                     self.id = id
                     self.direction = direction
                     self.serviceTypes = serviceTypes
@@ -57,7 +71,7 @@ extension TFL.Line {
             }
 
             /// convenience initialiser so an Option doesn't have to be created
-            public convenience init(id: String, direction: Direction, serviceTypes: [ServiceTypes]? = nil, excludeCrowding: Bool? = nil) {
+            public convenience init(id: String, direction: EvenDirection, serviceTypes: [EvenServiceTypes]? = nil, excludeCrowding: Bool? = nil) {
                 let options = Options(id: id, direction: direction, serviceTypes: serviceTypes, excludeCrowding: excludeCrowding)
                 self.init(options: options)
             }
@@ -79,12 +93,12 @@ extension TFL.Line {
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = RouteSequence
+            public typealias SuccessType = EvenRouteSequence
 
             /** OK */
-            case status200(RouteSequence)
+            case status200(EvenRouteSequence)
 
-            public var success: RouteSequence? {
+            public var success: EvenRouteSequence? {
                 switch self {
                 case .status200(let response): return response
                 }
@@ -110,7 +124,7 @@ extension TFL.Line {
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode(RouteSequence.self, from: data))
+                case 200: self = try .status200(decoder.decode(EvenRouteSequence.self, from: data))
                 default: throw APIClientError.unexpectedStatusCode(statusCode: statusCode, data: data)
                 }
             }

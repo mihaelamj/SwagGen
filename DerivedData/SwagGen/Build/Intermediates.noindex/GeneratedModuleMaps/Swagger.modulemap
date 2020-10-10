@@ -1,0 +1,4 @@
+module Swagger {
+header "Swagger-Swift.h"
+export *
+}

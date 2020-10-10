@@ -45,12 +45,12 @@ extension TFL.Vehicle {
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = EmissionsSurchargeVehicle
+            public typealias SuccessType = EvenEmissionsSurchargeVehicle
 
             /** OK */
-            case status200(EmissionsSurchargeVehicle)
+            case status200(EvenEmissionsSurchargeVehicle)
 
-            public var success: EmissionsSurchargeVehicle? {
+            public var success: EvenEmissionsSurchargeVehicle? {
                 switch self {
                 case .status200(let response): return response
                 }
@@ -76,7 +76,7 @@ extension TFL.Vehicle {
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode(EmissionsSurchargeVehicle.self, from: data))
+                case 200: self = try .status200(decoder.decode(EvenEmissionsSurchargeVehicle.self, from: data))
                 default: throw APIClientError.unexpectedStatusCode(statusCode: statusCode, data: data)
                 }
             }

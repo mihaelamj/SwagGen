@@ -13,9 +13,16 @@ extension TFL.StopPoint {
         public static let service = APIService<Response>(id: "StopPoint_ReachableFrom", tag: "StopPoint", method: "GET", path: "/StopPoint/{id}/CanReachOnLine/{lineId}", hasBody: false, securityRequirements: [])
 
         /** A comma-separated list of service types to filter on. If not specified. Supported values: Regular, Night. Defaulted to 'Regular' if not specified */
-        public enum ServiceTypes: String, Codable, Equatable, CaseIterable {
+        public enum EvenServiceTypes: String, Codable, Equatable, CaseIterable {
             case regular = "Regular"
             case night = "Night"
+            case undecodable
+
+            public init(from decoder: Decoder) throws {
+                let container = try decoder.singleValueContainer()
+                let rawValue = try container.decode(String.self)
+                self = EvenServiceTypes(rawValue: rawValue) ?? .undecodable
+            }
         }
 
         public final class Request: APIRequest<Response> {
@@ -29,9 +36,9 @@ extension TFL.StopPoint {
                 public var lineId: String
 
                 /** A comma-separated list of service types to filter on. If not specified. Supported values: Regular, Night. Defaulted to 'Regular' if not specified */
-                public var serviceTypes: [ServiceTypes]?
+                public var serviceTypes: [EvenServiceTypes]?
 
-                public init(id: String, lineId: String, serviceTypes: [ServiceTypes]? = nil) {
+                public init(id: String, lineId: String, serviceTypes: [EvenServiceTypes]? = nil) {
                     self.id = id
                     self.lineId = lineId
                     self.serviceTypes = serviceTypes
@@ -46,7 +53,7 @@ extension TFL.StopPoint {
             }
 
             /// convenience initialiser so an Option doesn't have to be created
-            public convenience init(id: String, lineId: String, serviceTypes: [ServiceTypes]? = nil) {
+            public convenience init(id: String, lineId: String, serviceTypes: [EvenServiceTypes]? = nil) {
                 let options = Options(id: id, lineId: lineId, serviceTypes: serviceTypes)
                 self.init(options: options)
             }
@@ -65,12 +72,12 @@ extension TFL.StopPoint {
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = [StopPoint]
+            public typealias SuccessType = [EvenStopPoint]
 
             /** OK */
-            case status200([StopPoint])
+            case status200([EvenStopPoint])
 
-            public var success: [StopPoint]? {
+            public var success: [EvenStopPoint]? {
                 switch self {
                 case .status200(let response): return response
                 }
@@ -96,7 +103,7 @@ extension TFL.StopPoint {
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode([StopPoint].self, from: data))
+                case 200: self = try .status200(decoder.decode([EvenStopPoint].self, from: data))
                 default: throw APIClientError.unexpectedStatusCode(statusCode: statusCode, data: data)
                 }
             }

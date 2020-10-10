@@ -1,0 +1,572 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SpecTests"
+provides-nominal:
+- "12SwaggerTests04SpecB0C"
+provides-member:
+- ["12SwaggerTests04SpecB0C", ""]
+provides-dynamic-lookup:
+- "testSpecs"
+depends-top-level:
+- "+"
+- "=="
+- !private "Array"
+- !private "AssignmentPrecedence"
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- "Path"
+- "SpecTests"
+- !private "StringLiteralType"
+- "SwaggerSpec"
+- "XCTestCase"
+- !private "describe"
+- "expect"
+depends-member:
+- !private ["Sa", "count"]
+- !private ["Sa", "filter"]
+- !private ["Sa", "first"]
+- !private ["Sa", "named"]
+- !private ["Sa", "subscript"]
+- !private ["s10ArraySliceV", "variables"]
+- !private ["SK", ""]
+- !private ["SK", "count"]
+- !private ["SK", "filter"]
+- !private ["SK", "first"]
+- !private ["SK", "named"]
+- !private ["SK", "subscript"]
+- !private ["SK", "variables"]
+- !private ["s7CVarArgP", "Path"]
+- !private ["s7CVarArgP", "SwaggerSpec"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "describe"]
+- !private ["s7CVarArgP", "expect"]
+- !private ["s7CVarArgP", "filter"]
+- !private ["s7CVarArgP", "first"]
+- !private ["s7CVarArgP", "named"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "testSpecs"]
+- !private ["Sl", ""]
+- !private ["Sl", "count"]
+- !private ["Sl", "filter"]
+- !private ["Sl", "first"]
+- !private ["Sl", "named"]
+- !private ["Sl", "subscript"]
+- !private ["Sl", "variables"]
+- !private ["SL", "init"]
+- !private ["SL", "string"]
+- !private ["7Swagger9ComponentP", "content"]
+- !private ["7Swagger9ComponentP", "description"]
+- !private ["7Swagger9ComponentP", "location"]
+- !private ["7Swagger9ComponentP", "type"]
+- !private ["7Swagger15ComponentObjectV", "name"]
+- !private ["7Swagger10ComponentsV", "schemas"]
+- !private ["7Swagger10ComponentsV", "securitySchemes"]
+- !private ["7Swagger7ContentV", "formSchema"]
+- !private ["7Spectre11ContextTypeP", "describe"]
+- !private ["7Spectre11ContextTypeP", "it"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
+- !private ["10Foundation15ContiguousBytesP", "filter"]
+- !private ["10Foundation15ContiguousBytesP", "first"]
+- !private ["10Foundation15ContiguousBytesP", "named"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
+- !private ["10Foundation15ContiguousBytesP", "variables"]
+- !private ["s28CustomDebugStringConvertibleP", "Path"]
+- !private ["s28CustomDebugStringConvertibleP", "SwaggerSpec"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "callAsFunction"]
+- !private ["s28CustomDebugStringConvertibleP", "components"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "describe"]
+- !private ["s28CustomDebugStringConvertibleP", "expect"]
+- !private ["s28CustomDebugStringConvertibleP", "filter"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
+- !private ["s28CustomDebugStringConvertibleP", "info"]
+- !private ["s28CustomDebugStringConvertibleP", "named"]
+- !private ["s28CustomDebugStringConvertibleP", "operations"]
+- !private ["s28CustomDebugStringConvertibleP", "paths"]
+- !private ["s28CustomDebugStringConvertibleP", "servers"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "tags"]
+- !private ["s28CustomDebugStringConvertibleP", "testSpecs"]
+- !private ["s28CustomDebugStringConvertibleP", "variables"]
+- !private ["s17CustomReflectableP", "callAsFunction"]
+- !private ["s17CustomReflectableP", "components"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "filter"]
+- !private ["s17CustomReflectableP", "first"]
+- !private ["s17CustomReflectableP", "info"]
+- !private ["s17CustomReflectableP", "named"]
+- !private ["s17CustomReflectableP", "operations"]
+- !private ["s17CustomReflectableP", "paths"]
+- !private ["s17CustomReflectableP", "servers"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "tags"]
+- !private ["s17CustomReflectableP", "variables"]
+- !private ["s23CustomStringConvertibleP", "Path"]
+- !private ["s23CustomStringConvertibleP", "SwaggerSpec"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "describe"]
+- !private ["s23CustomStringConvertibleP", "expect"]
+- !private ["s23CustomStringConvertibleP", "filter"]
+- !private ["s23CustomStringConvertibleP", "first"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "named"]
+- !private ["s23CustomStringConvertibleP", "string"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "testSpecs"]
+- !private ["s23CustomStringConvertibleP", "variables"]
+- !private ["10Foundation12DataProtocolP", ""]
+- !private ["10Foundation12DataProtocolP", "count"]
+- !private ["10Foundation12DataProtocolP", "filter"]
+- !private ["10Foundation12DataProtocolP", "first"]
+- !private ["10Foundation12DataProtocolP", "named"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
+- !private ["10Foundation12DataProtocolP", "variables"]
+- !private ["Se", "callAsFunction"]
+- !private ["Se", "components"]
+- !private ["Se", "count"]
+- !private ["Se", "filter"]
+- !private ["Se", "first"]
+- !private ["Se", "info"]
+- !private ["Se", "named"]
+- !private ["Se", "operations"]
+- !private ["Se", "paths"]
+- !private ["Se", "servers"]
+- !private ["Se", "subscript"]
+- !private ["Se", "tags"]
+- !private ["SD", "count"]
+- !private ["SE", "callAsFunction"]
+- !private ["SE", "components"]
+- !private ["SE", "count"]
+- !private ["SE", "filter"]
+- !private ["SE", "first"]
+- !private ["SE", "info"]
+- !private ["SE", "named"]
+- !private ["SE", "operations"]
+- !private ["SE", "paths"]
+- !private ["SE", "servers"]
+- !private ["SE", "subscript"]
+- !private ["SE", "tags"]
+- !private ["SQ", "=="]
+- !private ["SQ", "Path"]
+- !private ["SQ", "SwaggerSpec"]
+- ["SQ", ""]
+- !private ["SQ", "callAsFunction"]
+- !private ["SQ", "components"]
+- !private ["SQ", "count"]
+- !private ["SQ", "describe"]
+- !private ["SQ", "expect"]
+- !private ["SQ", "filter"]
+- !private ["SQ", "first"]
+- !private ["SQ", "get"]
+- !private ["SQ", "info"]
+- !private ["SQ", "init"]
+- !private ["SQ", "named"]
+- !private ["SQ", "operations"]
+- !private ["SQ", "path"]
+- !private ["SQ", "paths"]
+- !private ["SQ", "post"]
+- !private ["SQ", "servers"]
+- !private ["SQ", "string"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "tags"]
+- !private ["SQ", "testSpecs"]
+- !private ["SQ", "variables"]
+- !private ["7Spectre15ExpectationTypeP", "ValueType"]
+- !private ["s25ExpressibleByArrayLiteralP", ""]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "filter"]
+- !private ["s25ExpressibleByArrayLiteralP", "first"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "named"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "variables"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "count"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "string"]
+- !private ["s23ExpressibleByNilLiteralP", "callAsFunction"]
+- !private ["s23ExpressibleByNilLiteralP", "components"]
+- !private ["s23ExpressibleByNilLiteralP", "get"]
+- !private ["s23ExpressibleByNilLiteralP", "info"]
+- !private ["s23ExpressibleByNilLiteralP", "operations"]
+- !private ["s23ExpressibleByNilLiteralP", "paths"]
+- !private ["s23ExpressibleByNilLiteralP", "post"]
+- !private ["s23ExpressibleByNilLiteralP", "servers"]
+- !private ["s23ExpressibleByNilLiteralP", "tags"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "string"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "string"]
+- !private ["SH", "Path"]
+- !private ["SH", "SwaggerSpec"]
+- ["SH", ""]
+- !private ["SH", "callAsFunction"]
+- !private ["SH", "components"]
+- !private ["SH", "count"]
+- !private ["SH", "describe"]
+- !private ["SH", "expect"]
+- !private ["SH", "filter"]
+- !private ["SH", "first"]
+- !private ["SH", "get"]
+- !private ["SH", "info"]
+- !private ["SH", "init"]
+- !private ["SH", "named"]
+- !private ["SH", "operations"]
+- !private ["SH", "path"]
+- !private ["SH", "paths"]
+- !private ["SH", "post"]
+- !private ["SH", "servers"]
+- !private ["SH", "string"]
+- !private ["SH", "subscript"]
+- !private ["SH", "tags"]
+- !private ["SH", "testSpecs"]
+- !private ["SH", "variables"]
+- !private ["7Swagger4InfoV", "title"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", ""]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "components"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "content"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "description"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "formSchema"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "info"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "init"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "location"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "object"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "operations"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "paths"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "properties"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "schemas"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "securitySchemes"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "servers"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "tags"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "title"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "type"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "value"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "variables"]
+- !private ["s20LazySequenceProtocolP", "variables"]
+- !private ["7Swagger9OperationV6MethodO", "get"]
+- !private ["7Swagger9OperationV6MethodO", "post"]
+- !private ["SM", ""]
+- !private ["SM", "count"]
+- !private ["SM", "filter"]
+- !private ["SM", "first"]
+- !private ["SM", "named"]
+- !private ["SM", "subscript"]
+- !private ["SM", "variables"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
+- !private ["10Foundation19MutableDataProtocolP", "filter"]
+- !private ["10Foundation19MutableDataProtocolP", "first"]
+- !private ["10Foundation19MutableDataProtocolP", "named"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSObjectC", "Path"]
+- !private ["So8NSObjectC", "SwaggerSpec"]
+- ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "describe"]
+- !private ["So8NSObjectC", "expect"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "testCaseWithInvocation"]
+- ["So8NSObjectC", "testCaseWithSelector"]
+- ["So8NSObjectC", "testSpecs"]
+- !private ["So8NSObjectP", "Path"]
+- !private ["So8NSObjectP", "SwaggerSpec"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "describe"]
+- !private ["So8NSObjectP", "expect"]
+- ["So8NSObjectP", "init"]
+- ["So8NSObjectP", "testCaseWithInvocation"]
+- ["So8NSObjectP", "testCaseWithSelector"]
+- ["So8NSObjectP", "testSpecs"]
+- !private ["7Swagger5NamedP", "name"]
+- !private ["7Swagger13NamedMappableP", "init"]
+- !private ["7Swagger13NamedMappableP", "operations"]
+- !private ["7Swagger13NamedMappableP", "path"]
+- !private ["4Yams17NodeRepresentableP", "callAsFunction"]
+- !private ["4Yams17NodeRepresentableP", "components"]
+- !private ["4Yams17NodeRepresentableP", "count"]
+- !private ["4Yams17NodeRepresentableP", "filter"]
+- !private ["4Yams17NodeRepresentableP", "first"]
+- !private ["4Yams17NodeRepresentableP", "info"]
+- !private ["4Yams17NodeRepresentableP", "named"]
+- !private ["4Yams17NodeRepresentableP", "operations"]
+- !private ["4Yams17NodeRepresentableP", "paths"]
+- !private ["4Yams17NodeRepresentableP", "servers"]
+- !private ["4Yams17NodeRepresentableP", "subscript"]
+- !private ["4Yams17NodeRepresentableP", "tags"]
+- !private ["7Swagger12ObjectSchemaV", "properties"]
+- !private ["7Swagger9OperationV", "defaultResponse"]
+- !private ["7Swagger9OperationV", "identifier"]
+- !private ["7Swagger9OperationV", "method"]
+- !private ["7Swagger9OperationV", "parameters"]
+- !private ["7Swagger9OperationV", "path"]
+- !private ["7Swagger9OperationV", "pathParameters"]
+- !private ["7Swagger9OperationV", "requestBody"]
+- !private ["7Swagger9OperationV", "responses"]
+- !private ["7Swagger9OperationV", "tags"]
+- !private ["Sq", "callAsFunction"]
+- !private ["Sq", "components"]
+- !private ["Sq", "info"]
+- !private ["Sq", "operations"]
+- !private ["Sq", "paths"]
+- !private ["Sq", "servers"]
+- !private ["Sq", "tags"]
+- !private ["7Swagger9ParameterV", "location"]
+- !private ["7Swagger17ParameterLocationO", "path"]
+- !private ["7PathKit0A0V", "init"]
+- !private ["7Swagger4PathV", "init"]
+- !private ["7Swagger4PathV", "operations"]
+- !private ["7Swagger4PathV", "path"]
+- !private ["7PathKit0A0V", "string"]
+- !private ["7Swagger17PossibleReferenceO", "value"]
+- !private ["Sk", ""]
+- !private ["Sk", "count"]
+- !private ["Sk", "filter"]
+- !private ["Sk", "first"]
+- !private ["Sk", "named"]
+- !private ["Sk", "subscript"]
+- !private ["Sk", "variables"]
+- !private ["Sm", ""]
+- !private ["Sm", "count"]
+- !private ["Sm", "filter"]
+- !private ["Sm", "first"]
+- !private ["Sm", "named"]
+- !private ["Sm", "subscript"]
+- !private ["Sm", "variables"]
+- !private ["SY", "get"]
+- !private ["SY", "init"]
+- !private ["SY", "path"]
+- !private ["SY", "post"]
+- !private ["SY", "rawValue"]
+- !private ["7Swagger11RequestBodyV", "content"]
+- !private ["7Swagger8ResponseV", "description"]
+- !private ["7Swagger6SchemaV", "type"]
+- !private ["7Swagger10SchemaTypeO", "object"]
+- !private ["ST", ""]
+- !private ["ST", "count"]
+- !private ["ST", "filter"]
+- !private ["ST", "first"]
+- !private ["ST", "init"]
+- !private ["ST", "named"]
+- !private ["ST", "string"]
+- !private ["ST", "subscript"]
+- !private ["ST", "variables"]
+- !private ["7Swagger6ServerV", "variables"]
+- !private ["s5SliceV", "variables"]
+- !private ["12SwaggerTests04SpecB0C", "Path"]
+- !private ["12SwaggerTests04SpecB0C", "SwaggerSpec"]
+- ["12SwaggerTests04SpecB0C", ""]
+- ["12SwaggerTests04SpecB0C", "deinit"]
+- !private ["12SwaggerTests04SpecB0C", "describe"]
+- !private ["12SwaggerTests04SpecB0C", "expect"]
+- ["12SwaggerTests04SpecB0C", "init"]
+- ["12SwaggerTests04SpecB0C", "testSpecs"]
+- !private ["7Swagger0A4SpecV", "components"]
+- !private ["7Swagger0A4SpecV", "info"]
+- !private ["7Swagger0A4SpecV", "init"]
+- !private ["7Swagger0A4SpecV", "operations"]
+- !private ["7Swagger0A4SpecV", "paths"]
+- !private ["7Swagger0A4SpecV", "servers"]
+- !private ["7Swagger0A4SpecV", "tags"]
+- !private ["So11XCTActivityP", "Path"]
+- !private ["So11XCTActivityP", "SwaggerSpec"]
+- ["So11XCTActivityP", ""]
+- !private ["So11XCTActivityP", "describe"]
+- !private ["So11XCTActivityP", "expect"]
+- ["So11XCTActivityP", "init"]
+- ["So11XCTActivityP", "testSpecs"]
+- !private ["So17XCTWaiterDelegateP", "Path"]
+- !private ["So17XCTWaiterDelegateP", "SwaggerSpec"]
+- ["So17XCTWaiterDelegateP", ""]
+- !private ["So17XCTWaiterDelegateP", "describe"]
+- !private ["So17XCTWaiterDelegateP", "expect"]
+- ["So17XCTWaiterDelegateP", "init"]
+- ["So17XCTWaiterDelegateP", "testSpecs"]
+- !private ["So6XCTestC", "Path"]
+- !private ["So6XCTestC", "SwaggerSpec"]
+- ["So6XCTestC", ""]
+- !private ["So6XCTestC", "describe"]
+- !private ["So6XCTestC", "expect"]
+- ["So6XCTestC", "init"]
+- ["So6XCTestC", "testCaseWithInvocation"]
+- ["So6XCTestC", "testCaseWithSelector"]
+- ["So6XCTestC", "testSpecs"]
+- !private ["So10XCTestCaseC", "Path"]
+- !private ["So10XCTestCaseC", "SwaggerSpec"]
+- ["So10XCTestCaseC", ""]
+- !private ["So10XCTestCaseC", "describe"]
+- !private ["So10XCTestCaseC", "expect"]
+- ["So10XCTestCaseC", "init"]
+- ["So10XCTestCaseC", "testSpecs"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "filter"]
+- !private ["s14_ArrayProtocolP", "first"]
+- !private ["s14_ArrayProtocolP", "named"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s14_ArrayProtocolP", "variables"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "filter"]
+- !private ["s24_DestructorSafeContainerP", "first"]
+- !private ["s24_DestructorSafeContainerP", "named"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "variables"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "filter"]
+- !private ["s19_HasContiguousBytesP", "first"]
+- !private ["s19_HasContiguousBytesP", "named"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "filter"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "named"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Path"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SwaggerSpec"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "describe"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "expect"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "testSpecs"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Path"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "SwaggerSpec"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "describe"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "expect"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "testSpecs"]
+- !private ["s21_ObjectiveCBridgeableP", "callAsFunction"]
+- !private ["s21_ObjectiveCBridgeableP", "components"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "filter"]
+- !private ["s21_ObjectiveCBridgeableP", "first"]
+- !private ["s21_ObjectiveCBridgeableP", "info"]
+- !private ["s21_ObjectiveCBridgeableP", "named"]
+- !private ["s21_ObjectiveCBridgeableP", "operations"]
+- !private ["s21_ObjectiveCBridgeableP", "paths"]
+- !private ["s21_ObjectiveCBridgeableP", "servers"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "tags"]
+- !private ["s26_OptionalNilComparisonTypeV", "get"]
+- !private ["s26_OptionalNilComparisonTypeV", "post"]
+depends-nominal:
+- !private "Sa"
+- !private "s10ArraySliceV"
+- !private "SK"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "7Swagger9ComponentP"
+- !private "7Swagger15ComponentObjectV"
+- !private "7Swagger10ComponentsV"
+- !private "7Swagger7ContentV"
+- !private "7Spectre11ContextTypeP"
+- !private "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "SD"
+- !private "SE"
+- "SQ"
+- !private "7Spectre15ExpectationTypeP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "7Swagger4InfoV"
+- !private "13JSONUtilities21JSONObjectConvertibleP"
+- !private "s20LazySequenceProtocolP"
+- !private "7Swagger9OperationV6MethodO"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "7Swagger5NamedP"
+- !private "7Swagger13NamedMappableP"
+- !private "4Yams17NodeRepresentableP"
+- !private "7Swagger12ObjectSchemaV"
+- !private "7Swagger9OperationV"
+- !private "Sq"
+- !private "7Swagger9ParameterV"
+- !private "7Swagger17ParameterLocationO"
+- !private "7PathKit0A0V"
+- !private "7Swagger4PathV"
+- !private "7PathKit0A0V"
+- !private "7Swagger17PossibleReferenceO"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
+- !private "7Swagger11RequestBodyV"
+- !private "7Swagger8ResponseV"
+- !private "7Swagger6SchemaV"
+- !private "7Swagger10SchemaTypeO"
+- !private "ST"
+- !private "7Swagger6ServerV"
+- !private "s5SliceV"
+- "12SwaggerTests04SpecB0C"
+- !private "7Swagger0A4SpecV"
+- "So11XCTActivityP"
+- "So17XCTWaiterDelegateP"
+- "So6XCTestC"
+- "So10XCTestCaseC"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s26_OptionalNilComparisonTypeV"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreData.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreImage.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/QuartzCore.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/Spectre.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Metal.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/Swagger.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/JSONUtilities.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/Yams.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/PathKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/AppKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/XCTest.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/CYaml/include/CYaml.h"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/CYaml/include/yaml.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework/Modules/module.modulemap"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Intermediates.noindex/GeneratedModuleMaps/CYaml.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTest.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "304136b05376f80e69d27ee0b104f570"

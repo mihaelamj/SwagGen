@@ -1,0 +1,313 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "GeneratorTests"
+provides-nominal:
+- "15SwagGenKitTests09GeneratorD0C"
+provides-member:
+- ["15SwagGenKitTests09GeneratorD0C", ""]
+provides-dynamic-lookup:
+- "testGenerator"
+depends-top-level:
+- "=="
+- "GeneratorTests"
+- !private "StringLiteralType"
+- "XCTestCase"
+- !private "describe"
+- "expect"
+depends-member:
+- !private ["SK", ""]
+- !private ["SK", "lowerCamelCased"]
+- !private ["SK", "upperCamelCased"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "describe"]
+- !private ["s7CVarArgP", "expect"]
+- !private ["s7CVarArgP", "lowerCamelCased"]
+- !private ["s7CVarArgP", "testGenerator"]
+- !private ["s7CVarArgP", "upperCamelCased"]
+- !private ["Sl", ""]
+- !private ["Sl", "lowerCamelCased"]
+- !private ["Sl", "upperCamelCased"]
+- !private ["SL", ""]
+- !private ["SL", "lowerCamelCased"]
+- !private ["SL", "upperCamelCased"]
+- !private ["7Spectre11ContextTypeP", "it"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "describe"]
+- !private ["s28CustomDebugStringConvertibleP", "expect"]
+- !private ["s28CustomDebugStringConvertibleP", "lowerCamelCased"]
+- !private ["s28CustomDebugStringConvertibleP", "testGenerator"]
+- !private ["s28CustomDebugStringConvertibleP", "upperCamelCased"]
+- !private ["s17CustomReflectableP", "lowerCamelCased"]
+- !private ["s17CustomReflectableP", "upperCamelCased"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "describe"]
+- !private ["s23CustomStringConvertibleP", "expect"]
+- !private ["s23CustomStringConvertibleP", "lowerCamelCased"]
+- !private ["s23CustomStringConvertibleP", "testGenerator"]
+- !private ["s23CustomStringConvertibleP", "upperCamelCased"]
+- !private ["Se", "lowerCamelCased"]
+- !private ["Se", "upperCamelCased"]
+- !private ["SE", ""]
+- !private ["SE", "lowerCamelCased"]
+- !private ["SE", "upperCamelCased"]
+- ["SQ", ""]
+- !private ["SQ", "describe"]
+- !private ["SQ", "expect"]
+- !private ["SQ", "lowerCamelCased"]
+- !private ["SQ", "testGenerator"]
+- !private ["SQ", "upperCamelCased"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "lowerCamelCased"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "upperCamelCased"]
+- !private ["s32ExpressibleByStringInterpolationP", ""]
+- !private ["s32ExpressibleByStringInterpolationP", "lowerCamelCased"]
+- !private ["s32ExpressibleByStringInterpolationP", "upperCamelCased"]
+- !private ["s26ExpressibleByStringLiteralP", ""]
+- !private ["s26ExpressibleByStringLiteralP", "lowerCamelCased"]
+- !private ["s26ExpressibleByStringLiteralP", "upperCamelCased"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "lowerCamelCased"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "upperCamelCased"]
+- ["15SwagGenKitTests09GeneratorD0C", ""]
+- ["15SwagGenKitTests09GeneratorD0C", "deinit"]
+- !private ["15SwagGenKitTests09GeneratorD0C", "describe"]
+- !private ["15SwagGenKitTests09GeneratorD0C", "expect"]
+- ["15SwagGenKitTests09GeneratorD0C", "init"]
+- ["15SwagGenKitTests09GeneratorD0C", "testGenerator"]
+- ["SH", ""]
+- !private ["SH", "describe"]
+- !private ["SH", "expect"]
+- !private ["SH", "lowerCamelCased"]
+- !private ["SH", "testGenerator"]
+- !private ["SH", "upperCamelCased"]
+- !private ["13JSONUtilities7JSONKeyP", "lowerCamelCased"]
+- !private ["13JSONUtilities7JSONKeyP", "upperCamelCased"]
+- !private ["13JSONUtilities11JSONRawTypeP", "lowerCamelCased"]
+- !private ["13JSONUtilities11JSONRawTypeP", "upperCamelCased"]
+- !private ["s25LosslessStringConvertibleP", ""]
+- !private ["s25LosslessStringConvertibleP", "lowerCamelCased"]
+- !private ["s25LosslessStringConvertibleP", "upperCamelCased"]
+- !private ["s10MirrorPathP", "lowerCamelCased"]
+- !private ["s10MirrorPathP", "upperCamelCased"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "lowerCamelCased"]
+- !private ["So8NSCodingP", "upperCamelCased"]
+- !private ["So9NSCopyingP", "lowerCamelCased"]
+- !private ["So9NSCopyingP", "upperCamelCased"]
+- !private ["So21NSItemProviderReadingP", "lowerCamelCased"]
+- !private ["So21NSItemProviderReadingP", "upperCamelCased"]
+- !private ["So21NSItemProviderWritingP", "lowerCamelCased"]
+- !private ["So21NSItemProviderWritingP", "upperCamelCased"]
+- !private ["So16NSMutableCopyingP", "lowerCamelCased"]
+- !private ["So16NSMutableCopyingP", "upperCamelCased"]
+- ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "describe"]
+- !private ["So8NSObjectC", "expect"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "lowerCamelCased"]
+- ["So8NSObjectC", "testCaseWithInvocation"]
+- ["So8NSObjectC", "testCaseWithSelector"]
+- ["So8NSObjectC", "testGenerator"]
+- !private ["So8NSObjectC", "upperCamelCased"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "describe"]
+- !private ["So8NSObjectP", "expect"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "lowerCamelCased"]
+- ["So8NSObjectP", "testCaseWithInvocation"]
+- ["So8NSObjectP", "testCaseWithSelector"]
+- ["So8NSObjectP", "testGenerator"]
+- !private ["So8NSObjectP", "upperCamelCased"]
+- !private ["So19NSPasteboardReadingP", "lowerCamelCased"]
+- !private ["So19NSPasteboardReadingP", "upperCamelCased"]
+- !private ["So19NSPasteboardWritingP", "lowerCamelCased"]
+- !private ["So19NSPasteboardWritingP", "upperCamelCased"]
+- !private ["So14NSSecureCodingP", "lowerCamelCased"]
+- !private ["So14NSSecureCodingP", "upperCamelCased"]
+- !private ["So8NSStringC", "lowerCamelCased"]
+- !private ["So8NSStringC", "upperCamelCased"]
+- !private ["4Yams17NodeRepresentableP", ""]
+- !private ["4Yams17NodeRepresentableP", "lowerCamelCased"]
+- !private ["4Yams17NodeRepresentableP", "upperCamelCased"]
+- !private ["Sm", "lowerCamelCased"]
+- !private ["Sm", "upperCamelCased"]
+- !private ["4Yams19ScalarConstructibleP", "lowerCamelCased"]
+- !private ["4Yams19ScalarConstructibleP", "upperCamelCased"]
+- !private ["4Yams19ScalarRepresentableP", "lowerCamelCased"]
+- !private ["4Yams19ScalarRepresentableP", "upperCamelCased"]
+- !private ["ST", ""]
+- !private ["ST", "lowerCamelCased"]
+- !private ["ST", "upperCamelCased"]
+- !private ["SS", "lowerCamelCased"]
+- !private ["SS", "upperCamelCased"]
+- !private ["Sy", "lowerCamelCased"]
+- !private ["Sy", "upperCamelCased"]
+- !private ["s16TextOutputStreamP", ""]
+- !private ["s16TextOutputStreamP", "lowerCamelCased"]
+- !private ["s16TextOutputStreamP", "upperCamelCased"]
+- !private ["s20TextOutputStreamableP", ""]
+- !private ["s20TextOutputStreamableP", "lowerCamelCased"]
+- !private ["s20TextOutputStreamableP", "upperCamelCased"]
+- ["So11XCTActivityP", ""]
+- !private ["So11XCTActivityP", "describe"]
+- !private ["So11XCTActivityP", "expect"]
+- ["So11XCTActivityP", "init"]
+- ["So11XCTActivityP", "testGenerator"]
+- ["So17XCTWaiterDelegateP", ""]
+- !private ["So17XCTWaiterDelegateP", "describe"]
+- !private ["So17XCTWaiterDelegateP", "expect"]
+- ["So17XCTWaiterDelegateP", "init"]
+- ["So17XCTWaiterDelegateP", "testGenerator"]
+- ["So6XCTestC", ""]
+- !private ["So6XCTestC", "describe"]
+- !private ["So6XCTestC", "expect"]
+- ["So6XCTestC", "init"]
+- ["So6XCTestC", "testCaseWithInvocation"]
+- ["So6XCTestC", "testCaseWithSelector"]
+- ["So6XCTestC", "testGenerator"]
+- ["So10XCTestCaseC", ""]
+- !private ["So10XCTestCaseC", "describe"]
+- !private ["So10XCTestCaseC", "expect"]
+- ["So10XCTestCaseC", "init"]
+- ["So10XCTestCaseC", "testGenerator"]
+- !private ["4Yams13YAMLEncodableP", "lowerCamelCased"]
+- !private ["4Yams13YAMLEncodableP", "upperCamelCased"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "lowerCamelCased"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "upperCamelCased"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "lowerCamelCased"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "upperCamelCased"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "lowerCamelCased"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "upperCamelCased"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "lowerCamelCased"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "upperCamelCased"]
+- !private ["s19_HasContiguousBytesP", "lowerCamelCased"]
+- !private ["s19_HasContiguousBytesP", "upperCamelCased"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "lowerCamelCased"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "upperCamelCased"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "describe"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "expect"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lowerCamelCased"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "testGenerator"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "upperCamelCased"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "describe"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "expect"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "lowerCamelCased"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "testGenerator"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "upperCamelCased"]
+- !private ["s21_ObjectiveCBridgeableP", "_ObjectiveCType"]
+- !private ["s21_ObjectiveCBridgeableP", "_bridgeToObjectiveC"]
+- !private ["s21_ObjectiveCBridgeableP", "_conditionallyBridgeFromObjectiveC"]
+- !private ["s21_ObjectiveCBridgeableP", "_forceBridgeFromObjectiveC"]
+- !private ["s21_ObjectiveCBridgeableP", "_unconditionallyBridgeFromObjectiveC"]
+- !private ["s21_ObjectiveCBridgeableP", "lowerCamelCased"]
+- !private ["s21_ObjectiveCBridgeableP", "upperCamelCased"]
+depends-nominal:
+- !private "SK"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "7Spectre11ContextTypeP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "15SwagGenKitTests09GeneratorD0C"
+- "SH"
+- !private "13JSONUtilities7JSONKeyP"
+- !private "13JSONUtilities11JSONRawTypeP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So19NSPasteboardReadingP"
+- !private "So19NSPasteboardWritingP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "4Yams17NodeRepresentableP"
+- !private "Sm"
+- !private "4Yams19ScalarConstructibleP"
+- !private "4Yams19ScalarRepresentableP"
+- !private "ST"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "So11XCTActivityP"
+- "So17XCTWaiterDelegateP"
+- "So6XCTestC"
+- "So10XCTestCaseC"
+- !private "4Yams13YAMLEncodableP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreData.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreImage.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/QuartzCore.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/Spectre.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Metal.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/Stencil.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/Swagger.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/JSONUtilities.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/Yams.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/PathKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/SwagGenKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/AppKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Products/Debug/StencilSwiftKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/XCTest.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/CYaml/include/CYaml.h"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/SourcePackages/checkouts/Yams/Sources/CYaml/include/yaml.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework/Modules/module.modulemap"
+- "/Users/mmj/Developer/personal/SwagGen/DerivedData/SwagGen/Build/Intermediates.noindex/GeneratedModuleMaps/CYaml.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTest.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "8a6ee4840faea12e5cb40e4e756cc3d7"

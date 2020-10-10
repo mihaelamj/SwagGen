@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)"
+options: "4901afbd679b4aee176cc8e4ed4f709d"
+build_time: [1602278841, 710873000]
+inputs:
+  "/Users/mmj/Developer/personal/SwagGen/Tests/SwagGenKitTests/FixtureTests.swift": [1602277498, 94888639]
+  "/Users/mmj/Developer/personal/SwagGen/Tests/SwagGenKitTests/GeneratorTests.swift": [1602277498, 95060926]
+  "/Users/mmj/Developer/personal/SwagGen/Tests/SwagGenKitTests/XCTestManifests.swift": [1602277498, 95214335]

@@ -1,0 +1,539 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "JSONRawType"
+- "JSONKey"
+provides-nominal:
+- "13JSONUtilities11JSONRawTypeP"
+- "Si"
+- "Sd"
+- "Sf"
+- "SS"
+- "Sb"
+- "13JSONUtilities7JSONKeyP"
+provides-member:
+- ["13JSONUtilities11JSONRawTypeP", ""]
+- ["Si", ""]
+- ["Sd", ""]
+- ["Sf", ""]
+- ["SS", ""]
+- ["Sb", ""]
+- ["13JSONUtilities7JSONKeyP", ""]
+- ["SD", ""]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+- ["SD", "json"]
+provides-dynamic-lookup:
+depends-top-level:
+- "Array"
+- "AssignmentPrecedence"
+- "Bool"
+- "CastingPrecedence"
+- "DecodingError"
+- "Dictionary"
+- "Double"
+- "Float"
+- "Int"
+- "InvalidItemBehaviour"
+- "JSONArray"
+- !private "JSONArrayForKey"
+- "JSONDictionary"
+- !private "JSONDictionaryForKey"
+- "JSONKey"
+- "JSONObjectConvertible"
+- "JSONPrimitiveConvertible"
+- "JSONRawType"
+- "Key"
+- "KeyPath"
+- "RawRepresentable"
+- "String"
+- !private "StringLiteralType"
+- !private "decodeArray"
+- !private "decodeDictionary"
+- "getValue"
+- !private "json"
+depends-member:
+- !private ["Sa", "compactMap"]
+- !private ["Sa", "map"]
+- ["SK", ""]
+- !private ["SK", "compactMap"]
+- ["SK", "init"]
+- ["SK", "key"]
+- !private ["SK", "map"]
+- ["Sb", ""]
+- !private ["s7CVarArgP", "Array"]
+- !private ["s7CVarArgP", "DecodingError"]
+- !private ["s7CVarArgP", "JSONArray"]
+- !private ["s7CVarArgP", "JSONArrayForKey"]
+- !private ["s7CVarArgP", "JSONDictionaryForKey"]
+- !private ["s7CVarArgP", "KeyPath"]
+- !private ["s7CVarArgP", "compactMap"]
+- !private ["s7CVarArgP", "decodeArray"]
+- !private ["s7CVarArgP", "decodeDictionary"]
+- !private ["s7CVarArgP", "getValue"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "json"]
+- ["s7CVarArgP", "key"]
+- !private ["s7CVarArgP", "keys"]
+- !private ["s7CVarArgP", "map"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["Sl", "Array"]
+- !private ["Sl", "DecodingError"]
+- !private ["Sl", "JSONArray"]
+- !private ["Sl", "JSONArrayForKey"]
+- !private ["Sl", "JSONDictionaryForKey"]
+- !private ["Sl", "KeyPath"]
+- ["Sl", ""]
+- !private ["Sl", "compactMap"]
+- !private ["Sl", "decodeArray"]
+- !private ["Sl", "decodeDictionary"]
+- !private ["Sl", "getValue"]
+- ["Sl", "init"]
+- !private ["Sl", "json"]
+- ["Sl", "key"]
+- !private ["Sl", "keys"]
+- !private ["Sl", "map"]
+- !private ["Sl", "subscript"]
+- ["SL", ""]
+- ["SL", "init"]
+- ["SL", "key"]
+- !private ["10Foundation15ContiguousBytesP", "compactMap"]
+- !private ["10Foundation15ContiguousBytesP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "Array"]
+- !private ["s28CustomDebugStringConvertibleP", "DecodingError"]
+- !private ["s28CustomDebugStringConvertibleP", "JSONArray"]
+- !private ["s28CustomDebugStringConvertibleP", "JSONArrayForKey"]
+- !private ["s28CustomDebugStringConvertibleP", "JSONDictionaryForKey"]
+- !private ["s28CustomDebugStringConvertibleP", "KeyPath"]
+- !private ["s28CustomDebugStringConvertibleP", "compactMap"]
+- !private ["s28CustomDebugStringConvertibleP", "decodeArray"]
+- !private ["s28CustomDebugStringConvertibleP", "decodeDictionary"]
+- !private ["s28CustomDebugStringConvertibleP", "getValue"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "json"]
+- ["s28CustomDebugStringConvertibleP", "key"]
+- !private ["s28CustomDebugStringConvertibleP", "keys"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "Array"]
+- !private ["s17CustomReflectableP", "DecodingError"]
+- !private ["s17CustomReflectableP", "JSONArray"]
+- !private ["s17CustomReflectableP", "JSONArrayForKey"]
+- !private ["s17CustomReflectableP", "JSONDictionaryForKey"]
+- !private ["s17CustomReflectableP", "KeyPath"]
+- !private ["s17CustomReflectableP", "compactMap"]
+- !private ["s17CustomReflectableP", "decodeArray"]
+- !private ["s17CustomReflectableP", "decodeDictionary"]
+- !private ["s17CustomReflectableP", "getValue"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "json"]
+- ["s17CustomReflectableP", "key"]
+- !private ["s17CustomReflectableP", "keys"]
+- !private ["s17CustomReflectableP", "map"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "Array"]
+- !private ["s23CustomStringConvertibleP", "DecodingError"]
+- !private ["s23CustomStringConvertibleP", "JSONArray"]
+- !private ["s23CustomStringConvertibleP", "JSONArrayForKey"]
+- !private ["s23CustomStringConvertibleP", "JSONDictionaryForKey"]
+- !private ["s23CustomStringConvertibleP", "KeyPath"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "compactMap"]
+- !private ["s23CustomStringConvertibleP", "conversionFailure"]
+- !private ["s23CustomStringConvertibleP", "decodeArray"]
+- !private ["s23CustomStringConvertibleP", "decodeDictionary"]
+- !private ["s23CustomStringConvertibleP", "getValue"]
+- !private ["s23CustomStringConvertibleP", "incorrectRawRepresentableRawValue"]
+- !private ["s23CustomStringConvertibleP", "incorrectType"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "json"]
+- ["s23CustomStringConvertibleP", "key"]
+- !private ["s23CustomStringConvertibleP", "keyNotFound"]
+- !private ["s23CustomStringConvertibleP", "keys"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["10Foundation12DataProtocolP", ""]
+- !private ["10Foundation12DataProtocolP", "compactMap"]
+- !private ["10Foundation12DataProtocolP", "map"]
+- !private ["Se", "Array"]
+- !private ["Se", "DecodingError"]
+- !private ["Se", "JSONArray"]
+- !private ["Se", "JSONArrayForKey"]
+- !private ["Se", "JSONDictionaryForKey"]
+- !private ["Se", "KeyPath"]
+- !private ["Se", "compactMap"]
+- !private ["Se", "decodeArray"]
+- !private ["Se", "decodeDictionary"]
+- !private ["Se", "getValue"]
+- ["Se", "init"]
+- !private ["Se", "json"]
+- ["Se", "key"]
+- !private ["Se", "keys"]
+- !private ["Se", "map"]
+- !private ["Se", "subscript"]
+- !private ["13JSONUtilities13DecodingErrorV", ""]
+- !private ["13JSONUtilities13DecodingErrorV", "init"]
+- !private ["SD", "Array"]
+- !private ["SD", "DecodingError"]
+- ["SD", "InvalidItemBehaviour"]
+- ["SD", "JSONArray"]
+- !private ["SD", "JSONArrayForKey"]
+- ["SD", "JSONDictionary"]
+- !private ["SD", "JSONDictionaryForKey"]
+- ["SD", "JSONKey"]
+- ["SD", "JSONObjectConvertible"]
+- ["SD", "JSONPrimitiveConvertible"]
+- ["SD", "JSONRawType"]
+- ["SD", "KeyPath"]
+- ["SD", "RawRepresentable"]
+- ["SD", "String"]
+- ["SD", ""]
+- !private ["SD", "decodeArray"]
+- !private ["SD", "decodeDictionary"]
+- !private ["SD", "getValue"]
+- ["SD", "json"]
+- !private ["SD", "keys"]
+- !private ["SD", "subscript"]
+- ["Sd", ""]
+- !private ["SE", "Array"]
+- !private ["SE", "DecodingError"]
+- !private ["SE", "JSONArray"]
+- !private ["SE", "JSONArrayForKey"]
+- !private ["SE", "JSONDictionaryForKey"]
+- !private ["SE", "KeyPath"]
+- !private ["SE", "compactMap"]
+- !private ["SE", "decodeArray"]
+- !private ["SE", "decodeDictionary"]
+- !private ["SE", "getValue"]
+- ["SE", "init"]
+- !private ["SE", "json"]
+- ["SE", "key"]
+- !private ["SE", "keys"]
+- !private ["SE", "map"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "Array"]
+- !private ["SQ", "DecodingError"]
+- !private ["SQ", "JSONArray"]
+- !private ["SQ", "JSONArrayForKey"]
+- !private ["SQ", "JSONDictionaryForKey"]
+- !private ["SQ", "KeyPath"]
+- ["SQ", ""]
+- !private ["SQ", "compactMap"]
+- !private ["SQ", "conversionFailure"]
+- !private ["SQ", "decodeArray"]
+- !private ["SQ", "decodeDictionary"]
+- !private ["SQ", "getValue"]
+- !private ["SQ", "incorrectRawRepresentableRawValue"]
+- !private ["SQ", "incorrectType"]
+- ["SQ", "init"]
+- !private ["SQ", "json"]
+- ["SQ", "key"]
+- !private ["SQ", "keyNotFound"]
+- !private ["SQ", "keys"]
+- !private ["SQ", "map"]
+- !private ["SQ", "subscript"]
+- !private ["s5ErrorP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", ""]
+- !private ["s25ExpressibleByArrayLiteralP", "compactMap"]
+- !private ["s25ExpressibleByArrayLiteralP", "map"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "Array"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "DecodingError"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "JSONArray"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "JSONArrayForKey"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "JSONDictionaryForKey"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "Key"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "KeyPath"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "Value"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "decodeArray"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "decodeDictionary"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "getValue"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "init"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "json"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "keys"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "key"]
+- ["s32ExpressibleByStringInterpolationP", ""]
+- ["s32ExpressibleByStringInterpolationP", "init"]
+- ["s32ExpressibleByStringInterpolationP", "key"]
+- ["s26ExpressibleByStringLiteralP", ""]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "key"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "key"]
+- ["Sf", ""]
+- !private ["SH", "Array"]
+- !private ["SH", "DecodingError"]
+- !private ["SH", "JSONArray"]
+- !private ["SH", "JSONArrayForKey"]
+- !private ["SH", "JSONDictionaryForKey"]
+- !private ["SH", "KeyPath"]
+- ["SH", ""]
+- !private ["SH", "compactMap"]
+- !private ["SH", "conversionFailure"]
+- !private ["SH", "decodeArray"]
+- !private ["SH", "decodeDictionary"]
+- !private ["SH", "getValue"]
+- !private ["SH", "incorrectRawRepresentableRawValue"]
+- !private ["SH", "incorrectType"]
+- ["SH", "init"]
+- !private ["SH", "json"]
+- ["SH", "key"]
+- !private ["SH", "keyNotFound"]
+- !private ["SH", "keys"]
+- !private ["SH", "map"]
+- !private ["SH", "subscript"]
+- ["Si", ""]
+- !private ["13JSONUtilities20InvalidItemBehaviourO", "decodeItem"]
+- !private ["13JSONUtilities20InvalidItemBehaviourO", "remove"]
+- ["13JSONUtilities7JSONKeyP", "String"]
+- ["13JSONUtilities7JSONKeyP", ""]
+- ["13JSONUtilities7JSONKeyP", "init"]
+- ["13JSONUtilities7JSONKeyP", "key"]
+- !private ["13JSONUtilities21JSONObjectConvertibleP", "init"]
+- !private ["13JSONUtilities24JSONPrimitiveConvertibleP", "JSONType"]
+- !private ["13JSONUtilities24JSONPrimitiveConvertibleP", "from"]
+- ["13JSONUtilities11JSONRawTypeP", ""]
+- ["13JSONUtilities11JSONRawTypeP", "init"]
+- ["13JSONUtilities11JSONRawTypeP", "key"]
+- !private ["13JSONUtilities7KeyPathO", ""]
+- !private ["13JSONUtilities7KeyPathO", "key"]
+- ["s25LosslessStringConvertibleP", ""]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "key"]
+- ["s10MirrorPathP", "init"]
+- ["s10MirrorPathP", "key"]
+- !private ["SM", ""]
+- !private ["SM", "compactMap"]
+- !private ["SM", "map"]
+- !private ["10Foundation19MutableDataProtocolP", "compactMap"]
+- !private ["10Foundation19MutableDataProtocolP", "map"]
+- ["So8NSCodingP", ""]
+- !private ["Sk", ""]
+- !private ["Sk", "compactMap"]
+- !private ["Sk", "map"]
+- !private ["Sm", ""]
+- !private ["Sm", "compactMap"]
+- ["Sm", "init"]
+- ["Sm", "key"]
+- !private ["Sm", "map"]
+- ["SY", "RawValue"]
+- !private ["SY", "conversionFailure"]
+- !private ["SY", "incorrectRawRepresentableRawValue"]
+- !private ["SY", "incorrectType"]
+- ["SY", "init"]
+- !private ["SY", "keyNotFound"]
+- !private ["13JSONUtilities13DecodingErrorV6ReasonO", "conversionFailure"]
+- !private ["13JSONUtilities13DecodingErrorV6ReasonO", "incorrectRawRepresentableRawValue"]
+- !private ["13JSONUtilities13DecodingErrorV6ReasonO", "incorrectType"]
+- !private ["13JSONUtilities13DecodingErrorV6ReasonO", "keyNotFound"]
+- !private ["ST", "Array"]
+- !private ["ST", "DecodingError"]
+- !private ["ST", "Element"]
+- !private ["ST", "Iterator"]
+- !private ["ST", "JSONArray"]
+- !private ["ST", "JSONArrayForKey"]
+- !private ["ST", "JSONDictionaryForKey"]
+- !private ["ST", "KeyPath"]
+- ["ST", ""]
+- !private ["ST", "compactMap"]
+- !private ["ST", "decodeArray"]
+- !private ["ST", "decodeDictionary"]
+- !private ["ST", "getValue"]
+- ["ST", "init"]
+- !private ["ST", "json"]
+- ["ST", "key"]
+- !private ["ST", "keys"]
+- !private ["ST", "makeIterator"]
+- !private ["ST", "map"]
+- !private ["ST", "subscript"]
+- ["SS", "String"]
+- ["SS", ""]
+- ["SS", "init"]
+- ["SS", "key"]
+- ["Sy", "init"]
+- ["Sy", "key"]
+- ["s16TextOutputStreamP", ""]
+- ["s16TextOutputStreamP", "init"]
+- ["s16TextOutputStreamP", "key"]
+- ["s20TextOutputStreamableP", ""]
+- ["s20TextOutputStreamableP", "init"]
+- ["s20TextOutputStreamableP", "key"]
+- !private ["s14_ArrayProtocolP", "compactMap"]
+- !private ["s14_ArrayProtocolP", "map"]
+- ["s30_CustomPlaygroundQuickLookableP", "init"]
+- ["s30_CustomPlaygroundQuickLookableP", "key"]
+- !private ["s24_DestructorSafeContainerP", "compactMap"]
+- !private ["s24_DestructorSafeContainerP", "map"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "key"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "key"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "key"]
+- !private ["s19_HasContiguousBytesP", "compactMap"]
+- ["s19_HasContiguousBytesP", "init"]
+- ["s19_HasContiguousBytesP", "key"]
+- !private ["s19_HasContiguousBytesP", "map"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "Array"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "DecodingError"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "JSONArray"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "JSONArrayForKey"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "JSONDictionaryForKey"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "KeyPath"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "compactMap"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "decodeArray"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "decodeDictionary"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "getValue"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "json"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "keys"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "Array"]
+- !private ["s21_ObjectiveCBridgeableP", "DecodingError"]
+- !private ["s21_ObjectiveCBridgeableP", "JSONArray"]
+- !private ["s21_ObjectiveCBridgeableP", "JSONArrayForKey"]
+- !private ["s21_ObjectiveCBridgeableP", "JSONDictionaryForKey"]
+- !private ["s21_ObjectiveCBridgeableP", "KeyPath"]
+- !private ["s21_ObjectiveCBridgeableP", "compactMap"]
+- !private ["s21_ObjectiveCBridgeableP", "decodeArray"]
+- !private ["s21_ObjectiveCBridgeableP", "decodeDictionary"]
+- !private ["s21_ObjectiveCBridgeableP", "getValue"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "json"]
+- ["s21_ObjectiveCBridgeableP", "key"]
+- !private ["s21_ObjectiveCBridgeableP", "keys"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+depends-nominal:
+- !private "Sa"
+- "SK"
+- "Sb"
+- "s7CVarArgP"
+- "Sl"
+- "SL"
+- !private "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- "Se"
+- !private "13JSONUtilities13DecodingErrorV"
+- "SD"
+- "Sd"
+- "SE"
+- "SQ"
+- !private "s5ErrorP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s32ExpressibleByStringInterpolationP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "Sf"
+- "SH"
+- "Si"
+- !private "13JSONUtilities20InvalidItemBehaviourO"
+- "13JSONUtilities7JSONKeyP"
+- !private "13JSONUtilities21JSONObjectConvertibleP"
+- !private "13JSONUtilities24JSONPrimitiveConvertibleP"
+- "13JSONUtilities11JSONRawTypeP"
+- !private "13JSONUtilities7KeyPathO"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- "So8NSCodingP"
+- !private "Sk"
+- "Sm"
+- "SY"
+- !private "13JSONUtilities13DecodingErrorV6ReasonO"
+- "ST"
+- "SS"
+- "Sy"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "s14_ArrayProtocolP"
+- "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "22f92c2e7586adc387e16a1255a22cb7"

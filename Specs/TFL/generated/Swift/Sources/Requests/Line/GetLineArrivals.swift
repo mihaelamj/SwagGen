@@ -53,12 +53,12 @@ extension TFL.Line {
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = [Prediction]
+            public typealias SuccessType = [EvenPrediction]
 
             /** OK */
-            case status200([Prediction])
+            case status200([EvenPrediction])
 
-            public var success: [Prediction]? {
+            public var success: [EvenPrediction]? {
                 switch self {
                 case .status200(let response): return response
                 }
@@ -84,7 +84,7 @@ extension TFL.Line {
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode([Prediction].self, from: data))
+                case 200: self = try .status200(decoder.decode([EvenPrediction].self, from: data))
                 default: throw APIClientError.unexpectedStatusCode(statusCode: statusCode, data: data)
                 }
             }

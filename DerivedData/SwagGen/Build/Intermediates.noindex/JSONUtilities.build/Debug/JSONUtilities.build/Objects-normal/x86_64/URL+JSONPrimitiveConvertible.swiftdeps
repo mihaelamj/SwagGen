@@ -1,0 +1,110 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+- "10Foundation3URLV"
+provides-member:
+- ["10Foundation3URLV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "JSONPrimitiveConvertible"
+- "String"
+- "URL"
+depends-member:
+- ["s28CustomDebugStringConvertibleP", "JSONType"]
+- !private ["s28CustomDebugStringConvertibleP", "URL"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "from"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "JSONType"]
+- !private ["s23CustomStringConvertibleP", "URL"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "from"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- ["Se", "JSONType"]
+- !private ["Se", "URL"]
+- ["Se", "from"]
+- !private ["Se", "init"]
+- ["SE", "JSONType"]
+- !private ["SE", "URL"]
+- ["SE", "from"]
+- !private ["SE", "init"]
+- ["SQ", "JSONType"]
+- !private ["SQ", "URL"]
+- ["SQ", ""]
+- ["SQ", "from"]
+- !private ["SQ", "init"]
+- ["SH", "JSONType"]
+- !private ["SH", "URL"]
+- ["SH", ""]
+- ["SH", "from"]
+- !private ["SH", "init"]
+- ["13JSONUtilities24JSONPrimitiveConvertibleP", "JSONType"]
+- !private ["13JSONUtilities24JSONPrimitiveConvertibleP", "URL"]
+- ["13JSONUtilities24JSONPrimitiveConvertibleP", ""]
+- ["13JSONUtilities24JSONPrimitiveConvertibleP", "from"]
+- !private ["13JSONUtilities24JSONPrimitiveConvertibleP", "init"]
+- !private ["So8NSCodingP", ""]
+- !private ["So8NSObjectP", ""]
+- ["10Foundation20ReferenceConvertibleP", "JSONType"]
+- !private ["10Foundation20ReferenceConvertibleP", "URL"]
+- ["10Foundation20ReferenceConvertibleP", "from"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- ["SS", ""]
+- ["10Foundation3URLV", "JSONType"]
+- ["10Foundation3URLV", "String"]
+- ["10Foundation3URLV", "URL"]
+- ["10Foundation3URLV", ""]
+- ["10Foundation3URLV", "from"]
+- !private ["10Foundation3URLV", "init"]
+- ["s30_CustomPlaygroundQuickLookableP", "JSONType"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "URL"]
+- ["s30_CustomPlaygroundQuickLookableP", "from"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- ["s34_ExpressibleByFileReferenceLiteralP", "JSONType"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "URL"]
+- ["s34_ExpressibleByFileReferenceLiteralP", "from"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- ["s21_ObjectiveCBridgeableP", "JSONType"]
+- !private ["s21_ObjectiveCBridgeableP", "URL"]
+- ["s21_ObjectiveCBridgeableP", ""]
+- ["s21_ObjectiveCBridgeableP", "from"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+depends-nominal:
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- "SE"
+- "SQ"
+- "SH"
+- "13JSONUtilities24JSONPrimitiveConvertibleP"
+- !private "So8NSCodingP"
+- !private "So8NSObjectP"
+- "10Foundation20ReferenceConvertibleP"
+- "SS"
+- "10Foundation3URLV"
+- "s30_CustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s34_ExpressibleByFileReferenceLiteralP"
+- "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "e958a3fb2b984f7bc815e6cf698a61e2"

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Darwin</string>
+	<string>Rainbow</string>
+	<string>PathKit</string>
+	<string>Cocoa</string>
+	<string>yaml</string>
+	<string>Swagger</string>
+	<string>CDispatch</string>
+	<string>was</string>
+	<string>PathKitTests</string>
+	<string>CYaml</string>
+	<string>configurations</string>
+	<string>SwiftCLI</string>
+	<string>CoreData</string>
+	<string>CoreFoundation</string>
+	<string>Yams</string>
+	<string>summaries</string>
+	<string>SwaggerTests</string>
+	<string>SpectreTests</string>
+	<string>Glibc</string>
+	<string>SwagGenKit</string>
+	<string>StencilTests</string>
+	<string>PackageDescription</string>
+	<string>XCTest</string>
+	<string>JSONUtilities</string>
+	<string>Dispatch</string>
+	<string>Foundation</string>
+	<string>Spectre</string>
+	<string>AppKit</string>
+	<string>Alamofire</string>
+	<string>StencilSwiftKit</string>
+	<string>SwagGenKitTests</string>
+	<string>configuration</string>
+	<string>SwiftCLITests</string>
+	<string>StencilSwiftKitTests</string>
+	<string>RainbowTests</string>
+	<string>YamsTests</string>
+	<string>Stencil</string>
+</array>
+</plist>

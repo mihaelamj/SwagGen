@@ -20,31 +20,31 @@ extension TBX.AuthorizationService {
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = [OverrideRuleObject]
+            public typealias SuccessType = [EvenOverrideRuleObject]
 
             /** Request was successful */
-            case status200([OverrideRuleObject])
+            case status200([EvenOverrideRuleObject])
 
             /** Bad Request  */
-            case status400(ErrorObject)
+            case status400(EvenErrorObject)
 
             /** Unauthorized  */
-            case status401(ErrorObject)
+            case status401(EvenErrorObject)
 
             /** Customer or Device not Found */
-            case status404(ErrorObject)
+            case status404(EvenErrorObject)
 
             /** Device was Logged Out or the customer not longer exists */
-            case status410(ErrorObject)
+            case status410(EvenErrorObject)
 
-            public var success: [OverrideRuleObject]? {
+            public var success: [EvenOverrideRuleObject]? {
                 switch self {
                 case .status200(let response): return response
                 default: return nil
                 }
             }
 
-            public var failure: ErrorObject? {
+            public var failure: EvenErrorObject? {
                 switch self {
                 case .status400(let response): return response
                 case .status401(let response): return response
@@ -55,7 +55,7 @@ extension TBX.AuthorizationService {
             }
 
             /// either success or failure value. Success is anything in the 200..<300 status code range
-            public var responseResult: APIResponseResult<[OverrideRuleObject], ErrorObject> {
+            public var responseResult: APIResponseResult<[EvenOverrideRuleObject], EvenErrorObject> {
                 if let successValue = success {
                     return .success(successValue)
                 } else if let failureValue = failure {
@@ -97,11 +97,11 @@ extension TBX.AuthorizationService {
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode([OverrideRuleObject].self, from: data))
-                case 400: self = try .status400(decoder.decode(ErrorObject.self, from: data))
-                case 401: self = try .status401(decoder.decode(ErrorObject.self, from: data))
-                case 404: self = try .status404(decoder.decode(ErrorObject.self, from: data))
-                case 410: self = try .status410(decoder.decode(ErrorObject.self, from: data))
+                case 200: self = try .status200(decoder.decode([EvenOverrideRuleObject].self, from: data))
+                case 400: self = try .status400(decoder.decode(EvenErrorObject.self, from: data))
+                case 401: self = try .status401(decoder.decode(EvenErrorObject.self, from: data))
+                case 404: self = try .status404(decoder.decode(EvenErrorObject.self, from: data))
+                case 410: self = try .status410(decoder.decode(EvenErrorObject.self, from: data))
                 default: throw APIClientError.unexpectedStatusCode(statusCode: statusCode, data: data)
                 }
             }

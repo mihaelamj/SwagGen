@@ -81,12 +81,12 @@ extension TBX.Auth {
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = Auth
+            public typealias SuccessType = EvenAuth
 
             /** Request was successful */
-            case status200(Auth)
+            case status200(EvenAuth)
 
-            public var success: Auth? {
+            public var success: EvenAuth? {
                 switch self {
                 case .status200(let response): return response
                 }
@@ -112,7 +112,7 @@ extension TBX.Auth {
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode(Auth.self, from: data))
+                case 200: self = try .status200(decoder.decode(EvenAuth.self, from: data))
                 default: throw APIClientError.unexpectedStatusCode(statusCode: statusCode, data: data)
                 }
             }

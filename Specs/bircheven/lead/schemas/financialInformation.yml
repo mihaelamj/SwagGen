@@ -1,0 +1,35 @@
+type: object
+properties:
+  employmentStatus:
+    $ref: ./employmentStatus.yml
+  employmentPayFrequency:
+    $ref: ./employmentPayFrequency.yml
+  annualIncome:
+    type: integer
+    format: int32
+  monthlyNetIncome:
+    type: integer
+    format: int32
+  bankName:
+    type: string
+  bankRoutingNumber:
+    type: string
+  bankAccountType:
+    $ref: ./bankAccountType.yml
+  monthsAtBank:
+    type: integer
+    format: int32
+  bankAccountNumber:
+    type: string
+  monthlyDebt:
+    type: integer
+    format: int32
+  totalAssets:
+    type: integer
+    format: int32
+  monthlyHousingPayment:
+    type: integer
+    format: int32
+  availableAssets:
+    type: integer
+    format: int32

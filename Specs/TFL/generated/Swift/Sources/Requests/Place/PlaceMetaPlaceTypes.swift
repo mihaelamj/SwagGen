@@ -20,12 +20,12 @@ extension TFL.Place {
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = [PlaceCategory]
+            public typealias SuccessType = [EvenPlaceCategory]
 
             /** OK */
-            case status200([PlaceCategory])
+            case status200([EvenPlaceCategory])
 
-            public var success: [PlaceCategory]? {
+            public var success: [EvenPlaceCategory]? {
                 switch self {
                 case .status200(let response): return response
                 }
@@ -51,7 +51,7 @@ extension TFL.Place {
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode([PlaceCategory].self, from: data))
+                case 200: self = try .status200(decoder.decode([EvenPlaceCategory].self, from: data))
                 default: throw APIClientError.unexpectedStatusCode(statusCode: statusCode, data: data)
                 }
             }

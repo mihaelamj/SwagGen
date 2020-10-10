@@ -1,0 +1,4 @@
+module Spectre {
+header "Spectre-Swift.h"
+export *
+}

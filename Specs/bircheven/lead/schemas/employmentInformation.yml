@@ -1,0 +1,26 @@
+type: object
+properties:
+  employerName:
+    type: string
+  employerAddress:
+    type: string
+  employerCity:
+    type: string
+  employerState:
+    type: string
+  employerZip:
+    type: string
+  jobTitle:
+    type: string
+  monthsEmployed:
+    type: integer
+    format: int32
+  directDeposit:
+    type: boolean
+    description: Whether a `Lead` uses direct deposit for their salary
+  payDate1:
+    type: string
+    format: date
+  payDate2:
+    type: string
+    format: date

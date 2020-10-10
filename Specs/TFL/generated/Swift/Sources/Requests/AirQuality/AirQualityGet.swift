@@ -20,12 +20,12 @@ extension TFL.AirQuality {
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = Object
+            public typealias SuccessType = EvenObject
 
             /** OK */
-            case status200(Object)
+            case status200(EvenObject)
 
-            public var success: Object? {
+            public var success: EvenObject? {
                 switch self {
                 case .status200(let response): return response
                 }
@@ -51,7 +51,7 @@ extension TFL.AirQuality {
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode(Object.self, from: data))
+                case 200: self = try .status200(decoder.decode(EvenObject.self, from: data))
                 default: throw APIClientError.unexpectedStatusCode(statusCode: statusCode, data: data)
                 }
             }
